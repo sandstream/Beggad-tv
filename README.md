@@ -78,6 +78,28 @@ Direktläget går förbi MCP-servern och anropar samma uppströms-API som den g�
 Det är medvetet: en oövervakad körning i en färsk container ska inte bero på
 att en lokal Cloudflare-worker startar som den ska.
 
+### Utfall och livslängd
+
+Varje följd annons som försvinner loggas i `bevakning/utfall.json` med hur
+länge den låg ute, vad den kostade och hur den bedömdes när vi hittade den.
+`node statistik.mjs` sammanställer materialet.
+
+Frågan är om underprissatta annonser säljs snabbare. Den går **inte** att
+besvara på en ögonblicksbild: de snabbsålda hinner aldrig synas bland levande
+annonser, så åldersfördelningen är snedvriden per konstruktion. En mätning på
+443 levande annonser gav median 10–14 dagar i samtliga prislägen — ingen
+signal alls, vilket är precis vad snedvridningen förutsäger.
+
+Två varningar för tolkningen när materialet väl finns:
+
+- **Borttagen är inte detsamma som såld.** Blocket plockar bort annonser som
+  löper ut. Livslängder över 60 dagar behandlas därför som sannolikt utgångna
+  och räknas inte som affärer.
+- **Vi ser bara det vi råkat följa.** Urvalet är inte slumpmässigt.
+
+Under tio utfall per grupp säger `statistik.mjs` ifrån i stället för att
+redovisa skillnader som ändå är brus.
+
 ### Följlistan
 
 Utöver nya träffar bevakas de annonser vi redan bedömt. `bevakning/foljer.json`

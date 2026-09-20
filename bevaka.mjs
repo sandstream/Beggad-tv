@@ -19,6 +19,7 @@ import { bedomKap } from "./vardering.js";
 const HAR = dirname(fileURLToPath(import.meta.url));
 const HISTORIK = join(HAR, "bevakning", "sedda.json");
 const FOLJER = join(HAR, "bevakning", "foljer.json");
+const UTFALL = join(HAR, "bevakning", "utfall.json");
 const HEM = ORTER.spanga;
 
 const argv = process.argv.slice(2);
@@ -112,6 +113,26 @@ async function hamtaAnnons(id) {
   }
 }
 
+// Varje annons som försvinner loggas med sina egenskaper vid upptäckt. Det
+// är råmaterialet till frågan "säljs kap snabbare?", som inte går att besvara
+// på en ögonblicksbild: de snabbsålda hinner aldrig synas bland levande
+// annonser. Först när tillräckligt många utfall samlats går det att jämföra.
+//
+// Varning för tolkningen: borttagen betyder inte nödvändigtvis såld. Blocket
+// plockar även bort annonser som löper ut, så en annons som försvinner efter
+// två månader är sannolikt en utgången annons, inte en affär. Därför sparas
+// både hur länge vi följt den och hur gammal annonsen var när vi hittade den.
+function loggaUtfall(poster) {
+  if (!poster.length) return;
+  let utfall = [];
+  try {
+    utfall = JSON.parse(readFileSync(UTFALL, "utf8"));
+  } catch {}
+  utfall.push(...poster);
+  mkdirSync(dirname(UTFALL), { recursive: true });
+  writeFileSync(UTFALL, JSON.stringify(utfall, null, 2) + "\n");
+}
+
 // Går igenom annonserna vi följer och rapporterar det bevakningen annars
 // missar: att en annons försvinner, eller att priset ändras. En sänkning på
 // en annons vi redan bedömt är en starkare köpsignal än en ny träff.
@@ -123,7 +144,29 @@ async function kollaFoljda(foljer) {
     await new Promise((r) => setTimeout(r, 200));
     if (nu === undefined) continue; // nätfel, låt posten ligga kvar
     if (nu === null) {
-      borta.push({ id, ...f });
+      const dagarFoljd = f.sedan
+        ? Math.round((Date.now() - Date.parse(f.sedan)) / 86400000)
+        : null;
+      borta.push({
+        id,
+        ...f,
+        dagarFoljd,
+        utfall: {
+          id,
+          titel: f.titel,
+          pris: f.pris,
+          hittad: f.sedan,
+          forsvann: new Date().toISOString().slice(0, 10),
+          dagarFoljd,
+          annonsdagarVidStart: f.annonsdagar ?? null,
+          // Summan är annonsens totala livslängd, när vi vet startåldern.
+          totalAlder:
+            f.annonsdagar != null && dagarFoljd != null
+              ? f.annonsdagar + dagarFoljd
+              : null,
+          underMarknad: f.underMarknad ?? null,
+        },
+      });
       delete foljer[id];
       continue;
     }
@@ -132,6 +175,7 @@ async function kollaFoljda(foljer) {
     }
     foljer[id] = { titel: nu.titel, pris: nu.pris, url: nu.url, sedan: f.sedan };
   }
+  loggaUtfall(borta.map((b) => b.utfall));
   return { borta, andrade };
 }
 
@@ -208,7 +252,14 @@ for (const b of BEVAKNINGAR) {
           ar: m.ar,
           kap: jamforbara.length ? bedomKap({ begart: i.price, jamforbara }) : null,
         });
-        foljer[i.id] = { titel: r.titel, pris: r.pris, url: r.url, sedan: new Date().toISOString().slice(0, 10) };
+        foljer[i.id] = {
+          titel: r.titel,
+          pris: r.pris,
+          url: r.url,
+          sedan: new Date().toISOString().slice(0, 10),
+          annonsdagar: r.dagar,
+          underMarknad: nya[nya.length - 1].kap?.motMarknad?.procentUnder ?? null,
+        };
       }
     }
   }

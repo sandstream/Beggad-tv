@@ -50,6 +50,7 @@ export const TESTVINNARE = [
 
   // 2022
   { k: "LG C2",          ar: 2022, p: /oled(42|48|55|65|77)?c2|\bc2\b/i,   q: ["OLED55C2", "OLED65C2", "LG C2 OLED"] },
+  { k: "LG A2",          ar: 2022, p: /oled(48|55|65|77)?a2|\ba2\b/i,      q: ["OLED55A2", "LG A2 OLED", "OLED55A26LA"] },
   { k: "LG G2",          ar: 2022, p: /oled(55|65|77)?g2|\bg2\b/i,         q: ["OLED55G2", "OLED65G2", "LG G2 OLED"] },
   { k: "Samsung S95B",   ar: 2022, p: /s95b/i,                             q: ["S95B", "QE55S95B", "Samsung S95B QD-OLED"] },
   { k: "Samsung QN90B",  ar: 2022, p: /qn90b/i,                            q: ["QN90B", "QE55QN90B", "Samsung QN90B Neo QLED"] },
@@ -60,6 +61,7 @@ export const TESTVINNARE = [
 
   // 2021
   { k: "LG C1",          ar: 2021, p: /oled(48|55|65|77)?c1|\bc1\b/i,      q: ["OLED55C1", "OLED65C1", "LG C1 OLED"] },
+  { k: "LG A1",          ar: 2021, p: /oled(48|55|65|77)?a1|\ba1\b/i,      q: ["OLED55A1", "LG A1 OLED", "OLED55A16LA"] },
   { k: "LG G1",          ar: 2021, p: /oled(55|65|77)?g1|\bg1\b/i,         q: ["OLED55G1", "LG G1 OLED"] },
   { k: "Sony A90J",      ar: 2021, p: /a90j/i,                             q: ["A90J", "XR-55A90J", "Sony A90J"] },
   { k: "Sony A80J",      ar: 2021, p: /a80j/i,                             q: ["A80J", "XR-55A80J", "Sony A80J"] },
@@ -78,7 +80,7 @@ export const TESTVINNARE = [
   { k: "Sony A8G",     ar: 2019, p: /a8g|\bag8\b/i,                        q: ["KD-55A8G", "Sony A8G"] },
   { k: "Sony A87",     ar: 2019, p: /a87|kd-?\d{2}a8\b/i,                  q: ["KD-55A87", "Sony A87 OLED", "KD-55A8"] },
   { k: "Phil OLED804", ar: 2019, p: /oled804|oled854|oled934/i,            q: ["OLED804", "Philips OLED854", "OLED934"] },
-  { k: "Pana GZ1000",  ar: 2019, p: /gz1000|gz2000/i,                      q: ["GZ1000", "GZ2000", "Panasonic GZ"] },
+  { k: "Pana GZ1000",  ar: 2019, p: /gz1000|gz2000|gz9[0-9]0/i,            q: ["GZ1000", "GZ2000", "GZ960", "Panasonic GZ OLED"] },
   { k: "Sam Q90R",     ar: 2019, p: /q90r|q95r/i,                          q: ["Q90R", "QE55Q90R", "Samsung Q95R"] },
 
   // 2020 — bortre gränsen. Äldre än så och stoppregel tre biter nästan alltid.

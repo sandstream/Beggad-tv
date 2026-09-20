@@ -34,8 +34,12 @@ const torr = flagg.has("--torr");
 // (X90-serien, Bravia 9) lyser runt ljusa objekt i mörker och hör inte hit,
 // även om de ligger i modellkatalogen för den interaktiva sökningen.
 const AR_ELDST = 2019;
+// LG:s A-serie är insteg — 60 Hz och ingen HDMI 2.1 — men panelen är äkta
+// OLED och svärtan densamma. I ett mörklagt rum för film är den fullt
+// gångbar, så den bevakas. Den levereras dessutom ofta utan fot, vilket
+// rapporten ska fråga om.
 const OLED =
-  /^LG [CGEB](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil OLED|^Pana /;
+  /^LG [CGEBA](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil OLED|^Pana /;
 
 const BEVAKNINGAR = [
   {

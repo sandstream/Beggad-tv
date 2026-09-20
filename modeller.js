@@ -67,6 +67,20 @@ export const TESTVINNARE = [
   { k: "Philips OLED806", ar: 2021, p: /oled806|oled856/i,                 q: ["OLED806", "Philips OLED806", "OLED856"] },
   { k: "Panasonic JZ1000", ar: 2021, p: /jz1000|jz2000/i,                  q: ["JZ1000", "JZ2000", "Panasonic JZ"] },
 
+  // 2019 — första året med HDMI 2.1 och 120 Hz hos LG, och därför fullt
+  // relevant begagnat. Ligger under 2020 i katalogen men är inte sämre:
+  // C9 har bättre anslutningar än flera senare insteg.
+  { k: "LG C9",        ar: 2019, p: /oled(55|65|77)?c9|\bc9\b/i,           q: ["OLED55C9", "OLED65C9", "LG C9 OLED"] },
+  { k: "LG E9",        ar: 2019, p: /oled(55|65)?e9|\be9\b/i,              q: ["OLED55E9", "LG E9 OLED"] },
+  { k: "LG B9",        ar: 2019, p: /oled(55|65)?b9|\bb9\b/i,              q: ["OLED55B9", "LG B9 OLED"] },
+  // Sonys A8/A87 heter olika på olika marknader och spänner 2019–2020.
+  { k: "Sony A9G",     ar: 2019, p: /a9g|\bag9\b/i,                        q: ["KD-55AG9", "Sony A9G", "Sony AG9 OLED"] },
+  { k: "Sony A8G",     ar: 2019, p: /a8g|\bag8\b/i,                        q: ["KD-55A8G", "Sony A8G"] },
+  { k: "Sony A87",     ar: 2019, p: /a87|kd-?\d{2}a8\b/i,                  q: ["KD-55A87", "Sony A87 OLED", "KD-55A8"] },
+  { k: "Phil OLED804", ar: 2019, p: /oled804|oled854|oled934/i,            q: ["OLED804", "Philips OLED854", "OLED934"] },
+  { k: "Pana GZ1000",  ar: 2019, p: /gz1000|gz2000/i,                      q: ["GZ1000", "GZ2000", "Panasonic GZ"] },
+  { k: "Sam Q90R",     ar: 2019, p: /q90r|q95r/i,                          q: ["Q90R", "QE55Q90R", "Samsung Q95R"] },
+
   // 2020 — bortre gränsen. Äldre än så och stoppregel tre biter nästan alltid.
   { k: "LG CX",          ar: 2020, p: /oled(48|55|65|77)?cx|\bcx\b/i,      q: ["OLED55CX", "OLED65CX", "LG CX OLED"] },
   { k: "LG GX",          ar: 2020, p: /oled(55|65)?gx|\bgx\b/i,            q: ["OLED55GX", "LG GX OLED"] },

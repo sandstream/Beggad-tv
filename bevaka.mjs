@@ -23,15 +23,25 @@ const flagg = new Set(process.argv.slice(2));
 const torr = flagg.has("--torr");
 
 // Vad vi letar efter. Kriterierna är destillatet av hela researchen:
-// 55 tum för att 65 inte får plats, OLED för att rummet är mörklagt, 2021 och
-// nyare för att det ska vara ett steg upp från Ambilight-TV:n som redan sitter.
+// 55 tum för att 65 inte får plats, och OLED för att rummet är mörklagt.
+//
+// Årsgränsen går vid 2019, inte 2021. Det ursprungliga kravet "2021 och nyare"
+// var en förenkling — det som ska vara ett steg upp från Ambilight-LED:en som
+// redan sitter uppe är paneltekniken, inte årtalet. En C9 från 2019 har både
+// HDMI 2.1 och 120 Hz och slår flera senare insteg.
+//
+// Bara OLED matchas: mini-LED (QN90-serien, Q90R/Q90T) och Full Array LED
+// (X90-serien, Bravia 9) lyser runt ljusa objekt i mörker och hör inte hit,
+// även om de ligger i modellkatalogen för den interaktiva sökningen.
+const AR_ELDST = 2019;
+const OLED =
+  /^LG [CGEB](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil OLED|^Pana /;
+
 const BEVAKNINGAR = [
   {
-    namn: "Biorums-TV — 55\" OLED, 2021+",
+    namn: `Biorums-TV — 55" OLED, ${AR_ELDST}+`,
     maxpris: 9000,
-    modeller: TESTVINNARE.filter(
-      (m) => m.ar >= 2021 && /^LG (C|G)[1-6]$|^Sony A(80|90)|^Samsung S9[05]/.test(m.k),
-    ),
+    modeller: TESTVINNARE.filter((m) => m.ar >= AR_ELDST && OLED.test(m.k)),
     storlek: /(?<![0-9])55(?![0-9])/,
   },
 ];

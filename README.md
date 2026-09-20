@@ -59,6 +59,29 @@ Ankarpunkterna i `ORTER` är hämtade ur Blocket självt — medelkoordinaten f�
 annonserna på orten träffar tyngdpunkten bättre än en godtycklig centrumpunkt.
 Behöver du en ort som inte finns i listan, ange `--hem lat,lon`.
 
+## Daglig bevakning
+
+`bevaka.mjs` kör de sparade kriterierna, jämför mot `bevakning/sedda.json` och
+skriver ut bara det som inte rapporterats förut.
+
+```bash
+node bevaka.mjs          # direktläge mot uppströms-API:t
+node bevaka.mjs --mcp    # via begagnad-mcp i stället
+node bevaka.mjs --torr   # rapportera utan att uppdatera historiken
+```
+
+Historikfilen **måste committas efter varje körning** — det är den som gör att
+en färsk container vet vad gårdagens körning redan rapporterade. Utan push ser
+allt nytt ut igen nästa dag.
+
+Direktläget går förbi MCP-servern och anropar samma uppströms-API som den gör.
+Det är medvetet: en oövervakad körning i en färsk container ska inte bero på
+att en lokal Cloudflare-worker startar som den ska.
+
+Kriterierna ligger i `BEVAKNINGAR` och `SONOS` överst i filen. Just nu:
+55 tum OLED från 2021 och nyare under 9 000 kr, samt Sonos Beam och Sub i
+svart under 8 000 kr.
+
 ## Värderingsmodellen
 
 `vardering.js` räknar ut vad en annons får kosta:

@@ -17,10 +17,15 @@ import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
 
 const HAR = dirname(fileURLToPath(import.meta.url));
 const HISTORIK = join(HAR, "bevakning", "sedda.json");
+const FOLJER = join(HAR, "bevakning", "foljer.json");
 const HEM = ORTER.spanga;
 
-const flagg = new Set(process.argv.slice(2));
+const argv = process.argv.slice(2);
+const flagg = new Set(argv);
 const torr = flagg.has("--torr");
+// --folj 26730987,26747541 lägger till annonser i följlistan utan att söka.
+const foljArg = argv[argv.indexOf("--folj") + 1];
+const attFolja = flagg.has("--folj") && foljArg ? foljArg.split(",").map((s) => s.trim()) : [];
 
 // Vad vi letar efter. Kriterierna är destillatet av hela researchen:
 // 55 tum för att 65 inte får plats, och OLED för att rummet är mörklagt.
@@ -78,6 +83,57 @@ function lasHistorik() {
   }
 }
 
+function lasFoljer() {
+  try {
+    return JSON.parse(readFileSync(FOLJER, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+// Hämtar en enskild annons. Uppströms svarar 200 även för borttagna annonser,
+// med ett error-fält i stället för innehåll — så frånvaron av itemData är det
+// som betyder "borta", inte HTTP-statusen.
+async function hamtaAnnons(id) {
+  try {
+    const res = await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`);
+    const d = await res.json();
+    const it = d?.loaderData?.["item-recommerce"]?.itemData;
+    if (!it || it.title == null) return null;
+    return {
+      titel: it.title,
+      pris: typeof it.price === "number" ? it.price : (it.price?.amount ?? null),
+      plats: it.location?.postalName || "",
+      url: `https://www.blocket.se/recommerce/forsale/item/${id}`,
+    };
+  } catch {
+    return undefined; // nätfel — skilj från bekräftat borttagen
+  }
+}
+
+// Går igenom annonserna vi följer och rapporterar det bevakningen annars
+// missar: att en annons försvinner, eller att priset ändras. En sänkning på
+// en annons vi redan bedömt är en starkare köpsignal än en ny träff.
+async function kollaFoljda(foljer) {
+  const borta = [];
+  const andrade = [];
+  for (const [id, f] of Object.entries(foljer)) {
+    const nu = await hamtaAnnons(id);
+    await new Promise((r) => setTimeout(r, 200));
+    if (nu === undefined) continue; // nätfel, låt posten ligga kvar
+    if (nu === null) {
+      borta.push({ id, ...f });
+      delete foljer[id];
+      continue;
+    }
+    if (nu.pris != null && f.pris != null && nu.pris !== f.pris) {
+      andrade.push({ id, ...f, nyttPris: nu.pris });
+    }
+    foljer[id] = { titel: nu.titel, pris: nu.pris, url: nu.url, sedan: f.sedan };
+  }
+  return { borta, andrade };
+}
+
 function berika(i) {
   return {
     id: i.id,
@@ -91,6 +147,24 @@ function berika(i) {
       : null,
   };
 }
+
+const foljer = lasFoljer();
+
+// --folj: lägg till annonser i följlistan och sluta där.
+if (attFolja.length) {
+  for (const id of attFolja) {
+    const a = await hamtaAnnons(id);
+    if (!a) { console.log(`${id}: kunde inte hämtas`); continue; }
+    foljer[id] = { ...a, sedan: new Date().toISOString().slice(0, 10) };
+    console.log(`följer ${id} — ${a.pris} kr — ${a.titel}`);
+    await new Promise((r) => setTimeout(r, 200));
+  }
+  mkdirSync(dirname(FOLJER), { recursive: true });
+  writeFileSync(FOLJER, JSON.stringify(foljer, null, 2) + "\n");
+  process.exit(0);
+}
+
+const { borta, andrade } = await kollaFoljda(foljer);
 
 const sok = await skapaSokare({ direkt: !flagg.has("--mcp") });
 const historik = lasHistorik();
@@ -114,7 +188,9 @@ for (const b of BEVAKNINGAR) {
       if (!i.price || i.price > b.maxpris || inteEnTv(i.title)) continue;
       allaSedda[i.id] = true;
       if (!historik.rapporterade[i.id]) {
-        nya.push({ ...berika(i), bevakning: b.namn, modell: m.k, ar: m.ar });
+        const r = berika(i);
+        nya.push({ ...r, bevakning: b.namn, modell: m.k, ar: m.ar });
+        foljer[i.id] = { titel: r.titel, pris: r.pris, url: r.url, sedan: new Date().toISOString().slice(0, 10) };
       }
     }
   }
@@ -134,15 +210,31 @@ for (const b of BEVAKNINGAR) {
     if (!SONOS.passar(i.title) || !i.price || i.price > SONOS.maxpris) continue;
     allaSedda[i.id] = true;
     if (!historik.rapporterade[i.id]) {
-      nya.push({ ...berika(i), bevakning: SONOS.namn });
+      const r = berika(i);
+      nya.push({ ...r, bevakning: SONOS.namn });
+      foljer[i.id] = { titel: r.titel, pris: r.pris, url: r.url, sedan: new Date().toISOString().slice(0, 10) };
     }
   }
 }
 
 if (sok.stang) await sok.stang();
 
-if (nya.length === 0) {
+for (const b of borta) {
+  console.log(`## BORTA — ${b.titel}\n`);
+  console.log(`Såld eller tillbakadragen. Låg på ${b.pris} kr.`);
+  console.log(`${b.url}\n`);
+}
+for (const a of andrade) {
+  const riktning = a.nyttPris < a.pris ? "SÄNKT" : "HÖJT";
+  console.log(`## ${riktning} — ${a.titel}\n`);
+  console.log(`${a.pris} → ${a.nyttPris} kr`);
+  console.log(`${a.url}\n`);
+}
+
+if (nya.length === 0 && borta.length === 0 && andrade.length === 0) {
   console.log("INGET NYTT");
+} else if (nya.length === 0) {
+  // borta/ändrade är redan utskrivna
 } else {
   console.log(`${nya.length} nya träffar\n`);
   const grupper = new Map();
@@ -172,7 +264,10 @@ if (!torr) {
       2,
     ) + "\n",
   );
-  process.stderr.write(`\nHistorik: ${Object.keys(allaSedda).length} annonser\n`);
+  writeFileSync(FOLJER, JSON.stringify(foljer, null, 2) + "\n");
+  process.stderr.write(
+    `\nHistorik: ${Object.keys(allaSedda).length} annonser | följer: ${Object.keys(foljer).length}\n`,
+  );
 }
 
 process.exit(0);

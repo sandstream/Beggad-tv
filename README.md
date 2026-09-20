@@ -78,6 +78,26 @@ Direktläget går förbi MCP-servern och anropar samma uppströms-API som den g�
 Det är medvetet: en oövervakad körning i en färsk container ska inte bero på
 att en lokal Cloudflare-worker startar som den ska.
 
+### Följlistan
+
+Utöver nya träffar bevakas de annonser vi redan bedömt. `bevakning/foljer.json`
+håller senast kända pris per annons, och varje körning rapporterar två saker som
+en ren nyhetsbevakning aldrig ser:
+
+- **BORTA** — annonsen är såld eller tillbakadragen. Posten tas bort ur listan.
+- **SÄNKT / HÖJT** — säljaren har ändrat priset. En sänkning på något vi redan
+  bedömt är en starkare köpsignal än en ny träff, eftersom bedömningen är gjord.
+
+Nya träffar läggs till automatiskt. Vill du följa något manuellt:
+
+```bash
+node bevaka.mjs --folj 26730987,26747541
+```
+
+Uppströms svarar HTTP 200 även för borttagna annonser, med ett error-fält i
+stället för innehåll — därför avgörs "borta" på att `itemData` saknas, inte på
+statuskoden.
+
 Kriterierna ligger i `BEVAKNINGAR` och `SONOS` överst i filen. Just nu:
 55 tum OLED från 2021 och nyare under 9 000 kr, samt Sonos Beam och Sub i
 svart under 8 000 kr.

@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import { skapaSokare, avstand } from "./blocket.mjs";
 import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
+import { kollaKohort, fanga, las, KOHORT } from "./kohort.mjs";
 
 const HAR = dirname(fileURLToPath(import.meta.url));
 const HISTORIK = join(HAR, "bevakning", "sedda.json");
@@ -210,6 +211,18 @@ if (attFolja.length) {
 }
 
 const { borta, andrade } = await kollaFoljda(foljer);
+
+// Mätkohorten kollas varje körning men rapporteras aldrig — den finns för att
+// räknas, inte för att läsas. Fylls på när den krympt, så att storleken hålls
+// uppe medan medlemmar faller ifrån. Varje ny medlem får sina egenskaper
+// registrerade vid infångandet, så inträdet får ske löpande.
+if (!torr) {
+  const k = await kollaKohort(hamtaAnnons);
+  process.stderr.write(`Kohort: ${k.kollade} kollade, ${k.forsvunna} försvunna\n`);
+  if (Object.keys(las(KOHORT, {})).length < 150) {
+    await fanga();
+  }
+}
 
 const sok = await skapaSokare({ direkt: !flagg.has("--mcp") });
 const historik = lasHistorik();

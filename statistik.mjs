@@ -33,7 +33,19 @@ const med = (a) => {
   return s.length % 2 ? s[m] : Math.round((s[m - 1] + s[m]) / 2);
 };
 
-console.log(`${utfall.length} utfall loggade\n`);
+const franKohort = utfall.filter((u) => u.kohort);
+const franKortlistan = utfall.filter((u) => !u.kohort);
+console.log(`${utfall.length} utfall loggade — ${franKohort.length} från kohorten, ${franKortlistan.length} från kortlistan\n`);
+
+// Bara kohorten används för jämförelsen. Kortlistan är kuraterad: den
+// innehåller annonser vi tyckte var intressanta, och intressant korrelerar
+// med billig. Att räkna på den hade gett svar på hur snabbt annonser vi
+// gillar försvinner, inte om kap säljs snabbare.
+utfall = franKohort;
+if (!utfall.length) {
+  console.log("Kohorten har inga utfall än. Kortlistans utfall räknas inte — urvalet är snett.");
+  process.exit(0);
+}
 
 // En annons som försvinner efter mycket lång tid har sannolikt löpt ut i
 // stället för sålts. Blocket plockar bort gamla annonser automatiskt, så

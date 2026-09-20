@@ -78,6 +78,26 @@ Direktläget går förbi MCP-servern och anropar samma uppströms-API som den g�
 Det är medvetet: en oövervakad körning i en färsk container ska inte bero på
 att en lokal Cloudflare-worker startar som den ska.
 
+### Mätkohorten
+
+`node kohort.mjs --fanga` fångar in ett systematiskt urval 55-tums-annonser —
+allt som matchar formatet, oavsett om det är köpvärt, rimligt prissatt eller
+ens OLED. De följs tills de försvinner och rapporteras **aldrig** till
+användaren. `node kohort.mjs` visar storlek och sammansättning.
+
+Varför en egen lista i stället för en bredare följlista: följlistan är
+kuraterad, och intressant korrelerar med billig. Mäter man på den får man svar
+på hur snabbt annonser man gillar försvinner, inte om kap säljs snabbare.
+
+Taket är 200 annonser, för att hålla nere belastningen på ett gratis och
+inofficiellt API. Blir kandidaterna fler väljs medlemmarna slumpmässigt —
+ett urval på pris eller avstånd hade återinfört precis den bias kohorten
+ska undvika. `bevaka.mjs` fyller på automatiskt när kohorten krympt under 150.
+
+Prisläget räknas inom storlek och paneltyp vid infångandet, mot de andra
+kandidaterna samma dag, och fryses där. Det är egenskaperna vid inträdet som
+ska jämföras, inte dagens.
+
 ### Utfall och livslängd
 
 Varje följd annons som försvinner loggas i `bevakning/utfall.json` med hur

@@ -37,10 +37,27 @@ node sok.mjs --profil testvinnare --region stockholm --max 12000
 | `--max` / `--min` | prisspann i kronor | inget tak |
 | `--storlek` | tumstorlekar, kommaseparerat | `42,48,50,55,65,75,77,83` |
 | `--ar` | modellårsspann, t.ex. `2022-2026` | `2020-2026` |
+| `--hem` | ankarpunkt: `spanga`, `stockholm`, `goteborg`, `malmo`, `uppsala` eller `lat,lon` | `spanga` |
+| `--radie` | maxavstånd i kilometer fågelvägen från `--hem` | av |
 | `--json` | rå JSON istället för tabell | av |
 
 Peka om servern med `BEGAGNAD_MCP_URL` om den inte ligger på
 `http://localhost:8788/sse`.
+
+### Avstånd i stället för ortsnamn
+
+`--region` filtrerar på ortsnamn, vilket är trubbigt: "Stockholm" säger inget om
+huruvida annonsen ligger två eller tjugo kilometer bort, och en annons i
+Vällingby är närmare Spånga än en i Nacka. `--radie` mäter i stället fågelvägen
+från `--hem` och sorterar träffarna på avstånd.
+
+```bash
+node sok.mjs --profil budget --radie 10 --max 2000 --storlek 55
+```
+
+Ankarpunkterna i `ORTER` är hämtade ur Blocket självt — medelkoordinaten för
+annonserna på orten träffar tyngdpunkten bättre än en godtycklig centrumpunkt.
+Behöver du en ort som inte finns i listan, ange `--hem lat,lon`.
 
 ## Värderingsmodellen
 
@@ -87,6 +104,19 @@ returnerar numera Blockets Remix-loaderdata istället för ett platt objekt, så
 verktyget svarar med tomma fält. Rätta i `src/index.ts` i din klon genom att
 packa upp `loaderData["item-recommerce"].itemData` innan fälten läses. Sökningen
 (`search_blocket`) fungerar som den ska.
+
+**`--radie` kräver en patchad server.** `search_blocket` skickar inte med
+annonsernas koordinater, trots att Blockets eget svar innehåller dem. Lägg till
+i `searchBlocket` i `src/index.ts`:
+
+```ts
+coordinates: item.coordinates
+  ? { lat: item.coordinates.lat, lon: item.coordinates.lon }
+  : null,
+```
+
+och motsvarande fält i `UnifiedItem`. Utan patchen säger `sok.mjs` ifrån och
+kör vidare utan radiefilter i stället för att tyst ge fel svar.
 
 **Tradera kräver API-nycklar.** `search_tradera` och `get_tradera_item` behöver
 `TRADERA_APP_ID` och `TRADERA_APP_KEY` som variabler i wrangler. Utan dem är det

@@ -117,3 +117,14 @@ export const REGIONER = {
   skane: /(malm[öo]|lund|helsingborg|landskrona|h[öo]llviken|limhamn|bunkeflo|[äa]ngelholm|trelleborg|eslöv|kristianstad|h[äa]ssleholm)/i,
   alla: /./,
 };
+
+// Ankarpunkter för --hem. Koordinaterna är hämtade ur Blocket självt:
+// medelvärdet av koordinaterna för annonser på respektive ort, vilket träffar
+// ortens tyngdpunkt bättre än en godtycklig centrumpunkt.
+export const ORTER = {
+  spanga: { lat: 59.3825, lon: 17.9026 },
+  stockholm: { lat: 59.3326, lon: 18.0649 },
+  goteborg: { lat: 57.7089, lon: 11.9746 },
+  malmo: { lat: 55.6050, lon: 13.0038 },
+  uppsala: { lat: 59.8586, lon: 17.6389 },
+};

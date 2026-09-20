@@ -14,6 +14,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { skapaSokare, avstand } from "./blocket.mjs";
 import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
+import { bedomKap } from "./vardering.js";
 
 const HAR = dirname(fileURLToPath(import.meta.url));
 const HISTORIK = join(HAR, "bevakning", "sedda.json");
@@ -183,13 +184,30 @@ for (const b of BEVAKNINGAR) {
       }
       await paus(250);
     }
-    for (const i of sedda.values()) {
-      if (!m.p.test(i.title) || !b.storlek.test(i.title)) continue;
-      if (!i.price || i.price > b.maxpris || inteEnTv(i.title)) continue;
+    // Alla träffar på modellen, inte bara de nya — de utgör jämförelsematerialet
+    // som avgör om en ny annons är ett kap eller bara ett pris.
+    const matchande = [...sedda.values()].filter(
+      (i) =>
+        m.p.test(i.title) &&
+        b.storlek.test(i.title) &&
+        i.price &&
+        i.price <= b.maxpris &&
+        !inteEnTv(i.title),
+    );
+    const priser = matchande.map((i) => i.price);
+
+    for (const i of matchande) {
       allaSedda[i.id] = true;
       if (!historik.rapporterade[i.id]) {
         const r = berika(i);
-        nya.push({ ...r, bevakning: b.namn, modell: m.k, ar: m.ar });
+        const jamforbara = priser.filter((_, n) => matchande[n].id !== i.id);
+        nya.push({
+          ...r,
+          bevakning: b.namn,
+          modell: m.k,
+          ar: m.ar,
+          kap: jamforbara.length ? bedomKap({ begart: i.price, jamforbara }) : null,
+        });
         foljer[i.id] = { titel: r.titel, pris: r.pris, url: r.url, sedan: new Date().toISOString().slice(0, 10) };
       }
     }
@@ -249,6 +267,14 @@ if (nya.length === 0 && borta.length === 0 && andrade.length === 0) {
       const modell = n.modell ? `${n.modell} (${n.ar}) — ` : "";
       console.log(`${n.pris} kr · ${km} · ${n.dagar ?? "?"} dgr gammal`);
       console.log(`${modell}${n.titel}`);
+      if (n.kap?.motMarknad?.otillrackligt) {
+        console.log(n.kap.motMarknad.rad);
+      } else if (n.kap?.motMarknad) {
+        const k = n.kap.motMarknad;
+        console.log(
+          `${k.procentUnder}% mot ${n.kap.marknad} kr (${k.underlag} jämförbara) → ${k.klass.toUpperCase()}. ${k.rad}`,
+        );
+      }
       console.log(`${n.url}\n`);
     }
   }

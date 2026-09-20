@@ -10,7 +10,7 @@
 
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { SSEClientTransport } from "@modelcontextprotocol/sdk/client/sse.js";
-import { TESTVINNARE, BUDGET_SOKORD, INTE_EN_TV, REGIONER } from "./modeller.js";
+import { TESTVINNARE, BUDGET_SOKORD, inteEnTv, REGIONER } from "./modeller.js";
 
 const MCP_URL = process.env.BEGAGNAD_MCP_URL || "http://localhost:8788/sse";
 
@@ -89,7 +89,7 @@ const resultat = traffar
       i.price >= minpris &&
       i.price <= maxpris &&
       region.test(i.location) &&
-      !INTE_EN_TV.test(i.title),
+      !inteEnTv(i.title),
   )
   .map((i) => ({
     ...i,

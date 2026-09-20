@@ -87,8 +87,26 @@ export const BUDGET_SOKORD = [
 
 // Rubriker som matchar storlek och märke men inte är en TV: väggfästen,
 // fötter, fjärrkontroller, reservdelar, köpes-annonser.
-export const INTE_EN_TV =
-  /v[äa]ggf[äa]ste|fotstativ|\bstativ\b|\bfot\b|fj[äa]rrkontroll|reservdel|trasig|spr[äa]ck|startar inte|k[öo]pes|vi k[öo]per|\bs[öo]kes\b|\bram\b/i;
+const TILLBEHOR = /v[äa]ggf[äa]ste|fotstativ|\bstativ\b|tv-?st[äa]ll|\bfot\b|fj[äa]rrkontroll|\bram\b/;
+const DEFEKT_ELLER_KOPES = /reservdel|trasig|spr[äa]ck|startar inte|k[öo]pes|vi k[öo]per|\bs[öo]kes\b/i;
+
+// "LG C4 55'' i nyskick ink väggfäste" är en TV som får ett väggfäste på
+// köpet. "Nytt TV-väggfäste Andersson 23–55 tum" är ett väggfäste. Skillnaden
+// är om tillbehöret är huvudordet eller bara nämns som medföljande — så plocka
+// bort de medföljande omnämnandena innan rubriken bedöms.
+const MEDFOLJER = new RegExp(
+  `\\b(ink|inkl|inklusive|med|plus|och|\\+)\\s+\\w*\\s*(?:${TILLBEHOR.source})\\b|` +
+    `(?:${TILLBEHOR.source})\\s+(ing[åa]r|medf[öo]ljer|p[åa] k[öo]pet)`,
+  "gi",
+);
+
+export function inteEnTv(rubrik) {
+  const kvar = rubrik.replace(MEDFOLJER, " ");
+  return new RegExp(TILLBEHOR.source, "i").test(kvar) || DEFEKT_ELLER_KOPES.test(rubrik);
+}
+
+// Bakåtkompatibelt alias för den som bara vill ha regexen.
+export const INTE_EN_TV = new RegExp(`${TILLBEHOR.source}|${DEFEKT_ELLER_KOPES.source}`, "i");
 
 export const REGIONER = {
   stockholm:

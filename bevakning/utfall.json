@@ -1,0 +1,25 @@
+[
+  {
+    "id": "26713251",
+    "titel": "LG C4 55’’ Smart Tv i nyskick ink väggfäste",
+    "pris": 7000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-21",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26579508",
+    "titel": "Philips 55” OLED med Ambilight",
+    "pris": 2990,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-21",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 6,
+    "underMarknad": 34,
+    "kohort": true
+  }
+]

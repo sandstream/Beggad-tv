@@ -47,6 +47,17 @@ if (!utfall.length) {
   process.exit(0);
 }
 
+// Två fel åt olika håll, båda bekräftade i praktiken:
+//
+// En annons som försvinner behöver inte vara såld — Blocket plockar bort
+// utgångna annonser, se gränsen nedan.
+//
+// Och en annons som ligger kvar behöver inte vara osåld. En Philips i Solna
+// såldes den 22 september medan annonsen stod kvar med disposed=false och
+// oförändrat pris. Mätt livslängd är därför en ÖVRE gräns för tiden till
+// affär, inte tiden i sig. Slutsatser ska formuleras därefter: skillnader
+// mellan grupper är fortfarande jämförbara, men nivån är för hög.
+//
 // En annons som försvinner efter mycket lång tid har sannolikt löpt ut i
 // stället för sålts. Blocket plockar bort gamla annonser automatiskt, så
 // riktigt långa livslängder säger mer om annonstiden än om efterfrågan.

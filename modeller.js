@@ -69,6 +69,26 @@ export const TESTVINNARE = [
   { k: "Philips OLED806", ar: 2021, p: /oled806|oled856/i,                 q: ["OLED806", "Philips OLED806", "OLED856"] },
   { k: "Panasonic JZ1000", ar: 2021, p: /jz1000|jz2000/i,                  q: ["JZ1000", "JZ2000", "Panasonic JZ"] },
 
+  // 2016–2018 — de första OLED-generationerna. Ingen HDMI 2.1 och 60 Hz,
+  // men samma paneltyp och samma svärta. I ett mörklagt rum är de fullt
+  // gångbara, och de är de billigaste vägarna till OLED som finns.
+  //
+  // Katalogen saknade hela det här spannet, vilket gjorde två av de bästa
+  // objekten i jakten osynliga: en Philips POS9002 och en LG C7. Båda
+  // hittades bara för att ett fritextsvep kördes för hand.
+  { k: "LG C8",        ar: 2018, p: /oled(55|65)?c8|\bc8\b/i,              q: ["OLED55C8", "LG C8 OLED", "OLED65C8"] },
+  { k: "LG B8",        ar: 2018, p: /oled(55|65)?b8|\bb8\b/i,              q: ["OLED55B8", "LG B8 OLED"] },
+  { k: "LG E8",        ar: 2018, p: /oled(55|65)?e8|\be8\b/i,              q: ["OLED55E8", "LG E8 OLED"] },
+  { k: "LG C7",        ar: 2017, p: /oled(55|65)?c7|\bc7v?\b/i,            q: ["OLED55C7", "LG C7 OLED", "OLED55C7V"] },
+  { k: "LG B7",        ar: 2017, p: /oled(55|65)?b7|\bb7\b/i,              q: ["OLED55B7", "LG B7 OLED"] },
+  { k: "LG E7",        ar: 2017, p: /oled(55|65)?e7|\be7\b/i,              q: ["OLED55E7", "LG E7 OLED"] },
+  { k: "LG C6",        ar: 2016, p: /oled(55|65)?c6|\bc6\b/i,              q: ["OLED55C6", "LG C6 OLED"] },
+  { k: "LG B6",        ar: 2016, p: /oled(55|65)?b6|\bb6v?\b/i,            q: ["OLED55B6", "LG B6 OLED", "OLED55B6V"] },
+  { k: "LG E6",        ar: 2016, p: /oled(55|65)?e6|\be6\b/i,              q: ["OLED55E6", "LG E6 OLED"] },
+  { k: "Phil OLED803", ar: 2018, p: /oled803|oled873|oled903/i,             q: ["55OLED803", "Philips OLED873", "OLED903"] },
+  { k: "Phil POS9002", ar: 2017, p: /pos9002|pos 9002|oled9002/i,           q: ["55POS9002", "Philips POS9002", "Philips OLED 9002"] },
+  { k: "Phil POS901F", ar: 2016, p: /pos901f|pos 901/i,                     q: ["55POS901F", "Philips POS901F"] },
+
   // 2019 — första året med HDMI 2.1 och 120 Hz hos LG, och därför fullt
   // relevant begagnat. Ligger under 2020 i katalogen men är inte sämre:
   // C9 har bättre anslutningar än flera senare insteg.

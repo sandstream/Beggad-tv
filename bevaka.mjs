@@ -33,21 +33,25 @@ const attFolja = flagg.has("--folj") && foljArg ? foljArg.split(",").map((s) => 
 // Vad vi letar efter. Kriterierna är destillatet av hela researchen:
 // 55 tum för att 65 inte får plats, och OLED för att rummet är mörklagt.
 //
-// Årsgränsen går vid 2019, inte 2021. Det ursprungliga kravet "2021 och nyare"
-// var en förenkling — det som ska vara ett steg upp från Ambilight-LED:en som
-// redan sitter uppe är paneltekniken, inte årtalet. En C9 från 2019 har både
-// HDMI 2.1 och 120 Hz och slår flera senare insteg.
+// Årsgränsen går vid 2016, alltså första OLED-generationerna. Den har flyttats
+// två gånger, båda gångerna av samma skäl: det är paneltypen som avgör i ett
+// mörklagt rum, inte modellåret. Först 2021 till 2019, sedan 2019 till 2016.
+//
+// Andra flytten kom av ett konkret missat objekt. En Philips POS9002 från 2017
+// låg 38 procent under vad samma modell begär på andra håll, och syntes bara i
+// ett fritextsvep som kördes för hand. Den såldes inom två dygn. Modeller som
+// inte finns i katalogen kan bevakningen inte hitta.
 //
 // Bara OLED matchas: mini-LED (QN90-serien, Q90R/Q90T) och Full Array LED
 // (X90-serien, Bravia 9) lyser runt ljusa objekt i mörker och hör inte hit,
 // även om de ligger i modellkatalogen för den interaktiva sökningen.
-const AR_ELDST = 2019;
+const AR_ELDST = 2016;
 // LG:s A-serie är insteg — 60 Hz och ingen HDMI 2.1 — men panelen är äkta
 // OLED och svärtan densamma. I ett mörklagt rum för film är den fullt
 // gångbar, så den bevakas. Den levereras dessutom ofta utan fot, vilket
 // rapporten ska fråga om.
 const OLED =
-  /^LG [CGEBA](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil OLED|^Pana /;
+  /^LG [CGEBA](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil (OLED|POS)|^Pana /;
 
 const BEVAKNINGAR = [
   {

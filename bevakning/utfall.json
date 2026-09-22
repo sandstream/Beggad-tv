@@ -21,5 +21,17 @@
     "totalAlder": 6,
     "underMarknad": 34,
     "kohort": true
+  },
+  {
+    "id": "26758994",
+    "titel": "Philips 55 smart tv ULED 4k full HD Ambilight",
+    "pris": 2300,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-22",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 2,
+    "underMarknad": 23,
+    "kohort": true
   }
 ]

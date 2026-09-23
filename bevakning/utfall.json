@@ -33,5 +33,51 @@
     "totalAlder": 2,
     "underMarknad": 23,
     "kohort": true
+  },
+  {
+    "id": "25996039",
+    "titel": "LG c3 oled 55tum",
+    "pris": 6000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-23",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26735944",
+    "titel": "Philips tv 55 tum OLED 4K",
+    "pris": 1800,
+    "hittad": "2026-09-22",
+    "forsvann": "2026-09-23",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26532392",
+    "titel": "Samsung QE55Q70T 55\" QLED 4K Smart TV",
+    "pris": 4000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-23",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 8,
+    "totalAlder": 12,
+    "underMarknad": -33,
+    "kohort": true
+  },
+  {
+    "id": "26621803",
+    "titel": "Vit 55-tums Full HD 3D LED-TV med Smart TV",
+    "pris": 1000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-23",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 9,
+    "underMarknad": 67,
+    "kohort": true
   }
 ]

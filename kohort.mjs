@@ -145,10 +145,25 @@ export async function kollaKohort(hamtaAnnons) {
   let forsvunna = 0;
   const idag = new Date().toISOString().slice(0, 10);
 
+  // Serieanrop tog nio och en halv minut vid 120 medlemmar — uppströms svarar
+  // på flera sekunder, så väntan dominerar helt. Fyra parallella anrop är
+  // fortfarande skonsamt mot ett gratis-API och tar bort det mesta av tiden.
+  const PARALLELLA = 4;
+  const ko = [...ids];
+  const svar = new Map();
+  await Promise.all(
+    Array.from({ length: PARALLELLA }, async () => {
+      while (ko.length) {
+        const id = ko.shift();
+        svar.set(id, await hamtaAnnons(id));
+        await new Promise((r) => setTimeout(r, 250));
+      }
+    }),
+  );
+
   for (const id of ids) {
     const f = kohort[id];
-    const nu = await hamtaAnnons(id);
-    await new Promise((r) => setTimeout(r, 250));
+    const nu = svar.get(id);
     if (nu === undefined) continue; // nätfel — låt posten ligga kvar
     if (nu === null) {
       const dagarFoljd = Math.round((Date.now() - Date.parse(f.fangad)) / 86400000);

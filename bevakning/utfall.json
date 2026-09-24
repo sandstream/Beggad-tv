@@ -150,5 +150,53 @@
     "totalAlder": 6,
     "underMarknad": -17,
     "kohort": true
+  },
+  {
+    "id": "26448986",
+    "titel": "Samsung TV 55 tum",
+    "pris": 600,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 16,
+    "underMarknad": 80,
+    "kohort": true
+  },
+  {
+    "id": "26509028",
+    "titel": "Lg Oled 55\"",
+    "pris": 5500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 14,
+    "underMarknad": -22,
+    "kohort": true
+  },
+  {
+    "id": "26676969",
+    "titel": "Hisense 55U7KQ 55\" Mini-LED 4K TV",
+    "pris": 3900,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 7,
+    "underMarknad": -30,
+    "kohort": true
+  },
+  {
+    "id": "26778163",
+    "titel": "Samsung 55 tums Smart TV UE55H6475SU",
+    "pris": 1500,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 4,
+    "underMarknad": 25,
+    "kohort": true
   }
 ]

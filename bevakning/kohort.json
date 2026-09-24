@@ -221,7 +221,7 @@
   },
   "26236924": {
     "titel": "Samsung 55” QN70F Neo QLED 4K Edge MiniLED Smart TV",
-    "pris": 10500,
+    "pris": 9500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 19,
@@ -287,7 +287,7 @@
   },
   "26357020": {
     "titel": "Samsung Q8F QLED TV 55 tum",
-    "pris": 7000,
+    "pris": 6000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 14,
@@ -846,17 +846,6 @@
     "underMarknad": -17,
     "fangad": "2026-09-20"
   },
-  "26699890": {
-    "titel": "LG OLED A1 55” OLED55A16LA",
-    "pris": 4000,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 1,
-    "grupp": "55-oled",
-    "marknad": 4500,
-    "underMarknad": 11,
-    "fangad": "2026-09-20"
-  },
   "26704203": {
     "titel": "LG OLED55CX6LA – 55” OLED 4K Smart TV",
     "pris": 5000,
@@ -1002,24 +991,13 @@
   },
   "26742195": {
     "titel": "LG OLED55C7V OLED TV 55 tum 4K med alla tillbehör",
-    "pris": 4500,
+    "pris": 4000,
     "tum": 55,
     "oled": true,
     "annonsdagar": 0,
     "grupp": "55-oled",
     "marknad": 4500,
     "underMarknad": 0,
-    "fangad": "2026-09-20"
-  },
-  "26742260": {
-    "titel": "Samsung smart tv 55tum 4K/Ultra HD",
-    "pris": 3400,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -13,
     "fangad": "2026-09-20"
   },
   "26743149": {
@@ -1143,17 +1121,6 @@
     "underMarknad": 0,
     "fangad": "2026-09-21"
   },
-  "26765962": {
-    "titel": "Samsung 55 Smart TV + ny Google TV",
-    "pris": 2490,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 2000,
-    "underMarknad": -9,
-    "fangad": "2026-09-21"
-  },
   "26766031": {
     "titel": "Samsung UE55HU7505 55\" LED-TV",
     "pris": 4000,
@@ -1174,17 +1141,6 @@
     "grupp": "55-led",
     "marknad": 2000,
     "underMarknad": 75,
-    "fangad": "2026-09-21"
-  },
-  "26774932": {
-    "titel": "LG TV 55 tum svart",
-    "pris": 2000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 2000,
-    "underMarknad": 0,
     "fangad": "2026-09-21"
   },
   "26777674": {
@@ -1288,7 +1244,7 @@
   },
   "26822495": {
     "titel": "55” TV Sony BRAVIA XR-55X94J via konkursauktion",
-    "pris": 300,
+    "pris": 1050,
     "tum": 55,
     "oled": false,
     "annonsdagar": 0,

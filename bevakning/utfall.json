@@ -79,5 +79,64 @@
     "totalAlder": 9,
     "underMarknad": 67,
     "kohort": true
+  },
+  {
+    "id": "26699890",
+    "titel": "LG OLED A1 55” OLED55A16LA",
+    "pris": 4000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26699890",
+    "titel": "LG OLED A1 55” OLED55A16LA",
+    "pris": 4000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 5,
+    "underMarknad": 11,
+    "kohort": true
+  },
+  {
+    "id": "26742260",
+    "titel": "Samsung smart tv 55tum 4K/Ultra HD",
+    "pris": 3400,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 4,
+    "underMarknad": -13,
+    "kohort": true
+  },
+  {
+    "id": "26765962",
+    "titel": "Samsung 55 Smart TV + ny Google TV",
+    "pris": 2490,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": -9,
+    "kohort": true
+  },
+  {
+    "id": "26774932",
+    "titel": "LG TV 55 tum svart",
+    "pris": 2000,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-09-24",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": 0,
+    "kohort": true
   }
 ]

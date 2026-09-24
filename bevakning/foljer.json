@@ -113,12 +113,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26695328",
     "sedan": "2026-09-20"
   },
-  "26699890": {
-    "titel": "LG OLED A1 55” OLED55A16LA",
-    "pris": 4000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26699890",
-    "sedan": "2026-09-20"
-  },
   "26704203": {
     "titel": "LG OLED55CX6LA – 55” OLED 4K Smart TV",
     "pris": 5000,
@@ -132,8 +126,8 @@
     "sedan": "2026-09-20"
   },
   "26742195": {
-    "titel": "LG OLED55C7V OLED TV 55 tum 4K med alla tillbehör",
-    "pris": 4500,
+    "titel": "LG OLED55C7V OLED TV 55 tum 4K",
+    "pris": 4000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26742195",
     "sedan": "2026-09-22"
   },
@@ -154,5 +148,11 @@
     "pris": 100,
     "url": "https://www.blocket.se/recommerce/forsale/item/26798066",
     "sedan": "2026-09-23"
+  },
+  "26823865": {
+    "titel": "Sonos Sub 4",
+    "pris": 7500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26823865",
+    "sedan": "2026-09-24"
   }
 }

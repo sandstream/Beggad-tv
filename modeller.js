@@ -10,7 +10,9 @@
 
 export const TESTVINNARE = [
   // 2026
-  { k: "LG C6",        ar: 2026, p: /oled(48|55|65|77)?c6|\bc6\b/i,        q: ["OLED55C6", "LG C6 OLED", "OLED65C6"] },
+  // Se noten vid 2016 års C6: beteckningen är återanvänd. 2026:orna säljs som
+  // "OLED evo" eller "C6 Pro" — utan något av det är annonsen en 2016:a.
+  { k: "LG C6",        ar: 2026, p: /(oled(48|55|65|77)?c6|\bc6\b)(?=.*(evo|pro|2026))/i, q: ["OLED55C6", "LG C6 OLED", "OLED65C6"] },
   { k: "LG G6",        ar: 2026, p: /oled(55|65|77)?g6|\bg6\b/i,           q: ["OLED55G6", "LG G6 OLED"] },
   { k: "Samsung S95G", ar: 2026, p: /s95g|s90g/i,                          q: ["S95G", "Samsung S95G", "S90G"] },
 
@@ -82,7 +84,9 @@ export const TESTVINNARE = [
   { k: "LG C7",        ar: 2017, p: /oled(55|65)?c7|\bc7v?\b/i,            q: ["OLED55C7", "LG C7 OLED", "OLED55C7V"] },
   { k: "LG B7",        ar: 2017, p: /oled(55|65)?b7|\bb7\b/i,              q: ["OLED55B7", "LG B7 OLED"] },
   { k: "LG E7",        ar: 2017, p: /oled(55|65)?e7|\be7\b/i,              q: ["OLED55E7", "LG E7 OLED"] },
-  { k: "LG C6",        ar: 2016, p: /oled(55|65)?c6|\bc6\b/i,              q: ["OLED55C6", "LG C6 OLED"] },
+  // LG återanvände beteckningen C6 2026. Utan "evo"/"Pro"-undantaget klassas en
+  // 2026:a som nio år gammal, och värderingsmodellen får fel åldersfaktor.
+  { k: "LG C6",        ar: 2016, p: /oled(55|65)?c6(?!.*(evo|pro))|\bc6\b(?!.*(evo|pro))/i, q: ["OLED55C6", "LG C6 OLED"] },
   { k: "LG B6",        ar: 2016, p: /oled(55|65)?b6|\bb6v?\b/i,            q: ["OLED55B6", "LG B6 OLED", "OLED55B6V"] },
   { k: "LG E6",        ar: 2016, p: /oled(55|65)?e6|\be6\b/i,              q: ["OLED55E6", "LG E6 OLED"] },
   { k: "Phil OLED803", ar: 2018, p: /oled803|oled873|oled903/i,             q: ["55OLED803", "Philips OLED873", "OLED903"] },

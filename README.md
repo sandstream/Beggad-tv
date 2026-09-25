@@ -78,6 +78,11 @@ Direktläget går förbi MCP-servern och anropar samma uppströms-API som den g�
 Det är medvetet: en oövervakad körning i en färsk container ska inte bero på
 att en lokal Cloudflare-worker startar som den ska.
 
+Är `HTTPS_PROXY` satt går anropen genom proxyn (`natverk.mjs`). Nodes egen
+`fetch` gör inte det av sig själv, och i molnmiljön släpps bara trafik genom
+proxyn ut. Når körningen inte fram avbryts den med `KOM INTE FRAM` och
+felkod, utan att historiken skrivs.
+
 ### Mätkohorten
 
 `node kohort.mjs --fanga` fångar in ett systematiskt urval 55-tums-annonser —

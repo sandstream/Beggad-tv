@@ -9,6 +9,7 @@
     "budget": "node sok.mjs --profil budget --region stockholm --max 3000 --storlek 55"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.19.1"
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "undici": "^7.30.0"
   }
 }

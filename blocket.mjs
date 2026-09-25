@@ -5,6 +5,8 @@
 // som körs oövervakat i en färsk container varje morgon — där är en lokal
 // Cloudflare-worker en onödig felkälla.
 
+import "./natverk.mjs";
+
 const UPPSTROMS = "https://blocket-api.se/v1/search";
 
 function normalisera(item) {

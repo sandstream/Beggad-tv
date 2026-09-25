@@ -10,6 +10,8 @@
 //
 // Säljare lägger sällan defekten först. Den kommer efter specen.
 
+import "./natverk.mjs";
+
 const FLAGGOR = [
   [/inbr[äa]nn|burn.?in/gi, "inbränning"],
   [/d[öo]da? pixel|dead pixel/gi, "döda pixlar"],

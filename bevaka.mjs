@@ -62,6 +62,15 @@ const OLED =
 // tak nära marknaden och släpper igenom mer.
 const STORLEKAR = [55, 65];
 
+// Fyndbevakningen. Under 2 000 kr finns i praktiken bara inbrända paneler —
+// svepet den 25 september gav fyra i hela landet, samtliga med uppgiven
+// defekt. Just därför är den värd att bevaka: en fungerande OLED till det
+// priset dyker upp någon gång, och kohorten säger att medianannonsen lever
+// sex dagar. Den hinner man bara på om något tittar varje dag.
+//
+// Fot krävs inte längre — väggfäste gäller — så fotfrågan avgör inget här.
+const FYND_TAK = 2000;
+
 const BEVAKNINGAR = [
   {
     namn: `Biorums-TV — OLED ${STORLEKAR.join(" och ")} tum, ${AR_ELDST}+`,
@@ -69,7 +78,29 @@ const BEVAKNINGAR = [
     modeller: TESTVINNARE.filter((m) => m.ar >= AR_ELDST && OLED.test(m.k)),
     storlekar: STORLEKAR,
   },
+  {
+    namn: `Fynd — OLED ${STORLEKAR.join(" och ")} tum under ${FYND_TAK} kr`,
+    maxpris: FYND_TAK,
+    modeller: TESTVINNARE.filter((m) => m.ar >= AR_ELDST && OLED.test(m.k)),
+    storlekar: STORLEKAR,
+    granska: true, // hämta hela annonstexten och läs defektorden
+  },
 ];
+
+// Under fyndtaket avgör panelens skick allt, och skicket står sist i texten,
+// inte i rubriken. Rubrikfiltret räcker inte där.
+const DEFEKT_I_TEXT =
+  /inbr[äa]nn|burn.?in|d[öo]da? pixel|ljusskillnad|banding|clouding|spr[äa]ck|sprucken|krossad|defekt|funkar inte|fungerar ej/i;
+
+async function defektord(id) {
+  try {
+    const d = await (await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`)).json();
+    const txt = d?.loaderData?.["item-recommerce"]?.itemData?.description || "";
+    return (txt.replace(/<[^>]+>/g, " ").match(DEFEKT_I_TEXT) || [])[0] || null;
+  } catch {
+    return null;
+  }
+}
 
 /** Vilken av de bevakade storlekarna rubriken anger, eller null. */
 function storlekIRubrik(titel, storlekar) {
@@ -287,6 +318,7 @@ for (const b of BEVAKNINGAR) {
           modell: m.k,
           ar: m.ar,
           tum,
+          defekt: b.granska ? await defektord(i.id) : null,
           kap: jamforbara.length ? bedomKap({ begart: i.price, jamforbara }) : null,
         });
         foljer[i.id] = {
@@ -358,6 +390,7 @@ if (nya.length === 0 && borta.length === 0 && andrade.length === 0) {
       // är olika beslut, och priset ensamt säger inte vilket det gäller.
       const tum = n.tum ? `${n.tum}" · ` : "";
       console.log(`${tum}${n.pris} kr · ${km} · ${n.dagar ?? "?"} dgr gammal`);
+      if (n.defekt) console.log(`⚠ annonsen nämner "${n.defekt}" — läs hela texten med granska.mjs`);
       console.log(`${modell}${n.titel}`);
       if (n.kap?.motMarknad?.otillrackligt) {
         console.log(n.kap.motMarknad.rad);

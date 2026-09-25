@@ -138,7 +138,8 @@ node bevaka.mjs --folj 26730987,26747541
 
 Uppströms svarar HTTP 200 även för borttagna annonser, med ett error-fält i
 stället för innehåll — därför avgörs "borta" på att `itemData` saknas, inte på
-statuskoden.
+statuskoden. En annons som säljaren markerat som såld ligger däremot kvar med
+fullt innehåll och `disposed: true`; den räknas också som borta.
 
 Kriterierna ligger i `BEVAKNINGAR` och `SONOS` överst i filen. Just nu:
 55 tum OLED från 2021 och nyare under 9 000 kr, samt Sonos Beam och Sub i

@@ -152,12 +152,17 @@ function lasFoljer() {
 // Hämtar en enskild annons. Uppströms svarar 200 även för borttagna annonser,
 // med ett error-fält i stället för innehåll — så frånvaron av itemData är det
 // som betyder "borta", inte HTTP-statusen.
+//
+// En annons som markerats såld ligger däremot kvar med fullt innehåll och
+// disposed=true (och meta.isInactive=true). Den räknas också som borta.
+// Annars står sålda annonser kvar i följlistan och kohorten i veckor.
 async function hamtaAnnons(id) {
   try {
     const res = await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`);
     const d = await res.json();
     const it = d?.loaderData?.["item-recommerce"]?.itemData;
     if (!it || it.title == null) return null;
+    if (it.disposed === true || it.meta?.isInactive === true) return null;
     return {
       titel: it.title,
       pris: typeof it.price === "number" ? it.price : (it.price?.amount ?? null),

@@ -200,10 +200,11 @@ function loggaUtfall(poster) {
 async function kollaFoljda(foljer) {
   const borta = [];
   const andrade = [];
+  let misslyckade = 0;
   for (const [id, f] of Object.entries(foljer)) {
     const nu = await hamtaAnnons(id);
     await new Promise((r) => setTimeout(r, 200));
-    if (nu === undefined) continue; // nätfel, låt posten ligga kvar
+    if (nu === undefined) { misslyckade++; continue; } // nätfel, låt posten ligga kvar
     if (nu === null) {
       const dagarFoljd = f.sedan
         ? Math.round((Date.now() - Date.parse(f.sedan)) / 86400000)
@@ -237,7 +238,7 @@ async function kollaFoljda(foljer) {
     foljer[id] = { titel: nu.titel, pris: nu.pris, url: nu.url, sedan: f.sedan };
   }
   loggaUtfall(borta.map((b) => b.utfall));
-  return { borta, andrade };
+  return { borta, andrade, misslyckade };
 }
 
 function berika(i) {
@@ -270,7 +271,10 @@ if (attFolja.length) {
   process.exit(0);
 }
 
-const { borta, andrade } = await kollaFoljda(foljer);
+const { borta, andrade, misslyckade: foljdaMissade } = await kollaFoljda(foljer);
+if (foljdaMissade) {
+  process.stderr.write(`Följlistan: ${foljdaMissade} av ${borta.length + Object.keys(foljer).length} kunde inte hämtas\n`);
+}
 
 // Mätkohorten kollas varje körning men rapporteras aldrig — den finns för att
 // räknas, inte för att läsas. Fylls på när den krympt, så att storleken hålls
@@ -278,7 +282,8 @@ const { borta, andrade } = await kollaFoljda(foljer);
 // registrerade vid infångandet, så inträdet får ske löpande.
 if (!torr) {
   const k = await kollaKohort(hamtaAnnons);
-  process.stderr.write(`Kohort: ${k.kollade} kollade, ${k.forsvunna} försvunna\n`);
+  const missade = k.misslyckade ? `, ${k.misslyckade} kunde inte hämtas` : "";
+  process.stderr.write(`Kohort: ${k.kollade} kollade, ${k.forsvunna} försvunna${missade}\n`);
   if (Object.keys(las(KOHORT, {})).length < 150) {
     await fanga();
   }
@@ -289,14 +294,20 @@ const historik = lasHistorik();
 const nya = [];
 const allaSedda = { ...historik.rapporterade };
 const paus = (ms) => new Promise((r) => setTimeout(r, ms));
+// Räknas för att kunna skilja "inget nytt" från "kom inte fram". En körning
+// där nätet var stängt skrev förut INGET NYTT och en färsk tidsstämpel.
+let sokningar = 0;
+let sokfel = 0;
 
 for (const b of BEVAKNINGAR) {
   for (const m of b.modeller) {
     const sedda = new Map();
     for (const q of m.q) {
+      sokningar++;
       try {
         for (const it of await sok(q)) sedda.set(it.id, it);
       } catch (e) {
+        sokfel++;
         process.stderr.write(`${q}: ${e.message}\n`);
       }
       await paus(250);
@@ -346,9 +357,11 @@ for (const b of BEVAKNINGAR) {
 {
   const sedda = new Map();
   for (const q of SONOS.fragor) {
+    sokningar++;
     try {
       for (const it of await sok(q)) sedda.set(it.id, it);
     } catch (e) {
+      sokfel++;
       process.stderr.write(`${q}: ${e.message}\n`);
     }
     await paus(250);
@@ -366,6 +379,13 @@ for (const b of BEVAKNINGAR) {
 
 if (sok.stang) await sok.stang();
 
+// Kom ingen sökning fram vet vi ingenting. Då ska körningen varken se lyckad
+// ut eller skriva historik, så att nästa körning inte tror att den här gick.
+if (sokningar > 0 && sokfel === sokningar) {
+  console.log(`KOM INTE FRAM — alla ${sokningar} sökningar misslyckades. Ingenting kontrollerat, ingen historik skriven.`);
+  process.exit(1);
+}
+
 for (const b of borta) {
   console.log(`## BORTA — ${b.titel}\n`);
   console.log(`Såld eller tillbakadragen. Låg på ${b.pris} kr.`);
@@ -378,6 +398,9 @@ for (const a of andrade) {
   console.log(`${a.url}\n`);
 }
 
+if (sokfel) {
+  console.log(`OBS: ${sokfel} av ${sokningar} sökningar misslyckades — resultatet är ofullständigt.\n`);
+}
 if (nya.length === 0 && borta.length === 0 && andrade.length === 0) {
   console.log("INGET NYTT");
 } else if (nya.length === 0) {

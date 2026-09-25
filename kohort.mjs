@@ -188,7 +188,10 @@ export async function kollaKohort(hamtaAnnons) {
 
   skriv(KOHORT, kohort);
   if (forsvunna) skriv(UTFALL, utfall);
-  return { kollade: ids.length, forsvunna };
+  // Bara de som faktiskt svarade räknas som kollade. Att räkna alla hade fått
+  // en körning utan nät att se ut som "200 kollade, 0 försvunna".
+  const misslyckade = ids.filter((id) => svar.get(id) === undefined).length;
+  return { kollade: ids.length - misslyckade, misslyckade, forsvunna };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

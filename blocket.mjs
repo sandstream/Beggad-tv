@@ -24,13 +24,36 @@ function normalisera(item) {
   };
 }
 
+// Uppströms sidindelar. En sida är ungefär 53 träffar och svaret bär
+// metadata.paging.last — "oled tv" ger 281 träffar på sex sidor. Att bara
+// läsa sida ett var att se en sjundedel av marknaden och tro att det var
+// hela. Nu hämtas sidorna tills träffarna tar slut eller taket nås.
+const PER_SIDA_TAK = 12; // spärr mot en fråga som råkar matcha halva Blocket
+
+async function hamtaSida(fraga, sida) {
+  const res = await fetch(`${UPPSTROMS}?query=${encodeURIComponent(fraga)}&page=${sida}`);
+  if (!res.ok) throw new Error(`Blocket ${res.status} ${res.statusText}`);
+  return res.json();
+}
+
 async function direktSokare() {
-  return async function sok(fraga, limit = 40) {
-    const res = await fetch(`${UPPSTROMS}?query=${encodeURIComponent(fraga)}`);
-    if (!res.ok) throw new Error(`Blocket ${res.status} ${res.statusText}`);
-    const data = await res.json();
-    if (!Array.isArray(data?.docs)) return [];
-    return data.docs.slice(0, limit).map(normalisera);
+  return async function sok(fraga, limit = Infinity) {
+    const forsta = await hamtaSida(fraga, 1);
+    if (!Array.isArray(forsta?.docs)) return [];
+    const ut = [...forsta.docs];
+    const sista = Math.min(forsta.metadata?.paging?.last ?? 1, PER_SIDA_TAK);
+
+    for (let sida = 2; sida <= sista && ut.length < limit; sida++) {
+      await new Promise((r) => setTimeout(r, 150));
+      try {
+        const d = await hamtaSida(fraga, sida);
+        if (!Array.isArray(d?.docs) || !d.docs.length) break;
+        ut.push(...d.docs);
+      } catch {
+        break; // en trasig sida ska inte kasta bort de vi redan har
+      }
+    }
+    return ut.slice(0, limit).map(normalisera);
   };
 }
 

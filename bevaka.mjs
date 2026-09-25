@@ -62,14 +62,17 @@ const OLED =
 // tak nära marknaden och släpper igenom mer.
 const STORLEKAR = [55, 65];
 
-// Fyndbevakningen. Under 2 000 kr finns i praktiken bara inbrända paneler —
-// svepet den 25 september gav fyra i hela landet, samtliga med uppgiven
-// defekt. Just därför är den värd att bevaka: en fungerande OLED till det
-// priset dyker upp någon gång, och kohorten säger att medianannonsen lever
-// sex dagar. Den hinner man bara på om något tittar varje dag.
+// Fyndbevakningen. Taket låg först på 2 000 kr, men svepet den 25 september
+// gav fyra träffar i hela landet och samtliga hade uppgiven defekt. Under
+// 2 000 kr köper man inte en billig OLED utan en trasig. Golvet för en
+// fungerande 55:a låg samma dag på 3 000 kr, så taket är höjt dit: det är
+// där fynd faktiskt kan finnas.
+//
+// Kohorten säger att medianannonsen lever sex dagar. Den hinner man bara på
+// om något tittar varje dag.
 //
 // Fot krävs inte längre — väggfäste gäller — så fotfrågan avgör inget här.
-const FYND_TAK = 2000;
+const FYND_TAK = 3000;
 
 const BEVAKNINGAR = [
   {

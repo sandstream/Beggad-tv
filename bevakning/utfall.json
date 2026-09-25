@@ -540,5 +540,88 @@
     "totalAlder": 3,
     "underMarknad": 91,
     "kohort": true
+  },
+  {
+    "id": "26823865",
+    "titel": "Sonos Sub 4",
+    "pris": 7500,
+    "hittad": "2026-09-24",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26501714",
+    "titel": "Samsung Crystal UHD 4K Smart TV 55",
+    "pris": 3400,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 15,
+    "underMarknad": -67,
+    "kohort": true
+  },
+  {
+    "id": "26765314",
+    "titel": "Samsung smart TV 55tum 4k",
+    "pris": 2000,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 5,
+    "underMarknad": 0,
+    "kohort": true
+  },
+  {
+    "id": "26818737",
+    "titel": "Samsung 55 tum 4k Ultra-HD Smart TV",
+    "pris": 2500,
+    "hittad": "2026-09-23",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "26839071",
+    "titel": "QLED Samsung smart tv 55tum  4K",
+    "pris": 3900,
+    "hittad": "2026-09-24",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 2,
+    "underMarknad": -30,
+    "kohort": true
+  },
+  {
+    "id": "26859916",
+    "titel": "Philips Hue Play Gradient Lightstrip 55\" LED-ljusslinga",
+    "pris": 700,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": 80,
+    "kohort": true
+  },
+  {
+    "id": "26873856",
+    "titel": "LG 55\" OLED B4 (2024-modell) – Nyskick m. Kvitto & Garanti",
+    "pris": 7500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-25",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": 3,
+    "kohort": true
   }
 ]

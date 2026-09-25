@@ -1308,17 +1308,6 @@
     "underMarknad": -157,
     "fangad": "2026-09-25"
   },
-  "26501714": {
-    "titel": "Samsung Crystal UHD 4K Smart TV 55",
-    "pris": 3400,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -67,
-    "fangad": "2026-09-20"
-  },
   "26511263": {
     "titel": "Helt ny LG 55\" C6 Pro 4K OLED evo TV (2026) – Oöppnad i kartong!",
     "pris": 22500,
@@ -1891,17 +1880,6 @@
     "underMarknad": 10,
     "fangad": "2026-09-20"
   },
-  "26765314": {
-    "titel": "Samsung smart TV 55tum 4k",
-    "pris": 2000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 2000,
-    "underMarknad": 0,
-    "fangad": "2026-09-21"
-  },
   "26765756": {
     "titel": "Samsung tv 55",
     "pris": 3000,
@@ -1979,17 +1957,6 @@
     "underMarknad": -243,
     "fangad": "2026-09-23"
   },
-  "26818737": {
-    "titel": "Samsung 55 tum 4k Ultra-HD Smart TV",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3495,
-    "underMarknad": 17,
-    "fangad": "2026-09-23"
-  },
   "26824310": {
     "titel": "Digihome smart tv 55 Tum",
     "pris": 2000,
@@ -2033,17 +2000,6 @@
     "marknad": 3500,
     "underMarknad": 71,
     "fangad": "2026-09-25"
-  },
-  "26839071": {
-    "titel": "QLED Samsung smart tv 55tum  4K",
-    "pris": 3900,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -30,
-    "fangad": "2026-09-24"
   },
   "26839473": {
     "titel": "Philips TV 55 tum 4K UHD",
@@ -2111,17 +2067,6 @@
     "underMarknad": -117,
     "fangad": "2026-09-24"
   },
-  "26859916": {
-    "titel": "Philips Hue Play Gradient Lightstrip 55\" LED-ljusslinga",
-    "pris": 700,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": 80,
-    "fangad": "2026-09-25"
-  },
   "26860908": {
     "titel": "Philips qled ambilight smart tv 55 tum",
     "pris": 3999,
@@ -2186,17 +2131,6 @@
     "grupp": "55-led",
     "marknad": 3500,
     "underMarknad": 66,
-    "fangad": "2026-09-25"
-  },
-  "26873856": {
-    "titel": "LG 55\" OLED B4 (2024-modell) – Nyskick m. Kvitto & Garanti",
-    "pris": 7500,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 0,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": 3,
     "fangad": "2026-09-25"
   }
 }

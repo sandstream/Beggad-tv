@@ -97,13 +97,13 @@
   },
   "26390966": {
     "titel": "LG OLED65B6V 65\" 4K OLED Smart TV – Fungerar bra, inbränning",
-    "pris": 3000,
+    "pris": 2700,
     "url": "https://www.blocket.se/recommerce/forsale/item/26390966",
     "sedan": "2026-09-25"
   },
   "26399244": {
     "titel": "Sonos Beam Gen2",
-    "pris": 3900,
+    "pris": 4000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26399244",
     "sedan": "2026-09-20"
   },
@@ -179,10 +179,25 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26803732",
     "sedan": "2026-09-25"
   },
-  "26823865": {
-    "titel": "Sonos Sub 4",
-    "pris": 7500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26823865",
-    "sedan": "2026-09-24"
+  "26880714": {
+    "titel": "F0177 – Sonos Sub trådlös subwoofer",
+    "pris": 100,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26880714",
+    "sedan": "2026-09-25"
+  },
+  "26880715": {
+    "titel": "F0178 – Sonos Sub trådlös subwoofer",
+    "pris": 100,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26880715",
+    "sedan": "2026-09-25"
+  },
+  "26884936": {
+    "titel": "LG G1 65”  OLED",
+    "pris": 9000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26884936",
+    "sedan": "2026-09-25",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

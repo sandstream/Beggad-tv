@@ -53,14 +53,31 @@ const AR_ELDST = 2016;
 const OLED =
   /^LG [CGEBA](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil (OLED|POS)|^Pana /;
 
+// 65 tum togs med när bänkens mått räknades efter: en 65:a är 144 cm bred,
+// bänken 160, alltså sju centimeter luft på varje sida. Den får plats.
+//
+// Taket är detsamma för båda storlekarna, och det är avsiktligt. Medianen för
+// en 65-tums OLED inom fyra mil ligger på drygt 13 000 kr, så 9 000 är långt
+// under marknad — bara riktiga fynd tar sig igenom. För 55 tum ligger samma
+// tak nära marknaden och släpper igenom mer.
+const STORLEKAR = [55, 65];
+
 const BEVAKNINGAR = [
   {
-    namn: `Biorums-TV — 55" OLED, ${AR_ELDST}+`,
+    namn: `Biorums-TV — OLED ${STORLEKAR.join(" och ")} tum, ${AR_ELDST}+`,
     maxpris: 9000,
     modeller: TESTVINNARE.filter((m) => m.ar >= AR_ELDST && OLED.test(m.k)),
-    storlek: /(?<![0-9])55(?![0-9])/,
+    storlekar: STORLEKAR,
   },
 ];
+
+/** Vilken av de bevakade storlekarna rubriken anger, eller null. */
+function storlekIRubrik(titel, storlekar) {
+  for (const t of storlekar) {
+    if (new RegExp(`(?<![0-9])${t}(?![0-9])`).test(titel)) return t;
+  }
+  return null;
+}
 
 // Sonos söks på fritext — det finns ingen modellkatalog för högtalare.
 const SONOS = {
@@ -247,26 +264,29 @@ for (const b of BEVAKNINGAR) {
     }
     // Alla träffar på modellen, inte bara de nya — de utgör jämförelsematerialet
     // som avgör om en ny annons är ett kap eller bara ett pris.
-    const matchande = [...sedda.values()].filter(
-      (i) =>
-        m.p.test(i.title) &&
-        b.storlek.test(i.title) &&
-        i.price &&
-        i.price <= b.maxpris &&
-        !inteEnTv(i.title),
-    );
-    const priser = matchande.map((i) => i.price);
+    //
+    // Jämförelsen görs per storlek. En 55:a och en 65:a av samma modell är
+    // olika varor till olika pris, och en gemensam median hade dömt ut varje
+    // 65:a som dyr och varje 55:a som kap.
+    const matchande = [...sedda.values()]
+      .map((i) => ({ i, tum: storlekIRubrik(i.title, b.storlekar) }))
+      .filter(
+        ({ i, tum }) => tum && m.p.test(i.title) && i.price && i.price <= b.maxpris && !inteEnTv(i.title),
+      );
 
-    for (const i of matchande) {
+    for (const { i, tum } of matchande) {
       allaSedda[i.id] = true;
       if (!historik.rapporterade[i.id]) {
         const r = berika(i);
-        const jamforbara = priser.filter((_, n) => matchande[n].id !== i.id);
+        const jamforbara = matchande
+          .filter((x) => x.tum === tum && x.i.id !== i.id)
+          .map((x) => x.i.price);
         nya.push({
           ...r,
           bevakning: b.namn,
           modell: m.k,
           ar: m.ar,
+          tum,
           kap: jamforbara.length ? bedomKap({ begart: i.price, jamforbara }) : null,
         });
         foljer[i.id] = {
@@ -275,6 +295,7 @@ for (const b of BEVAKNINGAR) {
           url: r.url,
           sedan: new Date().toISOString().slice(0, 10),
           annonsdagar: r.dagar,
+          tum,
           underMarknad: nya[nya.length - 1].kap?.motMarknad?.procentUnder ?? null,
         };
       }
@@ -333,7 +354,10 @@ if (nya.length === 0 && borta.length === 0 && andrade.length === 0) {
     for (const n of rader.sort((a, b) => a.pris - b.pris)) {
       const km = n.avstand != null ? `${n.avstand} km` : n.plats;
       const modell = n.modell ? `${n.modell} (${n.ar}) — ` : "";
-      console.log(`${n.pris} kr · ${km} · ${n.dagar ?? "?"} dgr gammal`);
+      // Storleken skrivs ut sedan bevakningen omfattar två: 55 och 65 tum
+      // är olika beslut, och priset ensamt säger inte vilket det gäller.
+      const tum = n.tum ? `${n.tum}" · ` : "";
+      console.log(`${tum}${n.pris} kr · ${km} · ${n.dagar ?? "?"} dgr gammal`);
       console.log(`${modell}${n.titel}`);
       if (n.kap?.motMarknad?.otillrackligt) {
         console.log(n.kap.motMarknad.rad);

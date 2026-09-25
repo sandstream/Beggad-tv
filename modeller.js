@@ -128,15 +128,23 @@ export const BUDGET_SOKORD = [
 // Rubriker som matchar storlek och märke men inte är en TV: väggfästen,
 // fötter, fjärrkontroller, reservdelar, köpes-annonser.
 const TILLBEHOR = /v[äa]ggf[äa]ste|fotstativ|\bstativ\b|tv-?st[äa]ll|\bfot\b|fj[äa]rrkontroll|\bram\b/;
-const DEFEKT_ELLER_KOPES = /reservdel|trasig|spr[äa]ck|startar inte|k[öo]pes|vi k[öo]per|\bs[öo]kes\b/i;
+const DEFEKT_ELLER_KOPES = /reservdel|trasig|spr[äa]ck|sprucken|spricka|startar inte|k[öo]pes|vi k[öo]per|\bs[öo]kes\b/i;
 
 // "LG C4 55'' i nyskick ink väggfäste" är en TV som får ett väggfäste på
 // köpet. "Nytt TV-väggfäste Andersson 23–55 tum" är ett väggfäste. Skillnaden
 // är om tillbehöret är huvudordet eller bara nämns som medföljande — så plocka
 // bort de medföljande omnämnandena innan rubriken bedöms.
+//
+// Uppräkningar måste också klara sig. "fjärrkontroll och ben ingår" satte
+// "ingår" fyra ord efter tillbehöret, och en 65-tums OLED för 6 000 kr med
+// foten kvar sorterades bort som ett fjärrkontrollsköp. Därför tillåts några
+// mellanliggande ord mellan tillbehöret och ordet som gör det medföljande.
+// \w är [A-Za-z0-9_] i JavaScript, så "fjärrkontroll" bryts mitt i ordet och
+// uppräkningen tappar tråden. Svenska ord behöver en egen teckenklass.
+const ORD = "[^\\\\s,]";
 const MEDFOLJER = new RegExp(
-  `\\b(ink|inkl|inklusive|med|plus|och|\\+)\\s+\\w*\\s*(?:${TILLBEHOR.source})\\b|` +
-    `(?:${TILLBEHOR.source})\\s+(ing[åa]r|medf[öo]ljer|p[åa] k[öo]pet)`,
+  `\\b(ink|inkl|inklusive|med|plus|och|\\+)\\s+${ORD}*\\s*(?:${TILLBEHOR.source})\\b|` +
+    `(?:${TILLBEHOR.source})(?:[\\s,]+(?:och|samt|\\+)?[\\s,]*${ORD}+){0,3}\\s+(ing[åa]r|medf[öo]ljer|p[åa] k[öo]pet)`,
   "gi",
 );
 

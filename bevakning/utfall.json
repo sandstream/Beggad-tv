@@ -742,5 +742,16 @@
     "totalAlder": 3,
     "underMarknad": -33,
     "kohort": true
+  },
+  {
+    "id": "26898229",
+    "titel": "LG 55\" OLED TV - OLED55B7V",
+    "pris": 2500,
+    "hittad": "2026-09-26",
+    "forsvann": "2026-09-26",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
   }
 ]

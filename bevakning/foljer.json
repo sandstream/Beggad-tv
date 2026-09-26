@@ -17,17 +17,20 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/18915172",
     "sedan": "2026-09-20"
   },
+  "21246641": {
+    "titel": "LG CX OLED TV 55 tum",
+    "pris": 4500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/21246641",
+    "sedan": "2026-09-26",
+    "annonsdagar": 0,
+    "tum": 55,
+    "underMarknad": null
+  },
   "22354809": {
     "titel": "LG 55”OLED55B6V (2016)",
     "pris": 999,
     "url": "https://www.blocket.se/recommerce/forsale/item/22354809",
     "sedan": "2026-09-22"
-  },
-  "23428316": {
-    "titel": "LG CX 65\" TV svart",
-    "pris": 6000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/23428316",
-    "sedan": "2026-09-25"
   },
   "23607876": {
     "titel": "Philips 55POS901F 55\" 4K Ultra HD, Defekt, (3840x2160) LCD Smart TV",
@@ -103,7 +106,7 @@
   },
   "26399244": {
     "titel": "Sonos Beam Gen2",
-    "pris": 4000,
+    "pris": 3900,
     "url": "https://www.blocket.se/recommerce/forsale/item/26399244",
     "sedan": "2026-09-20"
   },
@@ -195,9 +198,51 @@
     "titel": "LG G1 65”  OLED",
     "pris": 9000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26884936",
-    "sedan": "2026-09-25",
+    "sedan": "2026-09-25"
+  },
+  "26886912": {
+    "titel": "LG 65” C1 OLED 4K Smart TV – OLED / Dolby Vision / 120Hz",
+    "pris": 9000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26886912",
+    "sedan": "2026-09-26",
     "annonsdagar": 0,
     "tum": 65,
     "underMarknad": null
+  },
+  "26891568": {
+    "titel": "LG 55\" 4K OLED Smart-TV (OLED55B7V)",
+    "pris": 3999,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26891568",
+    "sedan": "2026-09-26",
+    "annonsdagar": 0,
+    "tum": 55,
+    "underMarknad": null
+  },
+  "26896832": {
+    "titel": "Sonos Beam + 2 st Sonos Play 1",
+    "pris": 4499,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26896832",
+    "sedan": "2026-09-26"
+  },
+  "26898229": {
+    "titel": "LG 55\" OLED TV - OLED55B7V",
+    "pris": 2500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26898229",
+    "sedan": "2026-09-26",
+    "annonsdagar": 0,
+    "tum": 55,
+    "underMarknad": null
+  },
+  "26901775": {
+    "titel": "Sonos Sub (gen2)trådlös subwoofer svart",
+    "pris": 5200,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26901775",
+    "sedan": "2026-09-26"
+  },
+  "26910124": {
+    "titel": "Sonos soundbar och subwoofer svart",
+    "pris": 6500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26910124",
+    "sedan": "2026-09-26"
   }
 }

@@ -1233,7 +1233,7 @@
   },
   "26512679": {
     "titel": "Panasonic TV 55 tum",
-    "pris": 900,
+    "pris": 800,
     "tum": 55,
     "oled": false,
     "annonsdagar": 9,
@@ -1420,7 +1420,7 @@
   },
   "26599807": {
     "titel": "Samsung 55” Smart curved TV – UE55K5605 – Full HD",
-    "pris": 3699,
+    "pris": 3399,
     "tum": 55,
     "oled": false,
     "annonsdagar": 5,
@@ -1559,17 +1559,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -67,
-    "fangad": "2026-09-20"
-  },
-  "26721584": {
-    "titel": "Sony TV 55 tum svart",
-    "pris": 1000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 67,
     "fangad": "2026-09-20"
   },
   "26727511": {

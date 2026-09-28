@@ -933,5 +933,50 @@
     "totalAlder": 4,
     "underMarknad": 3,
     "kohort": true
+  },
+  {
+    "id": "26778677",
+    "titel": "Sonos Beam (Gen 1) i fint skick",
+    "pris": 2500,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-09-28",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26886912",
+    "titel": "LG 65” C1 OLED 4K Smart TV – OLED / Dolby Vision / 120Hz",
+    "pris": 9000,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-28",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 3,
+    "underMarknad": null
+  },
+  {
+    "id": "26950724",
+    "titel": "LG TV - OLED 65\" 4K – OLED65B6V",
+    "pris": 3000,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-28",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": -200
+  },
+  {
+    "id": "26721584",
+    "titel": "Sony TV 55 tum svart",
+    "pris": 1000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-28",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 10,
+    "underMarknad": 67,
+    "kohort": true
   }
 ]

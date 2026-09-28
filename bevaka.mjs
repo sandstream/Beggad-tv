@@ -114,23 +114,29 @@ function storlekIRubrik(titel, storlekar) {
 }
 
 // Sonos söks på fritext — det finns ingen modellkatalog för högtalare.
+//
+// Beam och Sub är köpta. Kvar är en Play:1 till, alltså en andra likadan
+// för surround bakom soffan: Sonos parar surroundhögtalare i identiska par,
+// så en One eller One SL duger inte som partner till en Play:1.
+//
+// Play:1 stöds av S2, alltså nuvarande app. Den slutade tillverkas 2019, så
+// allt på Blocket är begagnat och priserna ligger runt 800–1 500 kr.
 const SONOS = {
-  namn: "Sonos — Beam Gen 2 och Sub, svart",
-  maxpris: 8000,
+  namn: "Sonos Play:1 — en till för surround",
+  maxpris: 2000,
   fragor: [
-    "sonos beam gen 2 svart",
-    "sonos beam svart",
-    "sonos sub svart",
-    "sonos sub gen 3 svart",
-    "sonos sub gen 2 svart",
+    "sonos play 1",
+    "sonos play:1",
+    "sonos play1 svart",
+    "sonos högtalare play",
+    "sonos play 1 svart",
   ],
   passar: (t) =>
     /sonos/i.test(t) &&
-    /beam|\bsub\b|subwoofer/i.test(t) &&
-    // Vit utesluts på krav, mini för att den är underdimensionerad, och
-    // tillbehör för att ett väggfäste till en Beam inte är en Beam.
-    !/\bvit\b|vitt|white|mini/i.test(t) &&
-    !/f[äa]ste|h[åa]llare|stativ|mount|bracket/i.test(t),
+    // "play 1", "play:1", "play1" — men inte Play:3 eller Play:5.
+    /play\s*:?\s*1(?![0-9])/i.test(t) &&
+    !/\bvit\b|vitt|white/i.test(t) &&
+    !/f[äa]ste|h[åa]llare|stativ|mount|bracket|v[äa]gg/i.test(t),
 };
 
 function lasHistorik() {

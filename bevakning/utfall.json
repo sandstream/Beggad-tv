@@ -931,5 +931,97 @@
     "totalAlder": 3,
     "underMarknad": 14,
     "kohort": true
+  },
+  {
+    "id": "26778677",
+    "titel": "Sonos Beam (Gen 1) i fint skick",
+    "pris": 2500,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26886912",
+    "titel": "LG 65” C1 OLED 4K Smart TV – OLED / Dolby Vision / 120Hz",
+    "pris": 9000,
+    "hittad": "2026-09-26",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26896832",
+    "titel": "Sonos Beam + 2 st Sonos Play 1",
+    "pris": 4299,
+    "hittad": "2026-09-26",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26950724",
+    "titel": "LG TV - OLED 65\" 4K – OLED65B6V",
+    "pris": 3000,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": -200
+  },
+  {
+    "id": "23831280",
+    "titel": "LG 55\" 4K OLED smart tv alla apps",
+    "pris": 5500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 51,
+    "totalAlder": 55,
+    "underMarknad": 29,
+    "kohort": true
+  },
+  {
+    "id": "26432469",
+    "titel": "Sony 55 120 Hz TV 4K Smart-TV",
+    "pris": 4700,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 12,
+    "totalAlder": 21,
+    "underMarknad": -57,
+    "kohort": true
+  },
+  {
+    "id": "26721584",
+    "titel": "Sony TV 55 tum svart",
+    "pris": 1000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 10,
+    "underMarknad": 67,
+    "kohort": true
+  },
+  {
+    "id": "26757017",
+    "titel": "55” Google TV vit Thomson",
+    "pris": 3000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 8,
+    "underMarknad": 14,
+    "kohort": true
   }
 ]

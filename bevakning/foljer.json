@@ -19,7 +19,7 @@
   },
   "21246641": {
     "titel": "LG CX OLED TV 55 tum",
-    "pris": 4500,
+    "pris": 4000,
     "url": "https://www.blocket.se/recommerce/forsale/item/21246641",
     "sedan": "2026-09-26"
   },
@@ -91,13 +91,13 @@
   },
   "26390966": {
     "titel": "LG OLED65B6V 65\" 4K OLED Smart TV – Fungerar bra, inbränning",
-    "pris": 2700,
+    "pris": 2500,
     "url": "https://www.blocket.se/recommerce/forsale/item/26390966",
     "sedan": "2026-09-25"
   },
   "26399244": {
     "titel": "Sonos Beam Gen2",
-    "pris": 3900,
+    "pris": 3500,
     "url": "https://www.blocket.se/recommerce/forsale/item/26399244",
     "sedan": "2026-09-20"
   },
@@ -155,12 +155,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26747541",
     "sedan": "2026-09-20"
   },
-  "26778677": {
-    "titel": "Sonos Beam (Gen 1) i fint skick",
-    "pris": 2500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26778677",
-    "sedan": "2026-09-21"
-  },
   "26798066": {
     "titel": "F0176 – Sonos Sub trådlös subwoofer",
     "pris": 100,
@@ -191,27 +185,15 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26884936",
     "sedan": "2026-09-25"
   },
-  "26886912": {
-    "titel": "LG 65” C1 OLED 4K Smart TV – OLED / Dolby Vision / 120Hz",
-    "pris": 9000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26886912",
-    "sedan": "2026-09-26"
-  },
   "26891568": {
     "titel": "LG 55\" 4K OLED Smart-TV (OLED55B7V)",
-    "pris": 3499,
+    "pris": 3199,
     "url": "https://www.blocket.se/recommerce/forsale/item/26891568",
     "sedan": "2026-09-26"
   },
-  "26896832": {
-    "titel": "Sonos Beam + 2 st Sonos Play 1",
-    "pris": 4299,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26896832",
-    "sedan": "2026-09-26"
-  },
   "26901775": {
-    "titel": "Sonos Sub (gen2)trådlös subwoofer svart",
-    "pris": 5200,
+    "titel": "Sonos Sub (gen1)trådlös subwoofer svart",
+    "pris": 4500,
     "url": "https://www.blocket.se/recommerce/forsale/item/26901775",
     "sedan": "2026-09-26"
   },
@@ -219,43 +201,55 @@
     "titel": "LG B6 65\" delvis defekt",
     "pris": 500,
     "url": "https://www.blocket.se/recommerce/forsale/item/26920991",
-    "sedan": "2026-09-28",
-    "annonsdagar": 1,
-    "tum": 65,
-    "underMarknad": 81
+    "sedan": "2026-09-28"
   },
   "26926510": {
     "titel": "LG Oled C9 55",
     "pris": 5630,
     "url": "https://www.blocket.se/recommerce/forsale/item/26926510",
-    "sedan": "2026-09-28",
-    "annonsdagar": 0,
-    "tum": 55,
-    "underMarknad": null
+    "sedan": "2026-09-28"
   },
   "26940528": {
     "titel": "Säljes alt byte ( se text) Premium modell LG C1 OLED65C14LB OLED TV 65 tum",
     "pris": 9000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26940528",
-    "sedan": "2026-09-28",
+    "sedan": "2026-09-28"
+  },
+  "26953336": {
+    "titel": "LG OLED55B7V OLED TV 55 tum",
+    "pris": 2000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26953336",
+    "sedan": "2026-09-28"
+  },
+  "26961258": {
+    "titel": "Sonos Beam Gen 2 - Oöppnad",
+    "pris": 4500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26961258",
+    "sedan": "2026-09-29"
+  },
+  "26965232": {
+    "titel": "LG 65\" OLED 120hz CX-modell",
+    "pris": 3900,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26965232",
+    "sedan": "2026-09-29",
     "annonsdagar": 0,
     "tum": 65,
     "underMarknad": null
   },
-  "26950724": {
-    "titel": "LG TV - OLED 65\" 4K – OLED65B6V",
-    "pris": 3000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26950724",
-    "sedan": "2026-09-28",
+  "26967851": {
+    "titel": "LG B6 55\" oled tv",
+    "pris": 1800,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26967851",
+    "sedan": "2026-09-29",
     "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": -200
+    "tum": 55,
+    "underMarknad": null
   },
-  "26953336": {
-    "titel": "LG OLED55B7V OLED TV 55 tum",
-    "pris": 2500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26953336",
-    "sedan": "2026-09-28",
+  "26970410": {
+    "titel": "LG C3 55 Oled",
+    "pris": 7000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/26970410",
+    "sedan": "2026-09-29",
     "annonsdagar": 0,
     "tum": 55,
     "underMarknad": null

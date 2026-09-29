@@ -978,5 +978,52 @@
     "totalAlder": 10,
     "underMarknad": 67,
     "kohort": true
+  },
+  {
+    "id": "26896832",
+    "titel": "Sonos Beam + 2 st Sonos Play 1",
+    "pris": 4299,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "24094231",
+    "titel": "TCL 55\" QLED780K 4K QLED TV (2025)",
+    "pris": 5499,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 3,
+    "totalAlder": 12,
+    "underMarknad": -83,
+    "kohort": true
+  },
+  {
+    "id": "25501114",
+    "titel": "Samsung Neo QLED QN70F 55” (138 cm)",
+    "pris": 8500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 33,
+    "totalAlder": 37,
+    "underMarknad": -143,
+    "kohort": true
+  },
+  {
+    "id": "26432469",
+    "titel": "Sony 55 120 Hz TV 4K Smart-TV",
+    "pris": 4700,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 12,
+    "totalAlder": 21,
+    "underMarknad": -57,
+    "kohort": true
   }
 ]

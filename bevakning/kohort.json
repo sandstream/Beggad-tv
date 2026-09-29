@@ -230,17 +230,6 @@
     "underMarknad": 20,
     "fangad": "2026-09-25"
   },
-  "24094231": {
-    "titel": "TCL 55\" QLED780K 4K QLED TV (2025)",
-    "pris": 5499,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 3,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -83,
-    "fangad": "2026-09-20"
-  },
   "24101981": {
     "titel": "Bang & Olufsen Beovision Eclipse 55\"",
     "pris": 44990,
@@ -613,17 +602,6 @@
     "grupp": "55-led",
     "marknad": 3500,
     "underMarknad": 29,
-    "fangad": "2026-09-25"
-  },
-  "25501114": {
-    "titel": "Samsung Neo QLED QN70F 55” (138 cm)",
-    "pris": 8500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 33,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": -143,
     "fangad": "2026-09-25"
   },
   "25511805": {
@@ -1164,17 +1142,6 @@
     "marknad": 3500,
     "underMarknad": -66,
     "fangad": "2026-09-25"
-  },
-  "26432469": {
-    "titel": "Sony 55 120 Hz TV 4K Smart-TV",
-    "pris": 4700,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 12,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -57,
-    "fangad": "2026-09-20"
   },
   "26438592": {
     "titel": "LG SMART TV 55 tum",

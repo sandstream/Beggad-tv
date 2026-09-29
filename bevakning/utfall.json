@@ -1023,5 +1023,40 @@
     "totalAlder": 8,
     "underMarknad": 14,
     "kohort": true
+  },
+  {
+    "id": "26153302",
+    "titel": "Sonos Play:1 högtalare vit",
+    "pris": 1500,
+    "hittad": "2026-09-29",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 0,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26557311",
+    "titel": "Samsung TV 55” 4K UHD Smart LED",
+    "pris": 3500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 16,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "26743149",
+    "titel": "Samsung  smart tv 55 tum 4k ultra hd",
+    "pris": 3299,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-29",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 9,
+    "underMarknad": -10,
+    "kohort": true
   }
 ]

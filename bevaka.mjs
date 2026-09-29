@@ -114,22 +114,18 @@ function storlekIRubrik(titel, storlekar) {
 }
 
 // Sonos söks på fritext — det finns ingen modellkatalog för högtalare.
+// Systemet är köpt. Det som saknas är en andra Play:1, så att Tv-rummet får
+// surround. Surround kräver två av samma modell, så en Sonos One eller en
+// Play:3 duger inte. Taket ligger strax över vad en Play:1 går för.
 const SONOS = {
-  namn: "Sonos — Beam Gen 2 och Sub, svart",
-  maxpris: 8000,
-  fragor: [
-    "sonos beam gen 2 svart",
-    "sonos beam svart",
-    "sonos sub svart",
-    "sonos sub gen 3 svart",
-    "sonos sub gen 2 svart",
-  ],
+  namn: "Sonos — en Play:1 till surround i Tv-rummet",
+  maxpris: 1500,
+  fragor: ["sonos play:1", "sonos play 1", "sonos play1"],
   passar: (t) =>
     /sonos/i.test(t) &&
-    /beam|\bsub\b|subwoofer/i.test(t) &&
-    // Vit utesluts på krav, mini för att den är underdimensionerad, och
-    // tillbehör för att ett väggfäste till en Beam inte är en Beam.
-    !/\bvit\b|vitt|white|mini/i.test(t) &&
+    /play\s*:?\s*1\b/i.test(t) &&
+    // Paket med annat i, och tillbehör, är inte en lös Play:1.
+    !/\+|&|\boch\b|\bs5\b|\bsub\b|beam|playbar|play\s*:?\s*[35]\b|\bone\b/i.test(t) &&
     !/f[äa]ste|h[åa]llare|stativ|mount|bracket/i.test(t),
 };
 

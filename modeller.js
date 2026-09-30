@@ -156,6 +156,30 @@ export function inteEnTv(rubrik) {
   return new RegExp(TILLBEHOR.source, "i").test(kvar) || DEFEKT_ELLER_KOPES.test(rubrik);
 }
 
+/**
+ * Surroundhögtalare till Beam: en andra Play:1, eller SYMFONISK bokhylla.
+ * Sonos parar bara identiska högtalare, så en Play:1 och en Symfonisk kan
+ * inte bli ett par — men två av vardera sorten fungerar.
+ *
+ * Stavningen spretar i verkliga annonser: "symfonsik" förekommer. Samtidigt
+ * matchade ett för löst mönster "Sveriges Radios Symfoniorkester" på en
+ * LP-skiva, så ordet måste sluta på k och annonsen nämna Sonos eller IKEA.
+ */
+export function arSonosSurround(rubrik) {
+  const t = rubrik;
+  const play1 = /sonos/i.test(t) && /play\s*:?\s*1(?![0-9])/i.test(t);
+  const symfonisk =
+    /symfon[a-zåäö]{0,4}k\b/i.test(t) &&
+    /sonos|ikea/i.test(t) &&
+    !/lamp|tavl|tavelram|\bframe\b|t[äa]cklock/i.test(t);
+  if (!play1 && !symfonisk) return false;
+  return (
+    !/\bvit\b|vitt|white/i.test(t) &&
+    !/f[äa]ste|h[åa]llare|stativ|mount|bracket|v[äa]gg|konsol/i.test(t) &&
+    !inteEnTv(t)
+  );
+}
+
 // Bakåtkompatibelt alias för den som bara vill ha regexen.
 export const INTE_EN_TV = new RegExp(`${TILLBEHOR.source}|${DEFEKT_ELLER_KOPES.source}`, "i");
 

@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { skapaSokare, avstand } from "./blocket.mjs";
-import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
+import { TESTVINNARE, inteEnTv, ORTER, arSonosSurround } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
 import { kollaKohort, fanga, las, KOHORT } from "./kohort.mjs";
 
@@ -115,29 +115,32 @@ function storlekIRubrik(titel, storlekar) {
 
 // Sonos söks på fritext — det finns ingen modellkatalog för högtalare.
 //
-// Beam och Sub är köpta. Kvar är en Play:1 till, alltså en andra likadan
-// för surround bakom soffan: Sonos parar surroundhögtalare i identiska par,
-// så en One eller One SL duger inte som partner till en Play:1.
+// Beam och Sub är köpta. Kvar är surround bakom soffan, och det finns två
+// vägar dit: en andra Play:1, eller ett par SYMFONISK bokhyllshögtalare.
+// Sonos parar bara identiska högtalare, så en Play:1 och en Symfonisk kan
+// inte bli ett par — men två av vardera sorten fungerar.
 //
-// Play:1 stöds av S2, alltså nuvarande app. Den slutade tillverkas 2019, så
-// allt på Blocket är begagnat och priserna ligger runt 800–1 500 kr.
+// Prisankaret är nypris, inte vad folk begär. SYMFONISK kostade 999 kr ny
+// 2019 och gen 2 ligger runt 1 200 idag, så Blocket-annonser på 1 400–1 995
+// ligger över nypris och duger inte som jämförelse. Ett par för 1 000 kr
+// gick på ett dygn den 30 september. Taket är satt för att släppa igenom
+// både enstaka och par.
+//
+// SYMFONISK finns även som bordslampa och tavelram. Det är andra produkter
+// med sämre ljud, och de filtreras bort.
 const SONOS = {
-  namn: "Sonos Play:1 — en till för surround",
-  maxpris: 2000,
+  namn: "Sonos surround — Play:1 eller SYMFONISK",
+  maxpris: 2500,
   fragor: [
     "sonos play 1",
     "sonos play:1",
     "sonos play1 svart",
-    "sonos högtalare play",
-    "sonos play 1 svart",
+    "symfonisk",
+    "sonos symfonisk",
+    "ikea symfonisk högtalare",
+    "symfonisk bokhyllehögtalare",
   ],
-  passar: (t) =>
-    /sonos/i.test(t) &&
-    // "play 1", "play:1", "play1" — men inte Play:3 eller Play:5.
-    /play\s*:?\s*1(?![0-9])/i.test(t) &&
-    !/\bvit\b|vitt|white/i.test(t) &&
-    !/f[äa]ste|h[åa]llare|stativ|mount|bracket|v[äa]gg/i.test(t) &&
-    !inteEnTv(t),
+  passar: arSonosSurround,
 };
 
 function lasHistorik() {

@@ -8,7 +8,7 @@
 // oss en LG C4 och nästan en 65-tums OLED med benen kvar. Varje nytt fall
 // som dykt upp i verkligheten läggs till här.
 
-import { inteEnTv } from "./modeller.js";
+import { inteEnTv, arSonosSurround } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
 
 let fel = 0;
@@ -47,6 +47,29 @@ lika(bedomKap({ begart: 4000, jamforbara: [5000, 6000] }).motMarknad.otillrackli
 lika(bedomKap({ begart: 5000, jamforbara: [5000, 6000, 7000] }).motMarknad.klass, "kap", "17% under = kap");
 lika(bedomKap({ begart: 4000, jamforbara: [5000, 6000, 7000] }).motMarknad.klass, "leta efter haken", "33% under = leta efter haken");
 lika(bedomKap({ begart: 9000, jamforbara: [5000, 6000, 7000] }).motMarknad.klass, "över marknad", "dyrare än marknad");
+
+// Surroundhögtalarna. Varje rad här är ett fall som dykt upp på riktigt.
+for (const t of [
+  "IKEA Symfonisk (Sonos)",
+  "Sonos, Ikea symfonsik Bokhylla (gen 1)",
+  "IKEA SYMFONISK Gen 2 (Sonos)",
+  "Sonos IKEA Symfonisk bokhyllehögtalare svart 2 st",
+  "Sonos Play 1 - WiFi högtalare",
+  "Sonos Play:1 svart",
+]) lika(arSonosSurround(t), true, `surroundhögtalare: "${t}"`);
+
+for (const t of [
+  "LP-Skiva med Sveriges Radios Symfoniorkester - Klassisk musik",
+  "IKEA Symfonisk tavelram – Sonos/WiFi-högtalare",
+  "Sonos Symfonisk högtalare / bordslampor",
+  "IKEA SYMFONISK lampskärm – vit textil",
+  "Täcklock för Symfonisk gen2",
+  "Hållare till IKEA Symfonisk bokhyllehögtalare",
+  "Sonos Play:3",
+  "Sonos Play:5",
+  "Sonos One/One SL/Play:1 – Flexson S1-SPC strömkabel 35 cm",
+  "Sonos Play:1 vit",
+]) lika(arSonosSurround(t), false, `inte surroundhögtalare: "${t}"`);
 
 console.log(fel ? `\n${fel} fel` : `Alla tester passerar.`);
 process.exit(fel ? 1 : 0);

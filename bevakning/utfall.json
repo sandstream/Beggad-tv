@@ -1162,5 +1162,39 @@
     "totalAlder": 5,
     "underMarknad": 66,
     "kohort": true
+  },
+  {
+    "id": "26891568",
+    "titel": "LG 55\" 4K OLED Smart-TV (OLED55B7V)",
+    "pris": 2500,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26891568",
+    "titel": "LG 55\" 4K OLED Smart-TV (OLED55B7V)",
+    "pris": 2500,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "20914820",
+    "titel": "Philips 55” 4K Smart TV med Ambilight – 55PUS8303",
+    "pris": 3400,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 73,
+    "totalAlder": 78,
+    "underMarknad": 3,
+    "kohort": true
   }
 ]

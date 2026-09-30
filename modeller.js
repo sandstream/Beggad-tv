@@ -127,7 +127,10 @@ export const BUDGET_SOKORD = [
 
 // Rubriker som matchar storlek och märke men inte är en TV: väggfästen,
 // fötter, fjärrkontroller, reservdelar, köpes-annonser.
-const TILLBEHOR = /v[äa]ggf[äa]ste|fotstativ|\bstativ\b|tv-?st[äa]ll|\bfot\b|fj[äa]rrkontroll|\bram\b/;
+// Kablar, fodral och skyddsglas är tillbehör på samma sätt som väggfästen.
+// En Flexson-strömkabel för 150 kr smet igenom Sonos-bevakningen den 30
+// september eftersom den nämnde "Play:1" i rubriken.
+const TILLBEHOR = /v[äa]ggf[äa]ste|fotstativ|\bstativ\b|tv-?st[äa]ll|\bfot\b|fj[äa]rrkontroll|\bram\b|str[öo]mkabel|\bkabel\b|n[äa]tadapter|skyddsglas|\bfodral\b/;
 const DEFEKT_ELLER_KOPES = /reservdel|trasig|spr[äa]ck|sprucken|spricka|startar inte|k[öo]pes|vi k[öo]per|\bs[öo]kes\b/i;
 
 // "LG C4 55'' i nyskick ink väggfäste" är en TV som får ett väggfäste på

@@ -1025,5 +1025,142 @@
     "totalAlder": 21,
     "underMarknad": -57,
     "kohort": true
+  },
+  {
+    "id": "26479163",
+    "titel": "LG 65\" OLED 120hz CX-modell",
+    "pris": 4500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26798066",
+    "titel": "F0176 – Sonos Sub trådlös subwoofer",
+    "pris": 100,
+    "hittad": "2026-09-23",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26880714",
+    "titel": "F0177 – Sonos Sub trådlös subwoofer",
+    "pris": 100,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26880715",
+    "titel": "F0178 – Sonos Sub trådlös subwoofer",
+    "pris": 100,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26920991",
+    "titel": "LG B6 65\" delvis defekt",
+    "pris": 500,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26965232",
+    "titel": "LG 65\" OLED 120hz CX-modell",
+    "pris": 3900,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26970410",
+    "titel": "LG C3 55 Oled",
+    "pris": 7000,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26566941",
+    "titel": "Sony kdl-55w905a",
+    "pris": 1800,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 16,
+    "underMarknad": 43,
+    "kohort": true
+  },
+  {
+    "id": "26621614",
+    "titel": "Sharp smart TV 55tum",
+    "pris": 1200,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 14,
+    "underMarknad": 43,
+    "kohort": true
+  },
+  {
+    "id": "26743149",
+    "titel": "Samsung  smart tv 55 tum 4k ultra hd",
+    "pris": 3299,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 10,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 10,
+    "underMarknad": -10,
+    "kohort": true
+  },
+  {
+    "id": "26840832",
+    "titel": "Helt Ny qned LG 55 tum",
+    "pris": 5999,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 5,
+    "underMarknad": -71,
+    "kohort": true
+  },
+  {
+    "id": "26873051",
+    "titel": "Vit LG TV 55 Tum",
+    "pris": 1200,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-09-30",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 5,
+    "underMarknad": 66,
+    "kohort": true
   }
 ]

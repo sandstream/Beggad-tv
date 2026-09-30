@@ -628,7 +628,7 @@
   },
   "25533221": {
     "titel": "Toshiba Smart TV, 55 tums",
-    "pris": 2400,
+    "pris": 2200,
     "tum": 55,
     "oled": false,
     "annonsdagar": 43,
@@ -1319,17 +1319,6 @@
     "underMarknad": 44,
     "fangad": "2026-09-20"
   },
-  "26566941": {
-    "titel": "Sony kdl-55w905a",
-    "pris": 1800,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 11,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": 43,
-    "fangad": "2026-09-25"
-  },
   "26567543": {
     "titel": "Samsung TV 55 tum",
     "pris": 3000,
@@ -1417,17 +1406,6 @@
     "marknad": 3000,
     "underMarknad": -8,
     "fangad": "2026-09-20"
-  },
-  "26621614": {
-    "titel": "Sharp smart TV 55tum",
-    "pris": 1200,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": 43,
-    "fangad": "2026-09-25"
   },
   "26626432": {
     "titel": "LG 55UP75006LF TV 55 tum",
@@ -1519,7 +1497,7 @@
   },
   "26721397": {
     "titel": "Philips 4K UHD HDR TV 55 tum",
-    "pris": 5000,
+    "pris": 4500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 1,
@@ -1592,17 +1570,6 @@
     "grupp": "55-oled",
     "marknad": 4500,
     "underMarknad": 0,
-    "fangad": "2026-09-20"
-  },
-  "26743149": {
-    "titel": "Samsung  smart tv 55 tum 4k ultra hd",
-    "pris": 3299,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -10,
     "fangad": "2026-09-20"
   },
   "26743168": {
@@ -1748,17 +1715,6 @@
     "underMarknad": 0,
     "fangad": "2026-09-24"
   },
-  "26840832": {
-    "titel": "Helt Ny qned LG 55 tum",
-    "pris": 5999,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": -71,
-    "fangad": "2026-09-25"
-  },
   "26851642": {
     "titel": "Samsung 55\" Q60T 4K UHD QLED Smart-TV",
     "pris": 3000,
@@ -1812,17 +1768,6 @@
     "grupp": "55-led",
     "marknad": 3500,
     "underMarknad": -14,
-    "fangad": "2026-09-25"
-  },
-  "26873051": {
-    "titel": "Vit LG TV 55 Tum",
-    "pris": 1200,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": 66,
     "fangad": "2026-09-25"
   }
 }

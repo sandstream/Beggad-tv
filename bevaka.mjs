@@ -136,7 +136,8 @@ const SONOS = {
     // "play 1", "play:1", "play1" — men inte Play:3 eller Play:5.
     /play\s*:?\s*1(?![0-9])/i.test(t) &&
     !/\bvit\b|vitt|white/i.test(t) &&
-    !/f[äa]ste|h[åa]llare|stativ|mount|bracket|v[äa]gg/i.test(t),
+    !/f[äa]ste|h[åa]llare|stativ|mount|bracket|v[äa]gg/i.test(t) &&
+    !inteEnTv(t),
 };
 
 function lasHistorik() {

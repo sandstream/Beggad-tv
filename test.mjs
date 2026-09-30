@@ -33,6 +33,8 @@ for (const t of [
   "Nytt TV-väggfäste Andersson 23-55 tum",
   "Fotstativ till LG OLED55C1",
   "Fjärrkontroll till LG smart TV",
+  "Sonos One/One SL/Play:1 – Flexson S1-SPC strömkabel 35 cm",
+  "Nätadapter till LG OLED 55",
   "Stativ till 65 tums TV",
   "Köpes: 55 tum OLED",
   "Trasig LG OLED 55",

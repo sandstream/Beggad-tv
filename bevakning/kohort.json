@@ -10,17 +10,6 @@
     "underMarknad": -17,
     "fangad": "2026-09-20"
   },
-  "17482434": {
-    "titel": "Cisco Board 55 konferensskärm (Webex)",
-    "pris": 4500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 13,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": -29,
-    "fangad": "2026-09-25"
-  },
   "18793370": {
     "titel": "Sony KD-55X8505C — 55″ Sony 4K TV",
     "pris": 5000,
@@ -1033,17 +1022,6 @@
     "underMarknad": -133,
     "fangad": "2026-09-20"
   },
-  "26371143": {
-    "titel": "Panasonic 32S55AE LED Full HD Smart TV med Fire TV plus väggfäste",
-    "pris": 2000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 18,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": 29,
-    "fangad": "2026-09-25"
-  },
   "26376685": {
     "titel": "Tv Samsung 55\" QN90D 4K Neo QLED Mini LED Smart TV (2024)",
     "pris": 8500,
@@ -1662,7 +1640,7 @@
   },
   "26818369": {
     "titel": "Samsung Neo QLED TV  Samsung TV 55\" QN70F",
-    "pris": 12000,
+    "pris": 7000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 0,

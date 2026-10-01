@@ -1196,5 +1196,51 @@
     "totalAlder": 78,
     "underMarknad": 3,
     "kohort": true
+  },
+  {
+    "id": "26487225",
+    "titel": "LG OLED65B6V – 65\" OLED TV (inbränning + försämrade färger)",
+    "pris": 1000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-01",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26961258",
+    "titel": "HELT NY Sonos Beam Gen 2",
+    "pris": 4000,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-10-01",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "17482434",
+    "titel": "Cisco Board 55 konferensskärm (Webex)",
+    "pris": 4500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-01",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 13,
+    "totalAlder": 19,
+    "underMarknad": -29,
+    "kohort": true
+  },
+  {
+    "id": "26371143",
+    "titel": "Panasonic 32S55AE LED Full HD Smart TV med Fire TV plus väggfäste",
+    "pris": 2000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-01",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 18,
+    "totalAlder": 24,
+    "underMarknad": 29,
+    "kohort": true
   }
 ]

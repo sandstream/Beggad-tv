@@ -113,22 +113,6 @@ function storlekIRubrik(titel, storlekar) {
   return null;
 }
 
-// Sonos söks på fritext — det finns ingen modellkatalog för högtalare.
-// Systemet är köpt. Det som saknas är en andra Play:1, så att Tv-rummet får
-// surround. Surround kräver två av samma modell, så en Sonos One eller en
-// Play:3 duger inte. Taket ligger strax över vad en Play:1 går för.
-const SONOS = {
-  namn: "Sonos — en Play:1 till surround i Tv-rummet",
-  maxpris: 1500,
-  fragor: ["sonos play:1", "sonos play 1", "sonos play1"],
-  passar: (t) =>
-    /sonos/i.test(t) &&
-    /play\s*:?\s*1\b/i.test(t) &&
-    // Paket med annat i, och tillbehör, är inte en lös Play:1.
-    !/\+|&|\boch\b|\bs5\b|\bsub\b|beam|playbar|play\s*:?\s*[35]\b|\bone\b/i.test(t) &&
-    !/f[äa]ste|h[åa]llare|stativ|mount|bracket/i.test(t),
-};
-
 function lasHistorik() {
   try {
     return JSON.parse(readFileSync(HISTORIK, "utf8"));
@@ -346,29 +330,6 @@ for (const b of BEVAKNINGAR) {
           underMarknad: nya[nya.length - 1].kap?.motMarknad?.procentUnder ?? null,
         };
       }
-    }
-  }
-}
-
-{
-  const sedda = new Map();
-  for (const q of SONOS.fragor) {
-    sokningar++;
-    try {
-      for (const it of await sok(q)) sedda.set(it.id, it);
-    } catch (e) {
-      sokfel++;
-      process.stderr.write(`${q}: ${e.message}\n`);
-    }
-    await paus(250);
-  }
-  for (const i of sedda.values()) {
-    if (!SONOS.passar(i.title) || !i.price || i.price > SONOS.maxpris) continue;
-    allaSedda[i.id] = true;
-    if (!historik.rapporterade[i.id]) {
-      const r = berika(i);
-      nya.push({ ...r, bevakning: SONOS.namn });
-      foljer[i.id] = { titel: r.titel, pris: r.pris, url: r.url, sedan: new Date().toISOString().slice(0, 10) };
     }
   }
 }

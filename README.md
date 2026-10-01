@@ -146,9 +146,8 @@ stället för innehåll — därför avgörs "borta" på att `itemData` saknas, 
 statuskoden. En annons som säljaren markerat som såld ligger däremot kvar med
 fullt innehåll och `disposed: true`; den räknas också som borta.
 
-Kriterierna ligger i `BEVAKNINGAR` och `SONOS` överst i filen. Just nu:
-55 och 65 tum OLED från 2016 och nyare under 9 000 kr, samt en Sonos Play:1
-under 1 500 kr — den som saknas för surround i Tv-rummet.
+Kriterierna ligger i `BEVAKNINGAR` överst i filen. Just nu:
+55 och 65 tum OLED från 2016 och nyare under 9 000 kr.
 
 ## Värderingsmodellen
 

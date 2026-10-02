@@ -1242,5 +1242,153 @@
     "totalAlder": 24,
     "underMarknad": 29,
     "kohort": true
+  },
+  {
+    "id": "25632905",
+    "titel": "Sonos, Ikea symfonsik Bokhylla (gen 1)",
+    "pris": 1200,
+    "hittad": "2026-09-30",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26399244",
+    "titel": "Sonos Beam Gen2",
+    "pris": 3500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26747541",
+    "titel": "LG OLED C1 4K TV 55”",
+    "pris": 5240,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27002332",
+    "titel": "LG 55\" 4K OLED Smart-TV (OLED55B7V)",
+    "pris": 2999,
+    "hittad": "2026-09-30",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27011125",
+    "titel": "LG OLED 65\" 2021, OLED65C15LA - LG:s klassiska flaggskepps OLED-TV i nyskick",
+    "pris": 7500,
+    "hittad": "2026-09-30",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27012963",
+    "titel": "Sonos Play:1 högtalare",
+    "pris": 990,
+    "hittad": "2026-10-01",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27024365",
+    "titel": "Sonos Play:1 svart, fint skick, fungerar med S2-appen",
+    "pris": 1300,
+    "hittad": "2026-10-01",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27024898",
+    "titel": "LG OLED TV C1 55”",
+    "pris": 6000,
+    "hittad": "2026-10-01",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "26026314",
+    "titel": "Samsung LED 55 tum Smart TV",
+    "pris": 2500,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 11,
+    "annonsdagarVidStart": 27,
+    "totalAlder": 38,
+    "underMarknad": -25,
+    "kohort": true
+  },
+  {
+    "id": "26541984",
+    "titel": "55” OLED-TV från LG, vit",
+    "pris": 3000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": 8,
+    "totalAlder": 20,
+    "underMarknad": 33,
+    "kohort": true
+  },
+  {
+    "id": "26566097",
+    "titel": "LG 55\" Curved OLED-TV 55EG910V – Full HD, webOS, 3D",
+    "pris": 2500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 19,
+    "underMarknad": 44,
+    "kohort": true
+  },
+  {
+    "id": "26599080",
+    "titel": "LG 55\" 55QNED85A6C / 4K / QNED / 120Hz / Smart TV / AI",
+    "pris": 7000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 16,
+    "underMarknad": -133,
+    "kohort": true
+  },
+  {
+    "id": "26747541",
+    "titel": "LG OLED C1 4K TV 55”",
+    "pris": 5240,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-02",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 12,
+    "underMarknad": -16,
+    "kohort": true
   }
 ]

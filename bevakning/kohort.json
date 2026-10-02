@@ -813,17 +813,6 @@
     "underMarknad": -10,
     "fangad": "2026-09-25"
   },
-  "26026314": {
-    "titel": "Samsung LED 55 tum Smart TV",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 27,
-    "grupp": "55-led",
-    "marknad": 2000,
-    "underMarknad": -25,
-    "fangad": "2026-09-21"
-  },
   "26033761": {
     "titel": "Samsung The Frame TV 55\" (2026)",
     "pris": 10300,
@@ -1231,17 +1220,6 @@
     "underMarknad": -300,
     "fangad": "2026-09-20"
   },
-  "26541984": {
-    "titel": "55” OLED-TV från LG, vit",
-    "pris": 3000,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 8,
-    "grupp": "55-oled",
-    "marknad": 4500,
-    "underMarknad": 33,
-    "fangad": "2026-09-20"
-  },
   "26549036": {
     "titel": "Philips 55” OLED 4K Smart TV 55POS9002/12 / Ambilight",
     "pris": 2900,
@@ -1266,24 +1244,13 @@
   },
   "26563135": {
     "titel": "Samsung 55\" Curved SUHD 4K Smart TV",
-    "pris": 2987,
+    "pris": 2895,
     "tum": 55,
     "oled": false,
     "annonsdagar": 7,
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 0,
-    "fangad": "2026-09-20"
-  },
-  "26566097": {
-    "titel": "LG 55\" Curved OLED-TV 55EG910V – Full HD, webOS, 3D",
-    "pris": 2500,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 7,
-    "grupp": "55-oled",
-    "marknad": 4500,
-    "underMarknad": 44,
     "fangad": "2026-09-20"
   },
   "26567543": {
@@ -1330,20 +1297,9 @@
     "underMarknad": 86,
     "fangad": "2026-09-25"
   },
-  "26599080": {
-    "titel": "LG 55\" 55QNED85A6C / 4K / QNED / 120Hz / Smart TV / AI",
-    "pris": 7000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 4,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -133,
-    "fangad": "2026-09-20"
-  },
   "26599807": {
     "titel": "Samsung 55” Smart curved TV – UE55K5605 – Full HD",
-    "pris": 3399,
+    "pris": 2999,
     "tum": 55,
     "oled": false,
     "annonsdagar": 5,
@@ -1548,17 +1504,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 0,
-    "fangad": "2026-09-20"
-  },
-  "26747541": {
-    "titel": "LG OLED C1 4K TV 55”",
-    "pris": 5240,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 0,
-    "grupp": "55-oled",
-    "marknad": 4500,
-    "underMarknad": -16,
     "fangad": "2026-09-20"
   },
   "26749153": {

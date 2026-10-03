@@ -1704,5 +1704,39 @@
     "totalAlder": 1,
     "underMarknad": 70,
     "kohort": true
+  },
+  {
+    "id": "23607876",
+    "titel": "Philips 55POS901F 55\" 4K Ultra HD, Defekt, (3840x2160) LCD Smart TV",
+    "pris": 500,
+    "hittad": "2026-09-22",
+    "forsvann": "2026-10-03",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27087152",
+    "titel": "Samsung 65 tums 4K  S95B  QD-OLED-panel tv 120hz",
+    "pris": 7000,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-03",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "21844592",
+    "titel": "Sony KDL-55W805B TV 55 tum svart",
+    "pris": 3500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-03",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 3,
+    "underMarknad": -17,
+    "kohort": true
   }
 ]

@@ -153,17 +153,6 @@
     "underMarknad": -100,
     "fangad": "2026-09-25"
   },
-  "21844592": {
-    "titel": "Sony KDL-55W805B TV 55 tum svart",
-    "pris": 3500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 2,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -17,
-    "fangad": "2026-10-03"
-  },
   "21981248": {
     "titel": "LG 55\" 4K QNED evo Edge MiniLED TV 2025 55QNED87A6B",
     "pris": 9000,
@@ -782,7 +771,7 @@
   },
   "25501114": {
     "titel": "Samsung Neo QLED QN70F 55” (138 cm)",
-    "pris": 8500,
+    "pris": 7500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 41,

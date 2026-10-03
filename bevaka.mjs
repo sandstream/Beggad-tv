@@ -1,6 +1,10 @@
 #!/usr/bin/env node
-// Daglig bevakning. Kör de sparade sökningarna, jämför mot vad som redan
-// rapporterats, och skriver ut bara det som är nytt.
+// Daglig bevakning av TV. Kör de sparade sökningarna, jämför mot vad som
+// redan rapporterats, och skriver ut bara det som är nytt.
+//
+// Sonos-bevakningen togs bort den 3 oktober — ljudsidan är klar. Matchningen
+// finns kvar som arSonosSurround i modeller.js med sina testfall, så den går
+// att koppla in igen utan att skrivas om.
 //
 //   node bevaka.mjs                 # direktläge, skriver rapport till stdout
 //   node bevaka.mjs --mcp           # via begagnad-mcp i stället
@@ -13,7 +17,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { skapaSokare, avstand } from "./blocket.mjs";
-import { TESTVINNARE, inteEnTv, ORTER, arSonosSurround } from "./modeller.js";
+import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
 import { kollaKohort, fanga, las, KOHORT } from "./kohort.mjs";
 
@@ -112,36 +116,6 @@ function storlekIRubrik(titel, storlekar) {
   }
   return null;
 }
-
-// Sonos söks på fritext — det finns ingen modellkatalog för högtalare.
-//
-// Beam och Sub är köpta. Kvar är surround bakom soffan, och det finns två
-// vägar dit: en andra Play:1, eller ett par SYMFONISK bokhyllshögtalare.
-// Sonos parar bara identiska högtalare, så en Play:1 och en Symfonisk kan
-// inte bli ett par — men två av vardera sorten fungerar.
-//
-// Prisankaret är nypris, inte vad folk begär. SYMFONISK kostade 999 kr ny
-// 2019 och gen 2 ligger runt 1 200 idag, så Blocket-annonser på 1 400–1 995
-// ligger över nypris och duger inte som jämförelse. Ett par för 1 000 kr
-// gick på ett dygn den 30 september. Taket är satt för att släppa igenom
-// både enstaka och par.
-//
-// SYMFONISK finns även som bordslampa och tavelram. Det är andra produkter
-// med sämre ljud, och de filtreras bort.
-const SONOS = {
-  namn: "Sonos surround — Play:1 eller SYMFONISK",
-  maxpris: 2500,
-  fragor: [
-    "sonos play 1",
-    "sonos play:1",
-    "sonos play1 svart",
-    "symfonisk",
-    "sonos symfonisk",
-    "ikea symfonisk högtalare",
-    "symfonisk bokhyllehögtalare",
-  ],
-  passar: arSonosSurround,
-};
 
 function lasHistorik() {
   try {
@@ -349,27 +323,6 @@ for (const b of BEVAKNINGAR) {
           underMarknad: nya[nya.length - 1].kap?.motMarknad?.procentUnder ?? null,
         };
       }
-    }
-  }
-}
-
-{
-  const sedda = new Map();
-  for (const q of SONOS.fragor) {
-    try {
-      for (const it of await sok(q)) sedda.set(it.id, it);
-    } catch (e) {
-      process.stderr.write(`${q}: ${e.message}\n`);
-    }
-    await paus(250);
-  }
-  for (const i of sedda.values()) {
-    if (!SONOS.passar(i.title) || !i.price || i.price > SONOS.maxpris) continue;
-    allaSedda[i.id] = true;
-    if (!historik.rapporterade[i.id]) {
-      const r = berika(i);
-      nya.push({ ...r, bevakning: SONOS.namn });
-      foljer[i.id] = { titel: r.titel, pris: r.pris, url: r.url, sedan: new Date().toISOString().slice(0, 10) };
     }
   }
 }

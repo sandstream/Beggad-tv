@@ -77,12 +77,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/25467288",
     "sedan": "2026-09-30"
   },
-  "25618241": {
-    "titel": "LG 65\" 4K OLED TV (OLED65C7V)",
-    "pris": 2500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/25618241",
-    "sedan": "2026-09-25"
-  },
   "25667399": {
     "titel": "Philips 55POS9002/12 OLED",
     "pris": 2900,
@@ -197,15 +191,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26909349",
     "sedan": "2026-09-30"
   },
-  "26910447": {
-    "titel": "LG C4 OLED evo TV 65\" 144hz",
-    "pris": 8000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26910447",
-    "sedan": "2026-10-02",
-    "annonsdagar": 5,
-    "tum": 65,
-    "underMarknad": null
-  },
   "26912158": {
     "titel": "Sonos Play:1 trådlös högtalare svart",
     "pris": 1300,
@@ -224,18 +209,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26926510",
     "sedan": "2026-09-28"
   },
-  "26940528": {
-    "titel": "Säljes alt byte ( se text) Premium modell LG C1 OLED65C14LB OLED TV 65 tum",
-    "pris": 9000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26940528",
-    "sedan": "2026-09-28"
-  },
-  "26953336": {
-    "titel": "LG OLED55B7V OLED TV 55 tum",
-    "pris": 2000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26953336",
-    "sedan": "2026-09-28"
-  },
   "26967851": {
     "titel": "LG B6 55\" oled tv",
     "pris": 1800,
@@ -248,23 +221,11 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26993699",
     "sedan": "2026-09-30"
   },
-  "26997238": {
-    "titel": "LG OLED TV CX 55 tum",
-    "pris": 3990,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26997238",
-    "sedan": "2026-09-30"
-  },
   "27003537": {
     "titel": "Sonos One/One SL/Play:1 – Flexson S1-SPC strömkabel 35 cm",
     "pris": 150,
     "url": "https://www.blocket.se/recommerce/forsale/item/27003537",
     "sedan": "2026-09-30"
-  },
-  "27038920": {
-    "titel": "IKEA Symfonisk Bokhyllehögtalare Gen 1 – WiFi-högtalare",
-    "pris": 1295,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27038920",
-    "sedan": "2026-10-02"
   },
   "27039218": {
     "titel": "Sonos PLAY:1",
@@ -276,39 +237,54 @@
     "titel": "LG OLED CX 65 Tum",
     "pris": 8900,
     "url": "https://www.blocket.se/recommerce/forsale/item/27040624",
-    "sedan": "2026-10-02",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null
-  },
-  "27042381": {
-    "titel": "LG C9 55 Tum OLED Smart-TV,  2019",
-    "pris": 2500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27042381",
-    "sedan": "2026-10-02",
-    "annonsdagar": 0,
-    "tum": 55,
-    "underMarknad": null
-  },
-  "27051411": {
-    "titel": "Sonos Play:1 i nyskick inkl uppgraderingsrabatt",
-    "pris": 1150,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27051411",
     "sedan": "2026-10-02"
   },
   "27054978": {
     "titel": "LG OLED 65\" 4K HDR (OLED65C7V)",
     "pris": 3000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27054978",
-    "sedan": "2026-10-02",
+    "sedan": "2026-10-02"
+  },
+  "27055905": {
+    "titel": "Högtalare Sonos play 1",
+    "pris": 900,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27055905",
+    "sedan": "2026-10-02"
+  },
+  "27065341": {
+    "titel": "LG C2 55’ Oled",
+    "pris": 6500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27065341",
+    "sedan": "2026-10-03",
+    "annonsdagar": 0,
+    "tum": 55,
+    "underMarknad": null
+  },
+  "27065779": {
+    "titel": "LG OLED55C9PLA 55\" OLED TV svårt. Säljs tillsammans med TV-bänken.",
+    "pris": 6000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27065779",
+    "sedan": "2026-10-03",
+    "annonsdagar": 0,
+    "tum": 55,
+    "underMarknad": 0
+  },
+  "27072924": {
+    "titel": "Philips 65” OLED 4K Ambilight – 65OLED854/12",
+    "pris": 6000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27072924",
+    "sedan": "2026-10-03",
     "annonsdagar": 0,
     "tum": 65,
     "underMarknad": null
   },
-  "27055905": {
-    "titel": "Högtalare Sonos play 1",
-    "pris": 500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27055905",
-    "sedan": "2026-10-02"
+  "27076978": {
+    "titel": "LG OLED 55\" 4K (B9, OLED55B9PLA), skick som ny, inga inbrända bilder",
+    "pris": 3800,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27076978",
+    "sedan": "2026-10-03",
+    "annonsdagar": 0,
+    "tum": 55,
+    "underMarknad": null
   }
 }

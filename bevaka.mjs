@@ -57,14 +57,18 @@ const AR_ELDST = 2016;
 const OLED =
   /^LG [CGEBA](X|[1-9])$|^Sony (A[89]|Bravia 8)|^Sam(sung)? S9[05]|^Phil (OLED|POS)|^Pana /;
 
-// 65 tum togs med när bänkens mått räknades efter: en 65:a är 144 cm bred,
-// bänken 160, alltså sju centimeter luft på varje sida. Den får plats.
+// Bara 65 tum sedan den 3 oktober. 55 togs bort på beslut: ska det bli en
+// uppgradering alls blir det en 65:a.
 //
-// Taket är detsamma för båda storlekarna, och det är avsiktligt. Medianen för
-// en 65-tums OLED inom fyra mil ligger på drygt 13 000 kr, så 9 000 är långt
-// under marknad — bara riktiga fynd tar sig igenom. För 55 tum ligger samma
-// tak nära marknaden och släpper igenom mer.
-const STORLEKAR = [55, 65];
+// Måtten tillåter det. En 65-tums panel är 144 cm bred mot bänkens 160, och
+// TV:n väggmonteras ändå, så varken bredd eller fot begränsar längre. Vid
+// 2,5 meters tittavstånd ger 65 tum 32 graders synvinkel mot 55-tummarens
+// 27 — SMPTE:s biografgräns går vid 30.
+//
+// Taket på 9 000 kr behålls. Medianen för en 65-tums OLED inom fyra mil
+// ligger kring 9 750, så taket släpper igenom ungefär halva marknaden och
+// stoppar det som är dyrare än normalt.
+const STORLEKAR = [65];
 
 // Fyndbevakningen. Taket låg först på 2 000 kr, men svepet den 25 september
 // gav fyra träffar i hela landet och samtliga hade uppgiven defekt. Under

@@ -1738,5 +1738,29 @@
     "totalAlder": 3,
     "underMarknad": -17,
     "kohort": true
+  },
+  {
+    "id": "25689721",
+    "titel": "Samsung Smart-TV  55”",
+    "pris": 4500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-04",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 42,
+    "totalAlder": 51,
+    "underMarknad": -29,
+    "kohort": true
+  },
+  {
+    "id": "27024062",
+    "titel": "Samsung 55” TV + TV-bänk – säljes tillsammans eller separat",
+    "pris": 500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-04",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 3,
+    "underMarknad": 83,
+    "kohort": true
   }
 ]

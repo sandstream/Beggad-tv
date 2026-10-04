@@ -384,6 +384,17 @@
     "underMarknad": -100,
     "fangad": "2026-09-20"
   },
+  "24468945": {
+    "titel": "Samsung Q8F QLED TV 55 tum - Helt ny i kartongen med garanti",
+    "pris": 5000,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 3,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": -100,
+    "fangad": "2026-09-20"
+  },
   "24502989": {
     "titel": "LG Oled G3 55”",
     "pris": 10500,
@@ -415,6 +426,17 @@
     "grupp": "55-oled",
     "marknad": 7700,
     "underMarknad": -17,
+    "fangad": "2026-09-25"
+  },
+  "24561927": {
+    "titel": "Philips TV svart 55 tum smart",
+    "pris": 350,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 82,
+    "grupp": "55-led",
+    "marknad": 3500,
+    "underMarknad": 90,
     "fangad": "2026-09-25"
   },
   "24619976": {
@@ -1420,7 +1442,7 @@
   },
   "26563135": {
     "titel": "Samsung 55\" Curved SUHD 4K Smart TV",
-    "pris": 2495,
+    "pris": 2895,
     "tum": 55,
     "oled": false,
     "annonsdagar": 7,
@@ -1516,6 +1538,17 @@
     "marknad": 3500,
     "underMarknad": -14,
     "fangad": "2026-09-25"
+  },
+  "26671597": {
+    "titel": "Samsung smart TV 55 tum 4K UHD",
+    "pris": 3200,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 3,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": -7,
+    "fangad": "2026-09-20"
   },
   "26704210": {
     "titel": "55\" Samsung 8 Series TV",
@@ -1627,6 +1660,17 @@
     "underMarknad": 20,
     "fangad": "2026-09-20"
   },
+  "26756892": {
+    "titel": "Samsung smart TV 55 tum 4K UHD",
+    "pris": 3200,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 0,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": -7,
+    "fangad": "2026-09-20"
+  },
   "26757879": {
     "titel": "Philips 55 tum OLED TV",
     "pris": 500,
@@ -1680,6 +1724,17 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 33,
+    "fangad": "2026-09-24"
+  },
+  "26831248": {
+    "titel": "Samsung Studio Stand VG-STSM11B – nytt/oöppnat QLED 55/65\"",
+    "pris": 1000,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 1,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 67,
     "fangad": "2026-09-24"
   },
   "26833429": {
@@ -1737,6 +1792,17 @@
     "underMarknad": 3,
     "fangad": "2026-09-25"
   },
+  "26871275": {
+    "titel": "Lg smart-Tv 55 tum. Tv bänk IKEA",
+    "pris": 3500,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 0,
+    "grupp": "55-led",
+    "marknad": 3500,
+    "underMarknad": -14,
+    "fangad": "2026-09-25"
+  },
   "26913824": {
     "titel": "Samsung 55” 4k UHD LED med väggfäste",
     "pris": 1750,
@@ -1761,7 +1827,7 @@
   },
   "26923959": {
     "titel": "Samsung Crystal UHD TV 55’ 2021",
-    "pris": 1800,
+    "pris": 2200,
     "tum": 55,
     "oled": false,
     "annonsdagar": 5,
@@ -1803,6 +1869,17 @@
     "underMarknad": -14,
     "fangad": "2026-10-03"
   },
+  "26929358": {
+    "titel": "TV från LG 55tum",
+    "pris": 1600,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 5,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 47,
+    "fangad": "2026-10-03"
+  },
   "26930791": {
     "titel": "Samsung smart TV 55 tum svart",
     "pris": 3000,
@@ -1814,9 +1891,20 @@
     "underMarknad": 0,
     "fangad": "2026-10-03"
   },
+  "26942386": {
+    "titel": "LG smart tv 55 tum nanocell-55NAN0756PR",
+    "pris": 2500,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 5,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 0,
+    "fangad": "2026-10-03"
+  },
   "26956016": {
     "titel": "Philips 55 tum 706/12 OLED 4K 120hz Ambilight",
-    "pris": 6500,
+    "pris": 6700,
     "tum": 55,
     "oled": true,
     "annonsdagar": 4,
@@ -1834,6 +1922,17 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 33,
+    "fangad": "2026-10-03"
+  },
+  "26984428": {
+    "titel": "Hitachi 55HGW69 H 55\" LED-TV svart",
+    "pris": 300,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 3,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 90,
     "fangad": "2026-10-03"
   },
   "27001726": {
@@ -1869,6 +1968,50 @@
     "underMarknad": -50,
     "fangad": "2026-10-03"
   },
+  "27037274": {
+    "titel": "Samsung 55\" Smart TV 4k UHD",
+    "pris": 2800,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 1,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 7,
+    "fangad": "2026-10-03"
+  },
+  "27048114": {
+    "titel": "Samsung 55\" Q8FA 4k QLED SMART TV",
+    "pris": 9000,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 1,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": -200,
+    "fangad": "2026-10-03"
+  },
+  "27055238": {
+    "titel": "Samsung UE55H6475SU TV 55 tum svart",
+    "pris": 1500,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 1,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 50,
+    "fangad": "2026-10-03"
+  },
+  "27057114": {
+    "titel": "LG UltraHD 4K  55\"",
+    "pris": 2000,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 0,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": 33,
+    "fangad": "2026-10-03"
+  },
   "27059885": {
     "titel": "Samsung smart tv 55'",
     "pris": 1100,
@@ -1880,6 +2023,17 @@
     "underMarknad": 63,
     "fangad": "2026-10-03"
   },
+  "27060305": {
+    "titel": "LG 55XE4P-M 55\" digital signage-skärm FHD",
+    "pris": 34999,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 0,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": -1067,
+    "fangad": "2026-10-03"
+  },
   "27060311": {
     "titel": "LG 55\" OLED evo C5 PRO 4K (OLED55C54LA) – Helt ny & oöppnad med kvitto/garanti",
     "pris": 14999,
@@ -1889,6 +2043,17 @@
     "grupp": "55-oled",
     "marknad": 6600,
     "underMarknad": -127,
+    "fangad": "2026-10-03"
+  },
+  "27068367": {
+    "titel": "Samsung TV the Frame 55tum inklusive ram och väggfäste",
+    "pris": 6500,
+    "tum": 55,
+    "oled": false,
+    "annonsdagar": 0,
+    "grupp": "55-led",
+    "marknad": 3000,
+    "underMarknad": -117,
     "fangad": "2026-10-03"
   },
   "27071154": {

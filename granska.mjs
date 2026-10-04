@@ -40,6 +40,9 @@ for (const id of ids) {
   let it;
   try {
     const d = await (await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`)).json();
+    // Se noten i bevaka.mjs: ett error-fält i kroppen är strypning, inte
+    // en borttagen annons.
+    if (d?.error) { console.log(`${id}: uppströms svarade "${d.error.slice(0, 60)}" — försök igen senare\n`); continue; }
     it = d?.loaderData?.["item-recommerce"]?.itemData;
   } catch (e) {
     console.log(`${id}: kunde inte hämtas (${e.message})\n`);

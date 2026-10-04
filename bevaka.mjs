@@ -148,6 +148,12 @@ async function hamtaAnnons(id) {
   try {
     const res = await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`);
     const d = await res.json();
+    // Uppströms svarar 200 även när den stryper oss, med ett error-fält i
+    // kroppen: {"error":"Client error '429 Too Many Requests' ..."}. Det såg
+    // ut precis som en borttagen annons, och den 4 oktober loggades 31
+    // kohortmedlemmar som försvunna i en enda körning medan de levde. Allt
+    // som bär ett error-fält är ett fel, inte ett utfall.
+    if (d?.error) return undefined;
     const it = d?.loaderData?.["item-recommerce"]?.itemData;
     if (!it || it.title == null) return null;
     if (it.disposed === true || it.meta?.isInactive === true) return null;

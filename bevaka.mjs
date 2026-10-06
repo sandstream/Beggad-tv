@@ -33,6 +33,26 @@ const torr = flagg.has("--torr");
 // --folj 26730987,26747541 lägger till annonser i följlistan utan att söka.
 const foljArg = argv[argv.indexOf("--folj") + 1];
 const attFolja = flagg.has("--folj") && foljArg ? foljArg.split(",").map((s) => s.trim()) : [];
+// --kolla 27171758,26884936 svarar på "lever den?" med bevakningens egen
+// logik. Finns för att en handskriven kontroll den 6 oktober bara tittade
+// efter en titel, missade disposed-flaggan och fick mig att överpröva ett
+// korrekt BORTA — varpå jag raderade ett äkta utfall. Kontrollen ska aldrig
+// vara svagare än det den kontrollerar.
+const kollaArg = argv[argv.indexOf("--kolla") + 1];
+const attKolla = flagg.has("--kolla") && kollaArg ? kollaArg.split(",").map((s) => s.trim()) : [];
+
+// Svarar på frågan "lever den?" och avslutar, innan någon sökning hinner gå.
+if (attKolla.length) {
+  for (const id of attKolla) {
+    const a = await hamtaAnnons(id);
+    const url = `https://www.blocket.se/recommerce/forsale/item/${id}`;
+    if (a === undefined) console.log(`${id}  NÄTFEL — gick inte att avgöra\n      ${url}`);
+    else if (a === null) console.log(`${id}  BORTA eller såld\n      ${url}`);
+    else console.log(`${id}  LEVER ${a.pris} kr — ${a.titel}\n      ${url}`);
+    await new Promise((r) => setTimeout(r, 2000));
+  }
+  process.exit(0);
+}
 
 // Vad vi letar efter. Kriterierna är destillatet av hela researchen:
 // 55 tum för att 65 inte får plats, och OLED för att rummet är mörklagt.

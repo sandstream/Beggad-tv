@@ -1950,5 +1950,17 @@
     "totalAlder": 9,
     "underMarknad": 27,
     "kohort": true
+  },
+  {
+    "id": "27171758",
+    "titel": "LG 65” OLED TV – OLED65B7V",
+    "pris": 3500,
+    "hittad": "2026-10-06",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 0,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 0,
+    "underMarknad": null,
+    "kohort": false
   }
 ]

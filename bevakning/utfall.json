@@ -1868,5 +1868,40 @@
     "totalAlder": 2,
     "underMarknad": 33,
     "kohort": true
+  },
+  {
+    "id": "27039218",
+    "titel": "Sonos PLAY:1",
+    "pris": 1200,
+    "hittad": "2026-10-02",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "22754062",
+    "titel": "55 tum \"sony tv",
+    "pris": 3000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 11,
+    "annonsdagarVidStart": 46,
+    "totalAlder": 57,
+    "underMarknad": 14,
+    "kohort": true
+  },
+  {
+    "id": "26599807",
+    "titel": "Samsung 55” Smart curved TV – UE55K5605 – Full HD",
+    "pris": 2500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 16,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 21,
+    "underMarknad": 0,
+    "kohort": true
   }
 ]

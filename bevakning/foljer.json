@@ -168,8 +168,8 @@
     "sedan": "2026-09-25"
   },
   "26884936": {
-    "titel": "LG G1 65”  OLED",
-    "pris": 8000,
+    "titel": "LG G1 65”  OLED Gallery",
+    "pris": 7500,
     "url": "https://www.blocket.se/recommerce/forsale/item/26884936",
     "sedan": "2026-09-28"
   },
@@ -211,15 +211,9 @@
   },
   "27003537": {
     "titel": "Sonos One/One SL/Play:1 – Flexson S1-SPC strömkabel 35 cm",
-    "pris": 150,
+    "pris": 100,
     "url": "https://www.blocket.se/recommerce/forsale/item/27003537",
     "sedan": "2026-09-30"
-  },
-  "27039218": {
-    "titel": "Sonos PLAY:1",
-    "pris": 1200,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27039218",
-    "sedan": "2026-10-02"
   },
   "27040624": {
     "titel": "LG OLED CX 65 Tum",
@@ -274,5 +268,32 @@
     "pris": 7990,
     "url": "https://www.blocket.se/recommerce/forsale/item/27085680",
     "sedan": "2026-10-03"
+  },
+  "27149348": {
+    "titel": "LG CX 65 tum + Soundbar och väggfäste",
+    "pris": 8000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27149348",
+    "sedan": "2026-10-06",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": 0
+  },
+  "27171039": {
+    "titel": "LG OLED B6V 65” 4K TV inkl fjärrkontroll",
+    "pris": 1900,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27171039",
+    "sedan": "2026-10-06",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
+  },
+  "27171758": {
+    "titel": "LG 65” OLED TV – OLED65B7V",
+    "pris": 3500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27171758",
+    "sedan": "2026-10-06",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

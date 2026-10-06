@@ -1903,5 +1903,63 @@
     "totalAlder": 21,
     "underMarknad": 0,
     "kohort": true
+  },
+  {
+    "id": "27084091",
+    "titel": "LG TV 55” G1",
+    "pris": 4500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27171758",
+    "titel": "LG 65” OLED TV – OLED65B7V",
+    "pris": 3500,
+    "hittad": "2026-10-06",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "26452383",
+    "titel": "Philips 55\" PUS8500 4K QLED Ambilight TV",
+    "pris": 7000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 17,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 28,
+    "underMarknad": -133,
+    "kohort": true
+  },
+  {
+    "id": "26741949",
+    "titel": "Samsung UE55JS8505T, en böjd 55-tums SUHD-TV",
+    "pris": 1500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 17,
+    "underMarknad": 57,
+    "kohort": true
+  },
+  {
+    "id": "26923959",
+    "titel": "Samsung Crystal UHD TV 55’ 2021",
+    "pris": 1700,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 9,
+    "underMarknad": 27,
+    "kohort": true
   }
 ]

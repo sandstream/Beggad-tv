@@ -144,7 +144,20 @@ function lasFoljer() {
 // En annons som markerats såld ligger däremot kvar med fullt innehåll och
 // disposed=true (och meta.isInactive=true). Den räknas också som borta.
 // Annars står sålda annonser kvar i följlistan och kohorten i veckor.
+// Ett enda svar räcker inte för att döma ut en annons. Den 6 oktober
+// rapporterades en LG B7 i Täby som borta medan den låg kvar — svaret bar
+// varken itemData eller error-fält, alltså en tredje felform utöver 429.
+// Därför bekräftas varje misstänkt borttagning med ett andra anrop efter en
+// paus. Säger båda samma sak är annonsen borta; säger de olika är det brus.
 async function hamtaAnnons(id) {
+  const svar = await hamtaEnGang(id);
+  if (svar !== null) return svar;
+  await new Promise((r) => setTimeout(r, 3000));
+  const andra = await hamtaEnGang(id);
+  return andra === null ? null : andra;
+}
+
+async function hamtaEnGang(id) {
   try {
     const res = await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`);
     const d = await res.json();

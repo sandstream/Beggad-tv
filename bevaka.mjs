@@ -102,8 +102,11 @@ const STORLEKAR = [65];
 // Fot krävs inte längre — väggfäste gäller — så fotfrågan avgör inget här.
 const FYND_TAK = 3000;
 
-// Taket för Arc. Arc Ultra sänkte begagnatpriset på vanlig Arc till 4–6 000.
-const ARC_TAK = 5000;
+// Taket för Arc. Första gissningen var 4–6 000 och den var fel: en sökning
+// den 7 oktober gav två Arcar i hela landet, på 6 400 och 6 599 kr. Taket
+// på 5 000 hade alltså aldrig rapporterat någon av dem. Utbudet är tunt,
+// så taket ligger strax över marknaden i stället för under den.
+const ARC_TAK = 7000;
 
 const BEVAKNINGAR = [
   {

@@ -1962,5 +1962,27 @@
     "totalAlder": 0,
     "underMarknad": null,
     "kohort": false
+  },
+  {
+    "id": "26197651",
+    "titel": "Sonos Play:1 högtalare svart",
+    "pris": 1199,
+    "hittad": "2026-09-29",
+    "forsvann": "2026-10-06",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26197651",
+    "titel": "Sonos Play:1 högtalare svart",
+    "pris": 1199,
+    "hittad": "2026-09-29",
+    "forsvann": "2026-10-07",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
   }
 ]

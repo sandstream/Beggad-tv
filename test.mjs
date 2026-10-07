@@ -8,7 +8,7 @@
 // oss en LG C4 och nästan en 65-tums OLED med benen kvar. Varje nytt fall
 // som dykt upp i verkligheten läggs till här.
 
-import { inteEnTv, arSonosSurround } from "./modeller.js";
+import { inteEnTv, arSonosSurround, arSonosArc } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
 
 let fel = 0;
@@ -70,6 +70,32 @@ for (const t of [
   "Sonos One/One SL/Play:1 – Flexson S1-SPC strömkabel 35 cm",
   "Sonos Play:1 vit",
 ]) lika(arSonosSurround(t), false, `inte surroundhögtalare: "${t}"`);
+
+// Sonos Arc. Arc Ultra räknas in — den är samma vara en generation senare,
+// och under taket är den ett fynd. "arc" ensamt fångar för mycket, därför
+// kravet på Sonos i rubriken.
+for (const t of [
+  "Sonos Arc soundbar svart",
+  "Sonos Arc Ultra svart, som ny",
+  "Sonos arc, sub och två play 1",
+  "Sonos Arc inkl väggfäste",
+  "SONOS ARC",
+]) lika(arSonosArc(t), true, `är en Arc: "${t}"`);
+
+for (const t of [
+  "Väggfäste till Sonos Arc",
+  "Sonos Beam gen 2",
+  "Sonos Playbar",
+  "Sonos Ray",
+  "Köpes Sonos Arc",
+  "Sonos Arc sökes",
+  "Sonos Arc trasig, säljes som reservdel",
+  "Arc'teryx Beta LT jacka herr",
+  "Marc Jacobs väska svart",
+  "Arcade Fire - Funeral LP",
+  "Sonos Arc vit",
+  "Sonos Arc Ultra white",
+]) lika(arSonosArc(t), false, `inte en Arc: "${t}"`);
 
 console.log(fel ? `\n${fel} fel` : `Alla tester passerar.`);
 process.exit(fel ? 1 : 0);

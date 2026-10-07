@@ -180,6 +180,28 @@ export function arSonosSurround(rubrik) {
   );
 }
 
+/**
+ * Sonos Arc, soundbaren som ersätter Playbar när TV:n byts. Arc Ultra räknas
+ * in: dyker den upp under taket är den ett fynd, inte en annan vara.
+ *
+ * "arc" ensamt är för vanligt — Arc'teryx, arcade, Marc — så annonsen måste
+ * nämna Sonos. Ordgränsen skyddar mot "Marc": m är ett ordtecken, så \barc\b
+ * biter inte där.
+ *
+ * Tillbehörsfiltret är samma som för TV. "Sonos Arc väggfäste" är ett fäste,
+ * medan "Sonos Arc inkl väggfäste" är en soundbar med fäste på köpet — den
+ * skillnaden kan inteEnTv redan, och den har testfall.
+ */
+export function arSonosArc(rubrik) {
+  if (!/sonos/i.test(rubrik)) return false;
+  if (!/\barc\b/i.test(rubrik)) return false;
+  // Svart krävs — Playbar, Sub och Play:1 är svarta. Men de flesta annonser
+  // skriver ingen färg alls, så filtret avvisar bara uttalat vita. Tystnad
+  // släpps igenom och avgörs på bilden. Samma regel som för surrounderna.
+  if (/\bvit\b|vitt|white/i.test(rubrik)) return false;
+  return !inteEnTv(rubrik);
+}
+
 // Bakåtkompatibelt alias för den som bara vill ha regexen.
 export const INTE_EN_TV = new RegExp(`${TILLBEHOR.source}|${DEFEKT_ELLER_KOPES.source}`, "i");
 

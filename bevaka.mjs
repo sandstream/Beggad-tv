@@ -17,7 +17,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { skapaSokare, avstand } from "./blocket.mjs";
-import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
+import { TESTVINNARE, inteEnTv, arSonosArc, ORTER } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
 import { kollaKohort, fanga, las, KOHORT } from "./kohort.mjs";
 
@@ -102,6 +102,9 @@ const STORLEKAR = [65];
 // Fot krävs inte längre — väggfäste gäller — så fotfrågan avgör inget här.
 const FYND_TAK = 3000;
 
+// Taket för Arc. Arc Ultra sänkte begagnatpriset på vanlig Arc till 4–6 000.
+const ARC_TAK = 5000;
+
 const BEVAKNINGAR = [
   {
     namn: `Biorums-TV — OLED ${STORLEKAR.join(" och ")} tum, ${AR_ELDST}+`,
@@ -115,6 +118,22 @@ const BEVAKNINGAR = [
     modeller: TESTVINNARE.filter((m) => m.ar >= AR_ELDST && OLED.test(m.k)),
     storlekar: STORLEKAR,
     granska: true, // hämta hela annonstexten och läs defektorden
+  },
+  // Ljudsidan öppnad igen den 7 oktober. Playbar är optisk-only och klarar
+  // ingen Atmos; byts TV:n går vägen via eARC, och då är Arc soundbaren som
+  // behåller Sub och Play:1-paret. Arc Ultra kom 2024 och tryckte ner priset
+  // på vanlig Arc — taket ligger där begagnatpriset faktiskt är ett fynd.
+  //
+  // Den här posten har varken storlek i rubriken eller TV-filter, därför
+  // storlekar: null och en egen matchare.
+  {
+    namn: `Sonos Arc under ${ARC_TAK} kr`,
+    maxpris: ARC_TAK,
+    modeller: [
+      { k: "Sonos Arc", ar: 2020, p: /sonos/i, q: ["sonos arc", "sonos arc ultra", "sonos soundbar"] },
+    ],
+    storlekar: null,
+    matchar: arSonosArc,
   },
 ];
 
@@ -334,11 +353,16 @@ for (const b of BEVAKNINGAR) {
     // Jämförelsen görs per storlek. En 55:a och en 65:a av samma modell är
     // olika varor till olika pris, och en gemensam median hade dömt ut varje
     // 65:a som dyr och varje 55:a som kap.
+    // Tumangivelse krävs bara av bevakningar som gäller TV. En soundbar har
+    // ingen storlek i rubriken, så kravet skulle sålla bort varenda träff.
+    const kraverTum = Array.isArray(b.storlekar);
     const matchande = [...sedda.values()]
-      .map((i) => ({ i, tum: storlekIRubrik(i.title, b.storlekar) }))
-      .filter(
-        ({ i, tum }) => tum && m.p.test(i.title) && i.price && i.price <= b.maxpris && !inteEnTv(i.title),
-      );
+      .map((i) => ({ i, tum: kraverTum ? storlekIRubrik(i.title, b.storlekar) : null }))
+      .filter(({ i, tum }) => {
+        if (kraverTum && !tum) return false;
+        if (!i.price || i.price > b.maxpris) return false;
+        return b.matchar ? b.matchar(i.title) : m.p.test(i.title) && !inteEnTv(i.title);
+      });
 
     for (const { i, tum } of matchande) {
       allaSedda[i.id] = true;

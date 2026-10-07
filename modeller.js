@@ -130,7 +130,12 @@ export const BUDGET_SOKORD = [
 // Kablar, fodral och skyddsglas är tillbehör på samma sätt som väggfästen.
 // En Flexson-strömkabel för 150 kr smet igenom Sonos-bevakningen den 30
 // september eftersom den nämnde "Play:1" i rubriken.
-const TILLBEHOR = /v[äa]ggf[äa]ste|fotstativ|\bstativ\b|tv-?st[äa]ll|\bfot\b|fj[äa]rrkontroll|\bram\b|str[öo]mkabel|\bkabel\b|n[äa]tadapter|skyddsglas|\bfodral\b/;
+// "fäste" ensamt saknades och släppte igenom två fästen i Arc-bevakningens
+// första körning: "Sonos Arc soundbar tv fäste" och "Sanus förlängningsbart
+// TV-fäste för Sonos Arc". Bara väggf[äa]ste fanns, och ingen av dem skrev
+// "vägg". MEDFOLJER skyddar fortfarande "inkl fäste" — det är en vara med
+// fäste på köpet, inte ett fäste.
+const TILLBEHOR = /v[äa]ggf[äa]ste|\bf[äa]ste\b|h[åa]llare|\bbracket\b|\bmount\b|fotstativ|\bstativ\b|tv-?st[äa]ll|\bfot\b|fj[äa]rrkontroll|\bram\b|str[öo]mkabel|\bkabel\b|n[äa]tadapter|skyddsglas|\bfodral\b/;
 const DEFEKT_ELLER_KOPES = /reservdel|trasig|spr[äa]ck|sprucken|spricka|startar inte|k[öo]pes|vi k[öo]per|\bs[öo]kes\b/i;
 
 // "LG C4 55'' i nyskick ink väggfäste" är en TV som får ett väggfäste på

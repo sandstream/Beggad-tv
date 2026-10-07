@@ -84,6 +84,9 @@ for (const t of [
 
 for (const t of [
   "Väggfäste till Sonos Arc",
+  "Sonos Arc soundbar tv fäste",
+  "Sanus förlängningsbart TV-fäste för Sonos Arc – Nytt & oöppnat",
+  "Hållare för Sonos Arc",
   "Sonos Beam gen 2",
   "Sonos Playbar",
   "Sonos Ray",

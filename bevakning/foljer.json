@@ -9,7 +9,10 @@
     "titel": "Sonos Arc | Upp till 2 års garanti!",
     "pris": 6599,
     "url": "https://www.blocket.se/recommerce/forsale/item/16638102",
-    "sedan": "2026-09-20"
+    "sedan": "2026-10-08",
+    "annonsdagar": 1,
+    "tum": null,
+    "underMarknad": null
   },
   "18758233": {
     "titel": "PHILIPS 55OLED854 55”",
@@ -277,5 +280,23 @@
     "pris": 1600,
     "url": "https://www.blocket.se/recommerce/forsale/item/27197295",
     "sedan": "2026-10-06"
+  },
+  "27213009": {
+    "titel": "Sonos Arc Dolby Atmos (Svart) – Toppskick med originalkartong",
+    "pris": 6400,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27213009",
+    "sedan": "2026-10-08",
+    "annonsdagar": 0,
+    "tum": null,
+    "underMarknad": null
+  },
+  "27224992": {
+    "titel": "LG OLED 65 tums B6 4k TV - inkl fjärrkontroll",
+    "pris": 1500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27224992",
+    "sedan": "2026-10-08",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

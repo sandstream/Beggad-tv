@@ -208,7 +208,19 @@ async function hamtaEnGang(id) {
     // ut precis som en borttagen annons, och den 4 oktober loggades 31
     // kohortmedlemmar som försvunna i en enda körning medan de levde. Allt
     // som bär ett error-fält är ett fel, inte ett utfall.
-    if (d?.error) return undefined;
+    if (d?.error) {
+      // ...men alla error-fält är inte samma fel. Uppströms svarar alltid
+      // HTTP 200 och lägger den riktiga statusen i strängen. 429 är strypning
+      // och inget besked. 404 är ett besked: annonsen finns inte längre.
+      //
+      // Att klumpa ihop dem har nu kostat åt båda hållen. Först lästes 429 som
+      // borttagen och gav 49 falska utfall. Sedan lästes 404 som nätfel, och
+      // en annons i Djursholm stod som "gick inte att avgöra" i tre dygn
+      // medan den i själva verket var borta. Okända koder räknas som fel,
+      // för hellre inget besked än fel besked.
+      const kod = Number((/'(\d{3})\b/.exec(String(d.error)) || [])[1]);
+      return kod === 404 || kod === 410 ? null : undefined;
+    }
     const it = d?.loaderData?.["item-recommerce"]?.itemData;
     if (!it || it.title == null) return null;
     if (it.disposed === true || it.meta?.isInactive === true) return null;

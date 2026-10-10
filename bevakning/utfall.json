@@ -2208,5 +2208,96 @@
     "totalAlder": 6,
     "underMarknad": -33,
     "kohort": true
+  },
+  {
+    "id": "26472156",
+    "titel": "LG  OLED 55\" (C3)",
+    "pris": 7000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26901775",
+    "titel": "Sonos Sub (gen1)trådlös subwoofer svart",
+    "pris": 4300,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27072924",
+    "titel": "Philips 65” OLED 4K Ambilight – 65OLED854/12",
+    "pris": 5500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27213009",
+    "titel": "Sonos Arc Dolby Atmos (Svart) – Toppskick med originalkartong",
+    "pris": 6400,
+    "hittad": "2026-10-08",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27224992",
+    "titel": "LG OLED 65 tums B6 4k TV - inkl fjärrkontroll",
+    "pris": 1500,
+    "hittad": "2026-10-08",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26378798",
+    "titel": "LG 55\" UHD smart TV",
+    "pris": 2800,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": 14,
+    "totalAlder": 34,
+    "underMarknad": 7,
+    "kohort": true
+  },
+  {
+    "id": "26472156",
+    "titel": "LG  OLED 55\" (C3)",
+    "pris": 7000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": 10,
+    "totalAlder": 30,
+    "underMarknad": -56,
+    "kohort": true
+  },
+  {
+    "id": "26869332",
+    "titel": "LG Smart tv 55tum 4K/Ultra HD",
+    "pris": 3400,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-10",
+    "dagarFoljd": 15,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 15,
+    "underMarknad": 3,
+    "kohort": true
   }
 ]

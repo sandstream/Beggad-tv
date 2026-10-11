@@ -2299,5 +2299,133 @@
     "totalAlder": 15,
     "underMarknad": 3,
     "kohort": true
+  },
+  {
+    "id": "26742195",
+    "titel": "LG OLED55C7V OLED TV 55 tum 4K",
+    "pris": 4000,
+    "hittad": "2026-09-22",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 19,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26786262",
+    "titel": "Sonos Play 1 - WiFi högtalare",
+    "pris": 1350,
+    "hittad": "2026-09-29",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 12,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27065341",
+    "titel": "LG C2 55’ Oled",
+    "pris": 5000,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27178527",
+    "titel": "Sonos soundbar ARC svart",
+    "pris": 6500,
+    "hittad": "2026-10-10",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "25976726",
+    "titel": "Ny TCL 55\" QD-Mini LED TV",
+    "pris": 6000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 16,
+    "annonsdagarVidStart": 26,
+    "totalAlder": 42,
+    "underMarknad": -106,
+    "kohort": true
+  },
+  {
+    "id": "26293625",
+    "titel": "Samsung UE55JU6475U 55\" LED-TV",
+    "pris": 2900,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 16,
+    "annonsdagarVidStart": 21,
+    "totalAlder": 37,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "26354329",
+    "titel": "Komplett möbelpaket + LG 55\" Smart-TV & Bosch dammsugare!",
+    "pris": 3750,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 16,
+    "annonsdagarVidStart": 19,
+    "totalAlder": 35,
+    "underMarknad": -7,
+    "kohort": true
+  },
+  {
+    "id": "26742195",
+    "titel": "LG OLED55C7V OLED TV 55 tum 4K med alla tillbehör",
+    "pris": 4000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 21,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 21,
+    "underMarknad": 0,
+    "kohort": true
+  },
+  {
+    "id": "26928132",
+    "titel": "Philips 55” OLED 4K Ambilight – 55OLED809 nypris 15-20000",
+    "pris": 7500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 13,
+    "underMarknad": -14,
+    "kohort": true
+  },
+  {
+    "id": "26956016",
+    "titel": "Philips 55 tum 706/12 OLED 4K 120hz Ambilight",
+    "pris": 5400,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 12,
+    "underMarknad": -2,
+    "kohort": true
+  },
+  {
+    "id": "27005047",
+    "titel": "Samsung The Frame 55” – stilren 4K-TV med konstläge",
+    "pris": 4500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-11",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 10,
+    "underMarknad": -50,
+    "kohort": true
   }
 ]

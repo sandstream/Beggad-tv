@@ -31,7 +31,7 @@
   },
   "21246641": {
     "titel": "LG CX OLED TV 55 tum",
-    "pris": 4000,
+    "pris": 3500,
     "url": "https://www.blocket.se/recommerce/forsale/item/21246641",
     "sedan": "2026-09-28"
   },
@@ -131,18 +131,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26730987",
     "sedan": "2026-09-20"
   },
-  "26742195": {
-    "titel": "LG OLED55C7V OLED TV 55 tum 4K",
-    "pris": 4000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26742195",
-    "sedan": "2026-09-22"
-  },
-  "26786262": {
-    "titel": "Sonos Play 1 - WiFi högtalare",
-    "pris": 1350,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26786262",
-    "sedan": "2026-09-29"
-  },
   "26803732": {
     "titel": "Panasonic 65 Smart 4KUHD WiFi Bluetooth fjärrkontroll och ben ingår",
     "pris": 4000,
@@ -187,7 +175,7 @@
   },
   "27040624": {
     "titel": "LG OLED CX 65 Tum",
-    "pris": 7000,
+    "pris": 9000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27040624",
     "sedan": "2026-10-02"
   },
@@ -196,12 +184,6 @@
     "pris": 3000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27054978",
     "sedan": "2026-10-02"
-  },
-  "27065341": {
-    "titel": "LG C2 55’ Oled",
-    "pris": 5000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27065341",
-    "sedan": "2026-10-03"
   },
   "27065779": {
     "titel": "LG OLED55C9PLA 55\" OLED TV svårt. Säljs tillsammans med TV-bänken.",
@@ -223,7 +205,7 @@
   },
   "27085680": {
     "titel": "Samsung 55” S90D 4K OLED Smart TV",
-    "pris": 7690,
+    "pris": 6790,
     "url": "https://www.blocket.se/recommerce/forsale/item/27085680",
     "sedan": "2026-10-03"
   },
@@ -233,22 +215,28 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27149348",
     "sedan": "2026-10-06"
   },
-  "27178527": {
-    "titel": "Sonos soundbar ARC svart",
-    "pris": 6500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27178527",
-    "sedan": "2026-10-10",
-    "annonsdagar": 0,
-    "tum": null,
-    "underMarknad": null
-  },
   "27273956": {
     "titel": "Mycket bra LG OLED65CX6L",
     "pris": 9000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27273956",
-    "sedan": "2026-10-10",
+    "sedan": "2026-10-10"
+  },
+  "27284354": {
+    "titel": "LG OLED65C9 65\" OLED TV",
+    "pris": 3000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27284354",
+    "sedan": "2026-10-11",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": -12
+    "underMarknad": null
+  },
+  "27300156": {
+    "titel": "LG CX 65 tum (reparationsbehov)",
+    "pris": 3000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27300156",
+    "sedan": "2026-10-11",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

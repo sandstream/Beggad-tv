@@ -2427,5 +2427,50 @@
     "totalAlder": 10,
     "underMarknad": -50,
     "kohort": true
+  },
+  {
+    "id": "24063931",
+    "titel": "LG OLED C9 55”",
+    "pris": 6000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-12",
+    "dagarFoljd": 22,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26884936",
+    "titel": "LG G1 65”  OLED Gallery",
+    "pris": 7500,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-10-12",
+    "dagarFoljd": 14,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27085680",
+    "titel": "Samsung 55” S90D 4K OLED Smart TV",
+    "pris": 6790,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-12",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26913824",
+    "titel": "Samsung 55” 4k UHD LED med väggfäste",
+    "pris": 1750,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-12",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 6,
+    "totalAlder": 15,
+    "underMarknad": 42,
+    "kohort": true
   }
 ]

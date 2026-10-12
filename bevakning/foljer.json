@@ -41,12 +41,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/22354809",
     "sedan": "2026-09-22"
   },
-  "24063931": {
-    "titel": "LG OLED C9 55”",
-    "pris": 6000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/24063931",
-    "sedan": "2026-09-20"
-  },
   "24531663": {
     "titel": "IKEA SYMFONISK Gen 2 (Sonos)",
     "pris": 1800,
@@ -137,12 +131,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26803732",
     "sedan": "2026-09-25"
   },
-  "26884936": {
-    "titel": "LG G1 65”  OLED Gallery",
-    "pris": 7500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26884936",
-    "sedan": "2026-09-28"
-  },
   "26912158": {
     "titel": "Sonos Play:1 trådlös högtalare svart",
     "pris": 1300,
@@ -203,12 +191,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27082596",
     "sedan": "2026-10-03"
   },
-  "27085680": {
-    "titel": "Samsung 55” S90D 4K OLED Smart TV",
-    "pris": 6790,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27085680",
-    "sedan": "2026-10-03"
-  },
   "27149348": {
     "titel": "LG CX 65 tum + Soundbar och väggfäste",
     "pris": 8000,
@@ -225,18 +207,39 @@
     "titel": "LG OLED65C9 65\" OLED TV",
     "pris": 3000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27284354",
-    "sedan": "2026-10-11",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null
+    "sedan": "2026-10-11"
   },
   "27300156": {
     "titel": "LG CX 65 tum (reparationsbehov)",
     "pris": 3000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27300156",
-    "sedan": "2026-10-11",
+    "sedan": "2026-10-11"
+  },
+  "27321023": {
+    "titel": "Sonos Arc  soundbar svart",
+    "pris": 6400,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27321023",
+    "sedan": "2026-10-12",
+    "annonsdagar": 0,
+    "tum": null,
+    "underMarknad": null
+  },
+  "27342635": {
+    "titel": "LG OLED 4K TV - CX 65",
+    "pris": 7500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27342635",
+    "sedan": "2026-10-12",
     "annonsdagar": 0,
     "tum": 65,
+    "underMarknad": 6
+  },
+  "27345010": {
+    "titel": "Sonos Arc svart soundbar",
+    "pris": 6500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27345010",
+    "sedan": "2026-10-12",
+    "annonsdagar": 0,
+    "tum": null,
     "underMarknad": null
   }
 }

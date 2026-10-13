@@ -199,7 +199,13 @@ export function arSonosSurround(rubrik) {
  */
 export function arSonosArc(rubrik) {
   if (!/sonos/i.test(rubrik)) return false;
-  if (!/\barc\b/i.test(rubrik)) return false;
+  // "HDMI ARC" är en anslutning, inte en soundbar, och står i var tredje
+  // ljudannons. Den 13 oktober rapporterades "Sonos Beam Gen 1 — Soundbar med
+  // AirPlay 2 och HDMI ARC" som en Arc. Plocka bort anslutningsnamnen först,
+  // kräv sedan ett eget arc i det som blir kvar. "Sonos Arc, HDMI ARC-kabel
+  // ingår" överlever, Beam-annonsen gör det inte.
+  const utanPort = rubrik.replace(/\bhdmi[\s-]*arc\b|\be-?arc\b/gi, " ");
+  if (!/\barc\b/i.test(utanPort)) return false;
   // Svart krävs — Playbar, Sub och Play:1 är svarta. Men de flesta annonser
   // skriver ingen färg alls, så filtret avvisar bara uttalat vita. Tystnad
   // släpps igenom och avgörs på bilden. Samma regel som för surrounderna.

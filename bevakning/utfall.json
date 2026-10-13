@@ -2472,5 +2472,28 @@
     "totalAlder": 15,
     "underMarknad": 42,
     "kohort": true
+  },
+  {
+    "id": "27321023",
+    "titel": "Sonos Arc  soundbar svart",
+    "pris": 6400,
+    "hittad": "2026-10-12",
+    "forsvann": "2026-10-13",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "26705825",
+    "titel": "Sony XE-55X8096 4k TV 55 tum svart med väggfäste",
+    "pris": 2700,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-13",
+    "dagarFoljd": 23,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 24,
+    "underMarknad": 0,
+    "kohort": true
   }
 ]

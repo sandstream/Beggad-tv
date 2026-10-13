@@ -79,6 +79,7 @@ for (const t of [
   "Sonos Arc Ultra svart, som ny",
   "Sonos arc, sub och två play 1",
   "Sonos Arc inkl väggfäste",
+  "Sonos Arc svart, HDMI ARC-kabel ingår",
   "SONOS ARC",
 ]) lika(arSonosArc(t), true, `är en Arc: "${t}"`);
 
@@ -96,6 +97,8 @@ for (const t of [
   "Arc'teryx Beta LT jacka herr",
   "Marc Jacobs väska svart",
   "Arcade Fire - Funeral LP",
+  "Sonos Beam Gen 1 – Soundbar med AirPlay 2 och HDMI ARC – Originallåda",
+  "Sonos Ray soundbar, eARC-stöd",
   "Sonos Arc vit",
   "Sonos Arc Ultra white",
 ]) lika(arSonosArc(t), false, `inte en Arc: "${t}"`);

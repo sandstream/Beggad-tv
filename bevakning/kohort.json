@@ -439,17 +439,6 @@
     "underMarknad": -100,
     "fangad": "2026-09-20"
   },
-  "24502989": {
-    "titel": "LG Oled G3 55”",
-    "pris": 10500,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 84,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": -36,
-    "fangad": "2026-09-25"
-  },
   "24538415": {
     "titel": "Samsung 55” Curved 4K UHD Smart TV",
     "pris": 3000,
@@ -1321,7 +1310,7 @@
   },
   "26430112": {
     "titel": "Philips TV med Ambilight 55’",
-    "pris": 5800,
+    "pris": 4950,
     "tum": 55,
     "oled": false,
     "annonsdagar": 16,
@@ -1473,17 +1462,6 @@
     "underMarknad": -200,
     "fangad": "2026-10-03"
   },
-  "26572122": {
-    "titel": "LG NanoCell 4K Smart-TV 55 tum",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 7,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 3,
-    "fangad": "2026-09-20"
-  },
   "26587076": {
     "titel": "Philips 55PFL6678S/12 55\" Ambilight 3D – defekt / reparationsobjekt",
     "pris": 400,
@@ -1592,17 +1570,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 43,
-    "fangad": "2026-09-20"
-  },
-  "26743168": {
-    "titel": "LG 55UR78006LK 55\" 4K Smart TV med webOS",
-    "pris": 3000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 0,
     "fangad": "2026-09-20"
   },
   "26749153": {
@@ -1869,39 +1836,6 @@
     "underMarknad": 17,
     "fangad": "2026-10-13"
   },
-  "27087950": {
-    "titel": "Smart   TV 55 tum LG",
-    "pris": 2200,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 27,
-    "fangad": "2026-10-13"
-  },
-  "27095470": {
-    "titel": "Philips 55PUS6503 55\" 4K UHD LED Smart TV",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 17,
-    "fangad": "2026-10-13"
-  },
-  "27099189": {
-    "titel": "Samsung 55\" Q8FA 4K QLED Smart TV – OÖPPNAD",
-    "pris": 4500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -50,
-    "fangad": "2026-10-13"
-  },
   "27100871": {
     "titel": "Andersson Smart TV 55tum QLED",
     "pris": 2600,
@@ -2021,17 +1955,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -50,
-    "fangad": "2026-10-13"
-  },
-  "27283642": {
-    "titel": "Philips 4k TV 55 tum",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 2,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 17,
     "fangad": "2026-10-13"
   },
   "27289133": {

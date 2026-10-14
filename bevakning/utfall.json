@@ -2495,5 +2495,100 @@
     "totalAlder": 24,
     "underMarknad": 0,
     "kohort": true
+  },
+  {
+    "id": "27350769",
+    "titel": "Sonos Beam Gen 1 – Soundbar med AirPlay 2 och HDMI ARC – Originallåda",
+    "pris": 2500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "24502989",
+    "titel": "LG Oled G3 55”",
+    "pris": 10500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 19,
+    "annonsdagarVidStart": 84,
+    "totalAlder": 103,
+    "underMarknad": -36,
+    "kohort": true
+  },
+  {
+    "id": "26572122",
+    "titel": "LG NanoCell 4K Smart-TV 55 tum",
+    "pris": 2500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 24,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 31,
+    "underMarknad": 3,
+    "kohort": true
+  },
+  {
+    "id": "26743168",
+    "titel": "LG 55UR78006LK 55\" 4K Smart TV med webOS",
+    "pris": 3000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 24,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 24,
+    "underMarknad": 0,
+    "kohort": true
+  },
+  {
+    "id": "27087950",
+    "titel": "Smart   TV 55 tum LG",
+    "pris": 2200,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 10,
+    "underMarknad": 27,
+    "kohort": true
+  },
+  {
+    "id": "27095470",
+    "titel": "Philips 55PUS6503 55\" 4K UHD LED Smart TV",
+    "pris": 2500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 10,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "27099189",
+    "titel": "Samsung 55\" Q8FA 4K QLED Smart TV – OÖPPNAD",
+    "pris": 4500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 10,
+    "underMarknad": -50,
+    "kohort": true
+  },
+  {
+    "id": "27283642",
+    "titel": "Philips 4k TV 55 tum",
+    "pris": 2500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-14",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 3,
+    "underMarknad": 17,
+    "kohort": true
   }
 ]

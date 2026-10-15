@@ -2590,5 +2590,51 @@
     "totalAlder": 3,
     "underMarknad": 17,
     "kohort": true
+  },
+  {
+    "id": "21246641",
+    "titel": "LG CX OLED TV 55 tum",
+    "pris": 3500,
+    "hittad": "2026-09-28",
+    "forsvann": "2026-10-15",
+    "dagarFoljd": 17,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27040624",
+    "titel": "LG OLED CX 65 Tum",
+    "pris": 9000,
+    "hittad": "2026-10-02",
+    "forsvann": "2026-10-15",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "21246641",
+    "titel": "LG CX OLED TV 55 tum",
+    "pris": 3500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-15",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 16,
+    "totalAlder": 18,
+    "underMarknad": 42,
+    "kohort": true
+  },
+  {
+    "id": "27281307",
+    "titel": "Philips smart tv qled 55 tum 2025",
+    "pris": 4500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-15",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 4,
+    "underMarknad": -50,
+    "kohort": true
   }
 ]

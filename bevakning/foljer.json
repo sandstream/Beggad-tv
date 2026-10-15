@@ -29,12 +29,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/19311253",
     "sedan": "2026-09-30"
   },
-  "21246641": {
-    "titel": "LG CX OLED TV 55 tum",
-    "pris": 3500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/21246641",
-    "sedan": "2026-09-28"
-  },
   "22354809": {
     "titel": "LG 55”OLED55B6V (2016)",
     "pris": 999,
@@ -161,12 +155,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27003537",
     "sedan": "2026-09-30"
   },
-  "27040624": {
-    "titel": "LG OLED CX 65 Tum",
-    "pris": 9000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27040624",
-    "sedan": "2026-10-02"
-  },
   "27054978": {
     "titel": "LG OLED 65\" 4K HDR (OLED65C7V)",
     "pris": 3000,
@@ -226,5 +214,21 @@
     "pris": 6250,
     "url": "https://www.blocket.se/recommerce/forsale/item/27345010",
     "sedan": "2026-10-12"
+  },
+  "27405713": {
+    "titel": "LG 65\" OLED 120hz CX-modell",
+    "pris": 4900,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27405713",
+    "sedan": "2026-10-15",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": 39
+  },
+  "27419242": {
+    "titel": "LG OLED TV 65 tum svart G2",
+    "pris": 2000,
+    "plats": "Västerås",
+    "url": "https://www.blocket.se/recommerce/forsale/item/27419242",
+    "sedan": "2026-10-15"
   }
 }

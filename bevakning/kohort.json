@@ -131,17 +131,6 @@
     "underMarknad": 7,
     "fangad": "2026-10-03"
   },
-  "21246641": {
-    "titel": "LG CX OLED TV 55 tum",
-    "pris": 3500,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 16,
-    "grupp": "55-oled",
-    "marknad": 6000,
-    "underMarknad": 42,
-    "fangad": "2026-10-13"
-  },
   "21282766": {
     "titel": "55\" Crystal UHD U8075 4K Smart TV (2025) SPARA HALVA PRISET!",
     "pris": 4990,
@@ -881,7 +870,7 @@
   },
   "25533221": {
     "titel": "Toshiba Smart TV, 55 tums",
-    "pris": 2200,
+    "pris": 2000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 43,
@@ -1944,17 +1933,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -67,
-    "fangad": "2026-10-13"
-  },
-  "27281307": {
-    "titel": "Philips smart tv qled 55 tum 2025",
-    "pris": 4500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 2,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -50,
     "fangad": "2026-10-13"
   },
   "27289133": {

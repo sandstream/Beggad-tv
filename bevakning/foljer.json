@@ -97,7 +97,7 @@
   },
   "26527405": {
     "titel": "LG OLED65C8PLA",
-    "pris": 6099,
+    "pris": 5100,
     "url": "https://www.blocket.se/recommerce/forsale/item/26527405",
     "sedan": "2026-09-25"
   },
@@ -208,5 +208,14 @@
     "pris": 4900,
     "url": "https://www.blocket.se/recommerce/forsale/item/27405713",
     "sedan": "2026-10-15"
+  },
+  "27456850": {
+    "titel": "LG OLED65CX6LA OLED TV 65 tum svart",
+    "pris": 3000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27456850",
+    "sedan": "2026-10-17",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

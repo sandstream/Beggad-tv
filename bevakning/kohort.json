@@ -879,17 +879,6 @@
     "underMarknad": -83,
     "fangad": "2026-10-03"
   },
-  "25559281": {
-    "titel": "LG C9 OLED TV 55 tum",
-    "pris": 5500,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 46,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": 22,
-    "fangad": "2026-09-25"
-  },
   "25608317": {
     "titel": "Samsung Neo QLED GN70F 55\" TV",
     "pris": 8500,
@@ -958,7 +947,7 @@
   },
   "25725758": {
     "titel": "Samsung QM55b 55” Digital signage, 24/7 Tv",
-    "pris": 5000,
+    "pris": 4499,
     "tum": 55,
     "oled": false,
     "annonsdagar": 48,
@@ -1332,7 +1321,7 @@
   },
   "26512679": {
     "titel": "Panasonic TV 55 tum",
-    "pris": 1000,
+    "pris": 900,
     "tum": 55,
     "oled": false,
     "annonsdagar": 9,
@@ -1739,7 +1728,7 @@
   },
   "27060305": {
     "titel": "LG 55XE4P-M 55\" digital signage-skärm FHD",
-    "pris": 34999,
+    "pris": 25000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 0,
@@ -1759,17 +1748,6 @@
     "underMarknad": 0,
     "fangad": "2026-10-13"
   },
-  "27076561": {
-    "titel": "Samsung 55” 4K Smart TV",
-    "pris": 3500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 10,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -17,
-    "fangad": "2026-10-13"
-  },
   "27077967": {
     "titel": "LG 55NANO76 55\" 4K Smart TV webOS",
     "pris": 3600,
@@ -1779,17 +1757,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -20,
-    "fangad": "2026-10-13"
-  },
-  "27087742": {
-    "titel": "Samsung UE55H8005SQ Curved Smart TV",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 17,
     "fangad": "2026-10-13"
   },
   "27116147": {
@@ -1845,17 +1812,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 57,
-    "fangad": "2026-10-13"
-  },
-  "27172382": {
-    "titel": "Philips smart tv 55”",
-    "pris": 2000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 7,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 33,
     "fangad": "2026-10-13"
   },
   "27256281": {
@@ -2010,17 +1966,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 17,
-    "fangad": "2026-10-13"
-  },
-  "27360320": {
-    "titel": "Samsung 55\" (ny i original emballage)",
-    "pris": 3499,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -47,
     "fangad": "2026-10-13"
   }
 }

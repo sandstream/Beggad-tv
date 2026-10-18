@@ -2753,5 +2753,76 @@
     "totalAlder": 13,
     "underMarknad": 13,
     "kohort": true
+  },
+  {
+    "id": "27456850",
+    "titel": "LG OLED65CX6LA OLED TV 65 tum svart",
+    "pris": 3000,
+    "hittad": "2026-10-17",
+    "forsvann": "2026-10-18",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "25559281",
+    "titel": "LG C9 OLED TV 55 tum",
+    "pris": 5500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-18",
+    "dagarFoljd": 23,
+    "annonsdagarVidStart": 46,
+    "totalAlder": 69,
+    "underMarknad": 22,
+    "kohort": true
+  },
+  {
+    "id": "27076561",
+    "titel": "Samsung 55” 4K Smart TV",
+    "pris": 3500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-18",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 10,
+    "totalAlder": 15,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "27087742",
+    "titel": "Samsung UE55H8005SQ Curved Smart TV",
+    "pris": 2500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-18",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 14,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "27172382",
+    "titel": "Philips smart tv 55”",
+    "pris": 2000,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-18",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 12,
+    "underMarknad": 33,
+    "kohort": true
+  },
+  {
+    "id": "27360320",
+    "titel": "Samsung 55\" (ny i original emballage)",
+    "pris": 3499,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-18",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 5,
+    "underMarknad": -47,
+    "kohort": true
   }
 ]

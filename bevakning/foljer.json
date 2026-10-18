@@ -193,7 +193,7 @@
   },
   "27300156": {
     "titel": "LG CX 65 tum (reparationsbehov)",
-    "pris": 3000,
+    "pris": 2000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27300156",
     "sedan": "2026-10-11"
   },
@@ -208,14 +208,5 @@
     "pris": 4900,
     "url": "https://www.blocket.se/recommerce/forsale/item/27405713",
     "sedan": "2026-10-15"
-  },
-  "27456850": {
-    "titel": "LG OLED65CX6LA OLED TV 65 tum svart",
-    "pris": 3000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27456850",
-    "sedan": "2026-10-17",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null
   }
 }

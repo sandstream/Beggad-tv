@@ -2979,5 +2979,87 @@
     "totalAlder": 14,
     "underMarknad": 50,
     "kohort": true
+  },
+  {
+    "id": "25667399",
+    "titel": "Philips 55POS9002/12 OLED",
+    "pris": 2900,
+    "hittad": "2026-09-22",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 28,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26549036",
+    "titel": "Philips 55” OLED 4K Smart TV 55POS9002/12 / Ambilight",
+    "pris": 2900,
+    "hittad": "2026-09-22",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 28,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "25667399",
+    "titel": "Philips 55POS9002/12 OLED",
+    "pris": 2900,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 25,
+    "annonsdagarVidStart": 43,
+    "totalAlder": 68,
+    "underMarknad": 62,
+    "kohort": true
+  },
+  {
+    "id": "26549036",
+    "titel": "Philips 55” OLED 4K Smart TV 55POS9002/12 / Ambilight",
+    "pris": 2900,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 30,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 37,
+    "underMarknad": 36,
+    "kohort": true
+  },
+  {
+    "id": "27055238",
+    "titel": "Samsung UE55H6475SU TV 55 tum svart",
+    "pris": 1500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 17,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 18,
+    "underMarknad": 50,
+    "kohort": true
+  },
+  {
+    "id": "27166808",
+    "titel": "Sharp 55” Full HD TV – LC-55SFE7452E",
+    "pris": 1300,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 14,
+    "underMarknad": 57,
+    "kohort": true
+  },
+  {
+    "id": "27295516",
+    "titel": "Luxor 55 tum smartTv",
+    "pris": 2000,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-20",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 9,
+    "underMarknad": 33,
+    "kohort": true
   }
 ]

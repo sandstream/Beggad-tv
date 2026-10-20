@@ -835,17 +835,6 @@
     "underMarknad": -143,
     "fangad": "2026-09-25"
   },
-  "25667399": {
-    "titel": "Philips 55POS9002/12 OLED",
-    "pris": 2900,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 43,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": 62,
-    "fangad": "2026-09-25"
-  },
   "25700319": {
     "titel": "Samsung Neo QLED 55 tum TV QN70F",
     "pris": 7000,
@@ -1057,7 +1046,7 @@
   },
   "26177543": {
     "titel": "Smart tv 55 tum",
-    "pris": 500,
+    "pris": 300,
     "tum": 55,
     "oled": false,
     "annonsdagar": 21,
@@ -1306,17 +1295,6 @@
     "grupp": "55-oled",
     "marknad": 4500,
     "underMarknad": -300,
-    "fangad": "2026-09-20"
-  },
-  "26549036": {
-    "titel": "Philips 55” OLED 4K Smart TV 55POS9002/12 / Ambilight",
-    "pris": 2900,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 7,
-    "grupp": "55-oled",
-    "marknad": 4500,
-    "underMarknad": 36,
     "fangad": "2026-09-20"
   },
   "26568801": {
@@ -1572,17 +1550,6 @@
     "underMarknad": -200,
     "fangad": "2026-10-03"
   },
-  "27055238": {
-    "titel": "Samsung UE55H6475SU TV 55 tum svart",
-    "pris": 1500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 50,
-    "fangad": "2026-10-03"
-  },
   "27057455": {
     "titel": "Philips 55BDL3550Q 55\" 4K UHD Professional Display",
     "pris": 3995,
@@ -1671,17 +1638,6 @@
     "underMarknad": -30,
     "fangad": "2026-10-13"
   },
-  "27166808": {
-    "titel": "Sharp 55” Full HD TV – LC-55SFE7452E",
-    "pris": 1300,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 7,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 57,
-    "fangad": "2026-10-13"
-  },
   "27256281": {
     "titel": "TV Philips 55” Full HD",
     "pris": 2300,
@@ -1724,17 +1680,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -10,
-    "fangad": "2026-10-13"
-  },
-  "27295516": {
-    "titel": "Luxor 55 tum smartTv",
-    "pris": 2000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 2,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 33,
     "fangad": "2026-10-13"
   },
   "27299766": {

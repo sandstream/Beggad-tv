@@ -2,9 +2,11 @@
 // Daglig bevakning av TV. Kör de sparade sökningarna, jämför mot vad som
 // redan rapporterats, och skriver ut bara det som är nytt.
 //
-// Sonos-bevakningen togs bort den 3 oktober — ljudsidan är klar. Matchningen
-// finns kvar som arSonosSurround i modeller.js med sina testfall, så den går
-// att koppla in igen utan att skrivas om.
+// Sonos-bevakningen togs bort den 3 oktober och Arc-bevakningen den 22:a —
+// ljudsidan är klar. Matchningarna finns kvar som arSonosSurround och
+// arSonosArc i modeller.js med sina testfall, och sökloopens stöd för
+// bevakningar utan storlek (storlekar: null + egen matchare) ligger kvar.
+// Allt går att koppla in igen utan att skrivas om.
 //
 //   node bevaka.mjs                 # direktläge, skriver rapport till stdout
 //   node bevaka.mjs --mcp           # via begagnad-mcp i stället
@@ -17,7 +19,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { skapaSokare, avstand } from "./blocket.mjs";
-import { TESTVINNARE, inteEnTv, arSonosArc, ORTER } from "./modeller.js";
+import { TESTVINNARE, inteEnTv, ORTER } from "./modeller.js";
 import { bedomKap } from "./vardering.js";
 import { kollaKohort, fanga, las, KOHORT } from "./kohort.mjs";
 
@@ -102,12 +104,6 @@ const STORLEKAR = [65];
 // Fot krävs inte längre — väggfäste gäller — så fotfrågan avgör inget här.
 const FYND_TAK = 3000;
 
-// Taket för Arc. Första gissningen var 4–6 000 och den var fel: en sökning
-// den 7 oktober gav två Arcar i hela landet, på 6 400 och 6 599 kr. Taket
-// på 5 000 hade alltså aldrig rapporterat någon av dem. Utbudet är tunt,
-// så taket ligger strax över marknaden i stället för under den.
-const ARC_TAK = 7000;
-
 const BEVAKNINGAR = [
   {
     namn: `Biorums-TV — OLED ${STORLEKAR.join(" och ")} tum, ${AR_ELDST}+`,
@@ -121,22 +117,6 @@ const BEVAKNINGAR = [
     modeller: TESTVINNARE.filter((m) => m.ar >= AR_ELDST && OLED.test(m.k)),
     storlekar: STORLEKAR,
     granska: true, // hämta hela annonstexten och läs defektorden
-  },
-  // Ljudsidan öppnad igen den 7 oktober. Playbar är optisk-only och klarar
-  // ingen Atmos; byts TV:n går vägen via eARC, och då är Arc soundbaren som
-  // behåller Sub och Play:1-paret. Arc Ultra kom 2024 och tryckte ner priset
-  // på vanlig Arc — taket ligger där begagnatpriset faktiskt är ett fynd.
-  //
-  // Den här posten har varken storlek i rubriken eller TV-filter, därför
-  // storlekar: null och en egen matchare.
-  {
-    namn: `Sonos Arc under ${ARC_TAK} kr`,
-    maxpris: ARC_TAK,
-    modeller: [
-      { k: "Sonos Arc", ar: 2020, p: /sonos/i, q: ["sonos arc", "sonos arc ultra", "sonos soundbar"] },
-    ],
-    storlekar: null,
-    matchar: arSonosArc,
   },
 ];
 

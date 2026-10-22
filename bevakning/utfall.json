@@ -3109,5 +3109,16 @@
     "totalAlder": 11,
     "underMarknad": 50,
     "kohort": true
+  },
+  {
+    "id": "18758233",
+    "titel": "PHILIPS 55OLED854 55”",
+    "pris": 4200,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-22",
+    "dagarFoljd": 33,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
   }
 ]

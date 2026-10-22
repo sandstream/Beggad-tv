@@ -3061,5 +3061,53 @@
     "totalAlder": 9,
     "underMarknad": 33,
     "kohort": true
+  },
+  {
+    "id": "18766190",
+    "titel": "Samsung 55' Smart, 3D tv",
+    "pris": 950,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-22",
+    "dagarFoljd": 19,
+    "annonsdagarVidStart": 61,
+    "totalAlder": 80,
+    "underMarknad": 68,
+    "kohort": true
+  },
+  {
+    "id": "24191357",
+    "titel": "Samsung 55” UHD",
+    "pris": 2450,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-22",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 54,
+    "totalAlder": 63,
+    "underMarknad": 18,
+    "kohort": true
+  },
+  {
+    "id": "24255568",
+    "titel": "Samsung smart TV 55 Tum",
+    "pris": 3250,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-22",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 13,
+    "underMarknad": -8,
+    "kohort": true
+  },
+  {
+    "id": "27299766",
+    "titel": "Sony KDL-55EX723 LCD-TV 55tum svart",
+    "pris": 1500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-22",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 11,
+    "underMarknad": 50,
+    "kohort": true
   }
 ]

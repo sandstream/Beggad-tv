@@ -54,17 +54,6 @@
     "underMarknad": 36,
     "fangad": "2026-10-03"
   },
-  "18766190": {
-    "titel": "Samsung 55' Smart, 3D tv",
-    "pris": 950,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 61,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 68,
-    "fangad": "2026-10-03"
-  },
   "18793370": {
     "titel": "Sony KD-55X8505C — 55″ Sony 4K TV",
     "pris": 5000,
@@ -362,28 +351,6 @@
     "underMarknad": -1329,
     "fangad": "2026-09-25"
   },
-  "24191357": {
-    "titel": "Samsung 55” UHD",
-    "pris": 2450,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 54,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 18,
-    "fangad": "2026-10-13"
-  },
-  "24255568": {
-    "titel": "Samsung smart TV 55 Tum",
-    "pris": 3250,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 4,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -8,
-    "fangad": "2026-10-13"
-  },
   "24414925": {
     "titel": "Samsung OH55F digital signage display 55\" svart",
     "pris": 6000,
@@ -639,7 +606,7 @@
   },
   "25143855": {
     "titel": "LG Tv 55 tum",
-    "pris": 6000,
+    "pris": 5500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 77,
@@ -1680,17 +1647,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -10,
-    "fangad": "2026-10-13"
-  },
-  "27299766": {
-    "titel": "Sony KDL-55EX723 LCD-TV 55tum svart",
-    "pris": 1500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 2,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 50,
     "fangad": "2026-10-13"
   },
   "27305928": {

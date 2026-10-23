@@ -43,17 +43,6 @@
     "underMarknad": -27,
     "fangad": "2026-10-13"
   },
-  "18758233": {
-    "titel": "PHILIPS 55OLED854 55”",
-    "pris": 4200,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 20,
-    "grupp": "55-oled",
-    "marknad": 6600,
-    "underMarknad": 36,
-    "fangad": "2026-10-03"
-  },
   "18793370": {
     "titel": "Sony KD-55X8505C — 55″ Sony 4K TV",
     "pris": 5000,
@@ -661,7 +650,7 @@
   },
   "25275955": {
     "titel": "Defekt Hitachi 55HL5W63 55\" LED-TV svart",
-    "pris": 799,
+    "pris": 699,
     "tum": 55,
     "oled": false,
     "annonsdagar": 63,
@@ -800,17 +789,6 @@
     "grupp": "55-led",
     "marknad": 3500,
     "underMarknad": -143,
-    "fangad": "2026-09-25"
-  },
-  "25700319": {
-    "titel": "Samsung Neo QLED 55 tum TV QN70F",
-    "pris": 7000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 42,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": -100,
     "fangad": "2026-09-25"
   },
   "25708396": {
@@ -1494,17 +1472,6 @@
     "marknad": 6000,
     "underMarknad": -50,
     "fangad": "2026-10-13"
-  },
-  "27001726": {
-    "titel": "Philips TV  55 tum 55PLF5507T/12 + chromecast",
-    "pris": 1800,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 3,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 40,
-    "fangad": "2026-10-03"
   },
   "27048114": {
     "titel": "Samsung 55\" Q8FA 4k QLED SMART TV",

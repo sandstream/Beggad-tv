@@ -1,10 +1,4 @@
 {
-  "18758233": {
-    "titel": "PHILIPS 55OLED854 55”",
-    "pris": 4200,
-    "url": "https://www.blocket.se/recommerce/forsale/item/18758233",
-    "sedan": "2026-09-20"
-  },
   "22354809": {
     "titel": "LG 55”OLED55B6V (2016)",
     "pris": 999,
@@ -136,5 +130,14 @@
     "pris": 4900,
     "url": "https://www.blocket.se/recommerce/forsale/item/27405713",
     "sedan": "2026-10-15"
+  },
+  "27621662": {
+    "titel": "TV LG 65\" C1 4K OLED",
+    "pris": 3500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27621662",
+    "sedan": "2026-10-23",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

@@ -3120,5 +3120,52 @@
     "annonsdagarVidStart": null,
     "totalAlder": null,
     "underMarknad": null
+  },
+  {
+    "id": "18758233",
+    "titel": "PHILIPS 55OLED854 55”",
+    "pris": 4200,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-23",
+    "dagarFoljd": 33,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "18758233",
+    "titel": "PHILIPS 55OLED854 55”",
+    "pris": 4200,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-23",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": 20,
+    "totalAlder": 40,
+    "underMarknad": 36,
+    "kohort": true
+  },
+  {
+    "id": "25700319",
+    "titel": "Samsung Neo QLED 55 tum TV QN70F",
+    "pris": 7000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-23",
+    "dagarFoljd": 28,
+    "annonsdagarVidStart": 42,
+    "totalAlder": 70,
+    "underMarknad": -100,
+    "kohort": true
+  },
+  {
+    "id": "27001726",
+    "titel": "Philips TV  55 tum 55PLF5507T/12 + chromecast",
+    "pris": 1800,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-23",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": 3,
+    "totalAlder": 23,
+    "underMarknad": 40,
+    "kohort": true
   }
 ]

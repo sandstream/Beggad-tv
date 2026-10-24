@@ -3167,5 +3167,52 @@
     "totalAlder": 23,
     "underMarknad": 40,
     "kohort": true
+  },
+  {
+    "id": "27284354",
+    "titel": "LG OLED65C9 65\" OLED TV",
+    "pris": 1500,
+    "hittad": "2026-10-11",
+    "forsvann": "2026-10-24",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26006586",
+    "titel": "Samsung smart-TV 55” 4k UHD",
+    "pris": 3500,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-24",
+    "dagarFoljd": 21,
+    "annonsdagarVidStart": 39,
+    "totalAlder": 60,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "26924967",
+    "titel": "Samsung QLED Q70B 4K Smart TV 55 tum",
+    "pris": 5000,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-24",
+    "dagarFoljd": 21,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 26,
+    "underMarknad": -67,
+    "kohort": true
+  },
+  {
+    "id": "27328374",
+    "titel": "Samsung TV 55 Tum 4K Curved",
+    "pris": 2500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-24",
+    "dagarFoljd": 11,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 12,
+    "underMarknad": 0,
+    "kohort": true
   }
 ]

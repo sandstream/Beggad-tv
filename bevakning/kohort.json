@@ -912,17 +912,6 @@
     "underMarknad": -10,
     "fangad": "2026-09-25"
   },
-  "26006586": {
-    "titel": "Samsung smart-TV 55” 4k UHD",
-    "pris": 3500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 39,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -17,
-    "fangad": "2026-10-03"
-  },
   "26051019": {
     "titel": "LG smart TV 55 tum svart",
     "pris": 4000,
@@ -1189,7 +1178,7 @@
   },
   "26512679": {
     "titel": "Panasonic TV 55 tum",
-    "pris": 900,
+    "pris": 800,
     "tum": 55,
     "oled": false,
     "annonsdagar": 9,
@@ -1429,17 +1418,6 @@
     "underMarknad": -233,
     "fangad": "2026-10-13"
   },
-  "26924967": {
-    "titel": "Samsung QLED Q70B 4K Smart TV 55 tum",
-    "pris": 5000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 5,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -67,
-    "fangad": "2026-10-03"
-  },
   "26930791": {
     "titel": "Samsung smart TV 55 tum svart",
     "pris": 3000,
@@ -1658,17 +1636,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 27,
-    "fangad": "2026-10-13"
-  },
-  "27328374": {
-    "titel": "Samsung TV 55 Tum 4K Curved",
-    "pris": 2500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 0,
     "fangad": "2026-10-13"
   },
   "27331678": {

@@ -107,12 +107,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27273956",
     "sedan": "2026-10-10"
   },
-  "27284354": {
-    "titel": "LG OLED65C9 65\" OLED TV",
-    "pris": 1500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27284354",
-    "sedan": "2026-10-11"
-  },
   "27300156": {
     "titel": "LG CX 65 tum (reparationsbehov)",
     "pris": 2000,
@@ -135,9 +129,24 @@
     "titel": "TV LG 65\" C1 4K OLED",
     "pris": 3500,
     "url": "https://www.blocket.se/recommerce/forsale/item/27621662",
-    "sedan": "2026-10-23",
+    "sedan": "2026-10-23"
+  },
+  "27631848": {
+    "titel": "LG OLED65B6V 65\" OLED TV",
+    "pris": 4100,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27631848",
+    "sedan": "2026-10-24",
     "annonsdagar": 0,
     "tum": 65,
     "underMarknad": null
+  },
+  "27652920": {
+    "titel": "LG 65” CX 4K OLED TV – OLED65CX",
+    "pris": 9000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27652920",
+    "sedan": "2026-10-24",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": -16
   }
 }

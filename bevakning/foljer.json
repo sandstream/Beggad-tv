@@ -53,23 +53,11 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26527405",
     "sedan": "2026-09-25"
   },
-  "26730987": {
-    "titel": "Panasonic 55” OLED 4K Smart TV – Dolby Vision & Dolby Atmos",
-    "pris": 3990,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26730987",
-    "sedan": "2026-09-20"
-  },
   "26803732": {
     "titel": "Panasonic 65 Smart 4KUHD WiFi Bluetooth fjärrkontroll och ben ingår",
     "pris": 4000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26803732",
     "sedan": "2026-09-25"
-  },
-  "26993699": {
-    "titel": "LG C1, 65 tum OLED",
-    "pris": 8500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26993699",
-    "sedan": "2026-09-30"
   },
   "27054978": {
     "titel": "LG OLED 65\" 4K HDR (OLED65C7V)",
@@ -95,12 +83,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27082596",
     "sedan": "2026-10-03"
   },
-  "27149348": {
-    "titel": "LG CX 65 tum + Soundbar och väggfäste",
-    "pris": 8000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27149348",
-    "sedan": "2026-10-06"
-  },
   "27273956": {
     "titel": "Mycket bra LG OLED65CX6L",
     "pris": 9000,
@@ -119,12 +101,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27342635",
     "sedan": "2026-10-12"
   },
-  "27405713": {
-    "titel": "LG 65\" OLED 120hz CX-modell",
-    "pris": 4900,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27405713",
-    "sedan": "2026-10-15"
-  },
   "27621662": {
     "titel": "TV LG 65\" C1 4K OLED",
     "pris": 3500,
@@ -133,20 +109,23 @@
   },
   "27631848": {
     "titel": "LG OLED65B6V 65\" OLED TV",
-    "pris": 4100,
+    "pris": 3999,
     "url": "https://www.blocket.se/recommerce/forsale/item/27631848",
-    "sedan": "2026-10-24",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null
+    "sedan": "2026-10-24"
   },
   "27652920": {
     "titel": "LG 65” CX 4K OLED TV – OLED65CX",
     "pris": 9000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27652920",
-    "sedan": "2026-10-24",
+    "sedan": "2026-10-24"
+  },
+  "27678536": {
+    "titel": "LG OLED65B7V 65\" OLED TV inkl tv bänk",
+    "pris": 3500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27678536",
+    "sedan": "2026-10-25",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": -16
+    "underMarknad": null
   }
 }

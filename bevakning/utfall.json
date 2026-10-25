@@ -3214,5 +3214,73 @@
     "totalAlder": 12,
     "underMarknad": 0,
     "kohort": true
+  },
+  {
+    "id": "26730987",
+    "titel": "Panasonic 55” OLED 4K Smart TV – Dolby Vision & Dolby Atmos",
+    "pris": 3990,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-25",
+    "dagarFoljd": 35,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26993699",
+    "titel": "LG C1, 65 tum OLED",
+    "pris": 8500,
+    "hittad": "2026-09-30",
+    "forsvann": "2026-10-25",
+    "dagarFoljd": 25,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27149348",
+    "titel": "LG CX 65 tum + Soundbar och väggfäste",
+    "pris": 8000,
+    "hittad": "2026-10-06",
+    "forsvann": "2026-10-25",
+    "dagarFoljd": 19,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27405713",
+    "titel": "LG 65\" OLED 120hz CX-modell",
+    "pris": 4900,
+    "hittad": "2026-10-15",
+    "forsvann": "2026-10-25",
+    "dagarFoljd": 10,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26438592",
+    "titel": "LG SMART TV 55 tum",
+    "pris": 500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-25",
+    "dagarFoljd": 35,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 46,
+    "underMarknad": 83,
+    "kohort": true
+  },
+  {
+    "id": "26730987",
+    "titel": "Panasonic 55” OLED 4K Smart TV – Dolby Vision & Dolby Atmos",
+    "pris": 3990,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-10-25",
+    "dagarFoljd": 35,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 35,
+    "underMarknad": 11,
+    "kohort": true
   }
 ]

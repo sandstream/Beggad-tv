@@ -3282,5 +3282,41 @@
     "totalAlder": 35,
     "underMarknad": 11,
     "kohort": true
+  },
+  {
+    "id": "27059885",
+    "titel": "Samsung smart tv 55'",
+    "pris": 1100,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-10-26",
+    "dagarFoljd": 23,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 23,
+    "underMarknad": 63,
+    "kohort": true
+  },
+  {
+    "id": "27331678",
+    "titel": "Samsung 55” ks7005 SUHD HDR",
+    "pris": 3500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-26",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 14,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "27343491",
+    "titel": "Sony 55” 4K LCD-skärm – FW-55BZ35F – väggfäste ingår",
+    "pris": 1700,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-26",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 14,
+    "underMarknad": 17,
+    "kohort": true
   }
 ]

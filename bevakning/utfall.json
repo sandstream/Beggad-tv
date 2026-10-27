@@ -3318,5 +3318,111 @@
     "totalAlder": 14,
     "underMarknad": 17,
     "kohort": true
+  },
+  {
+    "id": "27342635",
+    "titel": "LG OLED 4K TV - CX 65",
+    "pris": 7500,
+    "hittad": "2026-10-12",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 15,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27652920",
+    "titel": "LG 65” CX 4K OLED TV – OLED65CX",
+    "pris": 9000,
+    "hittad": "2026-10-24",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26915442",
+    "titel": "Tillfälle! Samsung 55-85\" Neo QLED Mini LED Smart TV",
+    "pris": 7000,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 14,
+    "annonsdagarVidStart": 16,
+    "totalAlder": 30,
+    "underMarknad": -233,
+    "kohort": true
+  },
+  {
+    "id": "27457774",
+    "titel": "LG 55” 4K UHD Smart TV – 55UN71003LB – 2 190",
+    "pris": 2190,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 10,
+    "underMarknad": 27,
+    "kohort": true
+  },
+  {
+    "id": "27571327",
+    "titel": "Philips 55\" LED TV",
+    "pris": 1750,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 6,
+    "underMarknad": 42,
+    "kohort": true
+  },
+  {
+    "id": "27612156",
+    "titel": "Hisense 55” E8Q Mini-LED 4K Smart TV – 144 Hz,  Köpt juni 2026, Kvitto finns",
+    "pris": 6500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 3,
+    "totalAlder": 4,
+    "underMarknad": -117,
+    "kohort": true
+  },
+  {
+    "id": "27651644",
+    "titel": "Samsung TV 55 tum svart",
+    "pris": 3500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 3,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "27671898",
+    "titel": "Samsung UE55AU9075U 55\" TV svart",
+    "pris": 1700,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 2,
+    "underMarknad": 43,
+    "kohort": true
+  },
+  {
+    "id": "27702652",
+    "titel": "Samsung UE55MU6195U 55\" LED-TV",
+    "pris": 400,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-27",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": 87,
+    "kohort": true
   }
 ]

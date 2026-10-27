@@ -1167,7 +1167,7 @@
   },
   "26419579": {
     "titel": "Sony OLED TV 55 tum",
-    "pris": 5000,
+    "pris": 4000,
     "tum": 55,
     "oled": true,
     "annonsdagar": 12,
@@ -1233,7 +1233,7 @@
   },
   "26512679": {
     "titel": "Panasonic TV 55 tum",
-    "pris": 800,
+    "pris": 1500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 9,
@@ -1277,7 +1277,7 @@
   },
   "26534473": {
     "titel": "LG 55\" OLED evo AI C5 Pro 144hz",
-    "pris": 18000,
+    "pris": 13000,
     "tum": 55,
     "oled": true,
     "annonsdagar": 8,
@@ -1472,17 +1472,6 @@
     "marknad": 3000,
     "underMarknad": 0,
     "fangad": "2026-10-26"
-  },
-  "26915442": {
-    "titel": "Tillfälle! Samsung 55-85\" Neo QLED Mini LED Smart TV",
-    "pris": 7000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 16,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -233,
-    "fangad": "2026-10-13"
   },
   "26930791": {
     "titel": "Samsung smart TV 55 tum svart",
@@ -1783,7 +1772,7 @@
   },
   "27369938": {
     "titel": "LG 55\" OLED evo C4 4K TV (2024-modell) – Bra skick!",
-    "pris": 11500,
+    "pris": 10000,
     "tum": 55,
     "oled": true,
     "annonsdagar": 13,
@@ -1834,17 +1823,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -2223,
-    "fangad": "2026-10-26"
-  },
-  "27457774": {
-    "titel": "LG 55” 4K UHD Smart TV – 55UN71003LB – 2 190",
-    "pris": 2190,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 9,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 27,
     "fangad": "2026-10-26"
   },
   "27459704": {
@@ -1935,17 +1913,6 @@
     "underMarknad": 60,
     "fangad": "2026-10-26"
   },
-  "27571327": {
-    "titel": "Philips 55\" LED TV",
-    "pris": 1750,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 5,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 42,
-    "fangad": "2026-10-26"
-  },
   "27584691": {
     "titel": "Samsung smart tv 55 tum 4k ultra hd Qled",
     "pris": 3499,
@@ -1959,24 +1926,13 @@
   },
   "27597528": {
     "titel": "Samsung 55 4K",
-    "pris": 3500,
+    "pris": 3000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 4,
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -17,
-    "fangad": "2026-10-26"
-  },
-  "27612156": {
-    "titel": "Hisense 55” E8Q Mini-LED 4K Smart TV – 144 Hz,  Köpt juni 2026, Kvitto finns",
-    "pris": 6500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 3,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -117,
     "fangad": "2026-10-26"
   },
   "27622636": {
@@ -2010,17 +1966,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -67,
-    "fangad": "2026-10-26"
-  },
-  "27651644": {
-    "titel": "Samsung TV 55 tum svart",
-    "pris": 3500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 2,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -17,
     "fangad": "2026-10-26"
   },
   "27661201": {
@@ -2065,17 +2010,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -17,
-    "fangad": "2026-10-26"
-  },
-  "27671898": {
-    "titel": "Samsung UE55AU9075U 55\" TV svart",
-    "pris": 1700,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 43,
     "fangad": "2026-10-26"
   },
   "27673766": {
@@ -2142,17 +2076,6 @@
     "grupp": "55-oled",
     "marknad": 6500,
     "underMarknad": -77,
-    "fangad": "2026-10-26"
-  },
-  "27702652": {
-    "titel": "Samsung UE55MU6195U 55\" LED-TV",
-    "pris": 400,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 87,
     "fangad": "2026-10-26"
   },
   "27704224": {

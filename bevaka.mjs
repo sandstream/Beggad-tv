@@ -50,14 +50,16 @@ if (attKolla.length) {
     const url = `https://www.blocket.se/recommerce/forsale/item/${id}`;
     if (a === undefined) console.log(`${id}  NÄTFEL — gick inte att avgöra\n      ${url}`);
     else if (a === null) console.log(`${id}  BORTA eller såld\n      ${url}`);
-    else console.log(`${id}  LEVER ${a.pris} kr — ${a.titel}\n      ${url}`);
+    else console.log(`${id}  LEVER ${a.pris} kr — ${a.titel}${rordText(a.rord)}\n      ${url}`);
     await new Promise((r) => setTimeout(r, 2000));
   }
   process.exit(0);
 }
 
 // Vad vi letar efter. Kriterierna är destillatet av hela researchen:
-// 55 tum för att 65 inte får plats, och OLED för att rummet är mörklagt.
+// 65 tum, uppmätt mot väggen: 110 cm fri höjd över sideboarden och 3 meter
+// bred vägg. 77 tum får plats på bredden men inte på höjden. OLED för att
+// rummet mörkläggs vid biosittning.
 //
 // Årsgränsen går vid 2016, alltså första OLED-generationerna. Den har flyttats
 // två gånger, båda gångerna av samma skäl: det är paneltypen som avgör i ett
@@ -171,6 +173,14 @@ function lasFoljer() {
 // varken itemData eller error-fält, alltså en tredje felform utöver 429.
 // Därför bekräftas varje misstänkt borttagning med ett andra anrop efter en
 // paus. Säger båda samma sak är annonsen borta; säger de olika är det brus.
+// "rörd för 12 dgr sedan" säger mer om en annons än dess ålder.
+function rordText(rord) {
+  if (!rord) return "";
+  const dgr = Math.round((Date.now() - Date.parse(rord)) / 86400000);
+  if (!Number.isFinite(dgr) || dgr < 0) return "";
+  return dgr === 0 ? " · rörd i dag" : ` · rörd för ${dgr} dgr sedan`;
+}
+
 async function hamtaAnnons(id) {
   const svar = await hamtaEnGang(id);
   if (svar !== null) return svar;
@@ -208,6 +218,12 @@ async function hamtaEnGang(id) {
       titel: it.title,
       pris: typeof it.price === "number" ? it.price : (it.price?.amount ?? null),
       plats: it.location?.postalName || "",
+      // Datumet säljaren senast rörde annonsen. Annonsens ålder säger bara när
+      // den lades upp; det här säger om någon fortfarande sköter om den. En C8
+      // i Saltsjö-Boo stod som 47 dagar gammal och lästes av mig som övergiven,
+      // men hade redigerats tolv dagar tidigare. Fältet fanns i svaret hela
+      // tiden och kastades bort.
+      rord: typeof it.meta?.edited === "string" ? it.meta.edited.slice(0, 10) : null,
       url: `https://www.blocket.se/recommerce/forsale/item/${id}`,
     };
   } catch {
@@ -275,7 +291,12 @@ async function kollaFoljda(foljer) {
     if (nu.pris != null && f.pris != null && nu.pris !== f.pris) {
       andrade.push({ id, ...f, nyttPris: nu.pris });
     }
-    foljer[id] = { titel: nu.titel, pris: nu.pris, url: nu.url, sedan: f.sedan };
+    // Spridningen av f är inte kosmetisk. Raden räknade tidigare upp fälten
+    // ett och ett och tappade därför annonsdagar och underMarknad vid första
+    // uppdateringen, så varje utfall från kortlistan loggades med totalAlder
+    // och underMarknad som null. Behåll allt vi bär på och skriv bara över
+    // det som faktiskt hämtats om.
+    foljer[id] = { ...f, titel: nu.titel, pris: nu.pris, url: nu.url, rord: nu.rord ?? f.rord ?? null };
   }
   loggaUtfall(borta.map((b) => b.utfall));
   return { borta, andrade };

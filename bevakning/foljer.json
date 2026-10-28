@@ -35,12 +35,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/26386839",
     "sedan": "2026-09-25"
   },
-  "26390966": {
-    "titel": "LG OLED65B6V 65\" 4K OLED Smart TV – Fungerar bra, inbränning",
-    "pris": 2000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26390966",
-    "sedan": "2026-09-25"
-  },
   "26419579": {
     "titel": "Sony OLED TV 55 tum",
     "pris": 4000,
@@ -89,12 +83,6 @@
     "url": "https://www.blocket.se/recommerce/forsale/item/27273956",
     "sedan": "2026-10-10"
   },
-  "27300156": {
-    "titel": "LG CX 65 tum (reparationsbehov)",
-    "pris": 2000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27300156",
-    "sedan": "2026-10-11"
-  },
   "27621662": {
     "titel": "TV LG 65\" C1 4K OLED",
     "pris": 3500,
@@ -103,14 +91,17 @@
   },
   "27631848": {
     "titel": "LG OLED65B6V 65\" OLED TV",
-    "pris": 3600,
+    "pris": 3800,
     "url": "https://www.blocket.se/recommerce/forsale/item/27631848",
     "sedan": "2026-10-24"
   },
-  "27678536": {
-    "titel": "LG OLED65B7V 65\" OLED TV inkl tv bänk",
-    "pris": 3500,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27678536",
-    "sedan": "2026-10-25"
+  "27772954": {
+    "titel": "LG OLED evo C3 65” 4K Smart TV",
+    "pris": 7500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27772954",
+    "sedan": "2026-10-28",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

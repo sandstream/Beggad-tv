@@ -3424,5 +3424,110 @@
     "totalAlder": 1,
     "underMarknad": 87,
     "kohort": true
+  },
+  {
+    "id": "26390966",
+    "titel": "LG OLED65B6V 65\" 4K OLED Smart TV – Fungerar bra, inbränning",
+    "pris": 2000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 34,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27300156",
+    "titel": "LG CX 65 tum (reparationsbehov)",
+    "pris": 2000,
+    "hittad": "2026-10-11",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 18,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27678536",
+    "titel": "LG OLED65B7V 65\" OLED TV inkl tv bänk",
+    "pris": 3500,
+    "hittad": "2026-10-25",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "24848651",
+    "titel": "Samsung QLED TV 55 tum, HELT NY MED GARANTI",
+    "pris": 11000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 34,
+    "annonsdagarVidStart": 67,
+    "totalAlder": 101,
+    "underMarknad": -214,
+    "kohort": true
+  },
+  {
+    "id": "27459704",
+    "titel": "55 tums LCD-TV Samsung LE55C655L med chromecast",
+    "pris": 800,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 9,
+    "totalAlder": 12,
+    "underMarknad": 73,
+    "kohort": true
+  },
+  {
+    "id": "27648632",
+    "titel": "Samsung 55” Q7FA QLED 4K Smart TV (2025)",
+    "pris": 5000,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": -67,
+    "kohort": true
+  },
+  {
+    "id": "27667502",
+    "titel": "Philips LED TV 55 tum svart",
+    "pris": 2500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 4,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "27689668",
+    "titel": "Sharp LED-TV 55 tum svart",
+    "pris": 2000,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": 33,
+    "kohort": true
+  },
+  {
+    "id": "27691553",
+    "titel": "LG OLED C4 55” i nyskick + Oöppnad LG 5.1.1 Soundbar",
+    "pris": 11500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-28",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": -77,
+    "kohort": true
   }
 ]

@@ -76,7 +76,7 @@ export async function fanga() {
   const kandidater = [];
   for (const i of sedda.values()) {
     const tum = Number((i.title.match(/(?<![0-9])(55)(?![0-9])/) || [])[1]);
-    if (!tum || !i.price || i.price < 300 || !i.endDate || inteEnTv(i.title)) continue;
+    if (!tum || !i.price || i.price < 300 || !i.publicerad || inteEnTv(i.title)) continue;
     if (kohort[i.id]) continue;
     kandidater.push({
       id: i.id,
@@ -84,7 +84,7 @@ export async function fanga() {
       pris: i.price,
       tum,
       oled: /oled/i.test(i.title),
-      annonsdagar: Math.floor((Date.now() - Date.parse(i.endDate)) / 86400000),
+      annonsdagar: Math.floor((Date.now() - Date.parse(i.publicerad)) / 86400000),
     });
   }
 

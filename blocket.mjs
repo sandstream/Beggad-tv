@@ -16,7 +16,13 @@ function normalisera(item) {
     location: item.location || "",
     url: item.canonical_url || "",
     images: item.image_urls || [],
-    endDate: item.timestamp ? new Date(item.timestamp).toISOString() : null,
+    // Hette endDate i sex veckor och är raka motsatsen: uppströms timestamp
+    // är när annonsen lades upp, inte när den går ut. Varje användning räknar
+    // nu minus den, vilket gav rätt ålder av en slump — namnet gjorde att jag
+    // den 29 oktober misstänkte mina egna dagräknare för att vara frusna.
+    // Bumpas inte när säljaren redigerar: C8:an i Saltsjö-Boo låg kvar på 47
+    // dagar med meta.edited tolv dagar bort. De två fälten säger olika saker.
+    publicerad: item.timestamp ? new Date(item.timestamp).toISOString() : null,
     coordinates: item.coordinates
       ? { lat: item.coordinates.lat, lon: item.coordinates.lon }
       : null,

@@ -120,7 +120,7 @@ const resultat = traffar
   )
   .map((i) => ({
     ...i,
-    dagar: i.endDate ? Math.floor((nu - Date.parse(i.endDate)) / 86400000) : null,
+    dagar: i.publicerad ? Math.floor((nu - Date.parse(i.publicerad)) / 86400000) : null,
     avstand: i.coordinates ? avstand(hem, i.coordinates) : null,
     // Stoppregel ett: utan modellkod i annonsen går det inte att räkna.
     // Ring och fråga innan du åker.

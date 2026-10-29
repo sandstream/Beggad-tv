@@ -83,7 +83,7 @@ const traffar = [...sedda.values()]
     pris: i.price,
     tum: storlekAv(i.title),
     km: i.coordinates ? avstand(HEM, i.coordinates) : null,
-    dagar: i.endDate ? Math.floor((nu - Date.parse(i.endDate)) / 86400000) : null,
+    dagar: i.publicerad ? Math.floor((nu - Date.parse(i.publicerad)) / 86400000) : null,
     url: `https://www.blocket.se/recommerce/forsale/item/${i.id}`,
     katalog: iKatalogen(i.title),
     rapporterad: kanda.has(String(i.id)),

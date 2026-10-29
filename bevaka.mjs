@@ -310,8 +310,8 @@ function berika(i) {
     plats: i.location,
     url: i.url,
     avstand: i.coordinates ? avstand(HEM, i.coordinates) : null,
-    dagar: i.endDate
-      ? Math.floor((Date.now() - Date.parse(i.endDate)) / 86400000)
+    dagar: i.publicerad
+      ? Math.floor((Date.now() - Date.parse(i.publicerad)) / 86400000)
       : null,
   };
 }

@@ -3,97 +3,113 @@
     "titel": "LG 55”OLED55B6V (2016)",
     "pris": 999,
     "url": "https://www.blocket.se/recommerce/forsale/item/22354809",
-    "sedan": "2026-09-22"
+    "sedan": "2026-09-22",
+    "rord": "2026-08-09"
   },
   "25430609": {
     "titel": "LG 55\" 4K UHD OLED Smart TV OLED55B6V",
     "pris": 4500,
     "url": "https://www.blocket.se/recommerce/forsale/item/25430609",
-    "sedan": "2026-09-22"
+    "sedan": "2026-09-22",
+    "rord": "2026-08-05"
   },
   "25773941": {
     "titel": "LG C1 55” 4K OLED TV",
     "pris": 4500,
     "url": "https://www.blocket.se/recommerce/forsale/item/25773941",
-    "sedan": "2026-09-20"
+    "sedan": "2026-09-20",
+    "rord": "2026-08-23"
   },
   "26067174": {
     "titel": "LG OLED 55” B6V – 4K OLED-TV",
     "pris": 2799,
     "url": "https://www.blocket.se/recommerce/forsale/item/26067174",
-    "sedan": "2026-09-22"
+    "sedan": "2026-09-22",
+    "rord": "2026-08-29"
   },
   "26310735": {
     "titel": "LG OLED 55” C8 + LG SK9Y Atmos 5.1.2 – komplett hemmabio",
     "pris": 7990,
     "url": "https://www.blocket.se/recommerce/forsale/item/26310735",
-    "sedan": "2026-09-22"
+    "sedan": "2026-09-22",
+    "rord": "2026-09-04"
   },
   "26386839": {
     "titel": "LG OLED CX 65\"",
     "pris": 8000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26386839",
-    "sedan": "2026-09-25"
+    "sedan": "2026-09-25",
+    "rord": "2026-09-08"
   },
   "26419579": {
     "titel": "Sony OLED TV 55 tum",
     "pris": 4000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26419579",
-    "sedan": "2026-09-20"
+    "sedan": "2026-09-20",
+    "rord": "2026-10-26"
   },
   "26527405": {
     "titel": "LG OLED65C8PLA",
     "pris": 5100,
     "url": "https://www.blocket.se/recommerce/forsale/item/26527405",
-    "sedan": "2026-09-25"
+    "sedan": "2026-09-25",
+    "rord": "2026-10-16"
   },
   "26803732": {
     "titel": "Panasonic 65 Smart 4KUHD WiFi Bluetooth fjärrkontroll och ben ingår",
     "pris": 4000,
     "url": "https://www.blocket.se/recommerce/forsale/item/26803732",
-    "sedan": "2026-09-25"
+    "sedan": "2026-09-25",
+    "rord": "2026-09-27"
   },
   "27054978": {
     "titel": "LG OLED 65\" 4K HDR (OLED65C7V)",
     "pris": 3000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27054978",
-    "sedan": "2026-10-02"
+    "sedan": "2026-10-02",
+    "rord": "2026-10-01"
   },
   "27065779": {
     "titel": "LG OLED55C9PLA 55\" OLED TV svårt. Säljs tillsammans med TV-bänken.",
     "pris": 6000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27065779",
-    "sedan": "2026-10-03"
+    "sedan": "2026-10-03",
+    "rord": "2026-10-02"
   },
   "27076978": {
     "titel": "LG OLED 55\" 4K (B9, OLED55B9PLA), skick som ny, inga inbrända bilder",
     "pris": 3800,
     "url": "https://www.blocket.se/recommerce/forsale/item/27076978",
-    "sedan": "2026-10-03"
+    "sedan": "2026-10-03",
+    "rord": "2026-10-14"
   },
   "27082596": {
     "titel": "LG OLED55CX6LA OLED TV 55 tum",
     "pris": 6500,
     "url": "https://www.blocket.se/recommerce/forsale/item/27082596",
-    "sedan": "2026-10-03"
+    "sedan": "2026-10-03",
+    "rord": "2026-10-03"
   },
   "27273956": {
     "titel": "Mycket bra LG OLED65CX6L",
     "pris": 9000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27273956",
-    "sedan": "2026-10-10"
+    "sedan": "2026-10-10",
+    "rord": "2026-10-09"
   },
   "27621662": {
     "titel": "TV LG 65\" C1 4K OLED",
     "pris": 3500,
     "url": "https://www.blocket.se/recommerce/forsale/item/27621662",
-    "sedan": "2026-10-23"
+    "sedan": "2026-10-23",
+    "rord": "2026-10-22"
   },
   "27631848": {
     "titel": "LG OLED65B6V 65\" OLED TV",
     "pris": 3800,
     "url": "https://www.blocket.se/recommerce/forsale/item/27631848",
-    "sedan": "2026-10-24"
+    "sedan": "2026-10-24",
+    "rord": "2026-10-28"
   },
   "27772954": {
     "titel": "LG OLED evo C3 65” 4K Smart TV",
@@ -102,6 +118,7 @@
     "sedan": "2026-10-28",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-10-28"
   }
 }

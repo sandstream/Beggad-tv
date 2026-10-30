@@ -3541,5 +3541,17 @@
     "totalAlder": 59,
     "underMarknad": 0,
     "kohort": true
+  },
+  {
+    "id": "27717389",
+    "titel": "Samsung 55\" TV med väggfäste",
+    "pris": 2500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-10-30",
+    "dagarFoljd": 4,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 4,
+    "underMarknad": 17,
+    "kohort": true
   }
 ]

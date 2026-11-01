@@ -406,17 +406,6 @@
     "underMarknad": 14,
     "fangad": "2026-09-25"
   },
-  "24553518": {
-    "titel": "55\" OLED S95F 4K Smart TV (2025)",
-    "pris": 9000,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 82,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": -17,
-    "fangad": "2026-09-25"
-  },
   "24619976": {
     "titel": "Samsung Q8F QLED TV 55 tum",
     "pris": 8000,
@@ -438,17 +427,6 @@
     "marknad": 3500,
     "underMarknad": -14,
     "fangad": "2026-09-25"
-  },
-  "24784865": {
-    "titel": "Anderson tv 55 led",
-    "pris": 1000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 81,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 67,
-    "fangad": "2026-10-03"
   },
   "24794096": {
     "titel": "TV Philips 55”",
@@ -1145,7 +1123,7 @@
   },
   "26480103": {
     "titel": "HELT NY: TCL 55\" A400 Pro 4K QD-Mini LED TV (2026)",
-    "pris": 9000,
+    "pris": 10500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 14,
@@ -1167,7 +1145,7 @@
   },
   "26512679": {
     "titel": "Panasonic TV 55 tum",
-    "pris": 1500,
+    "pris": 1300,
     "tum": 55,
     "oled": false,
     "annonsdagar": 9,
@@ -1244,7 +1222,7 @@
   },
   "26601137": {
     "titel": "Samsung Qled 4K 55 tum",
-    "pris": 3900,
+    "pris": 3500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 5,
@@ -1495,17 +1473,6 @@
     "underMarknad": -233,
     "fangad": "2026-10-26"
   },
-  "27104035": {
-    "titel": "LG 55\" Full HD LED TV +Android tv stick",
-    "pris": 2100,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 22,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 30,
-    "fangad": "2026-10-26"
-  },
   "27115971": {
     "titel": "Sony 55\" Smart tv",
     "pris": 1900,
@@ -1596,7 +1563,7 @@
   },
   "27261047": {
     "titel": "LG smart tv 55tum",
-    "pris": 4000,
+    "pris": 3500,
     "tum": 55,
     "oled": false,
     "annonsdagar": 3,
@@ -1607,7 +1574,7 @@
   },
   "27289133": {
     "titel": "Sony KD-55X9005A 4K LED",
-    "pris": 3250,
+    "pris": 3200,
     "tum": 55,
     "oled": false,
     "annonsdagar": 2,
@@ -1713,17 +1680,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 18,
-    "fangad": "2026-10-26"
-  },
-  "27407080": {
-    "titel": "Samsung TV, modell UE55JU6075",
-    "pris": 2450,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 11,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 2,
     "fangad": "2026-10-26"
   },
   "27411931": {
@@ -1911,17 +1867,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 67,
-    "fangad": "2026-10-26"
-  },
-  "27713696": {
-    "titel": "Samsung 55” QLED 4K UHD Smart TV",
-    "pris": 3300,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -10,
     "fangad": "2026-10-26"
   }
 }

@@ -3673,5 +3673,65 @@
     "totalAlder": 5,
     "underMarknad": -23,
     "kohort": true
+  },
+  {
+    "id": "24553518",
+    "titel": "55\" OLED S95F 4K Smart TV (2025)",
+    "pris": 9000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-01",
+    "dagarFoljd": 37,
+    "annonsdagarVidStart": 82,
+    "totalAlder": 119,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "24784865",
+    "titel": "Anderson tv 55 led",
+    "pris": 1000,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-11-01",
+    "dagarFoljd": 29,
+    "annonsdagarVidStart": 81,
+    "totalAlder": 110,
+    "underMarknad": 67,
+    "kohort": true
+  },
+  {
+    "id": "27104035",
+    "titel": "LG 55\" Full HD LED TV +Android tv stick",
+    "pris": 2100,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-01",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 22,
+    "totalAlder": 28,
+    "underMarknad": 30,
+    "kohort": true
+  },
+  {
+    "id": "27407080",
+    "titel": "Samsung TV, modell UE55JU6075",
+    "pris": 2450,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-01",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 17,
+    "underMarknad": 2,
+    "kohort": true
+  },
+  {
+    "id": "27713696",
+    "titel": "Samsung 55” QLED 4K UHD Smart TV",
+    "pris": 3300,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-01",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 6,
+    "underMarknad": -10,
+    "kohort": true
   }
 ]

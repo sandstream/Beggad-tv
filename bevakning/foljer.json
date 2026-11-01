@@ -138,7 +138,8 @@
     "sedan": "2026-10-31",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-10-30"
   },
   "27831662": {
     "titel": "LG OLED65B6V 65\" 4K OLED Smart TV",
@@ -147,6 +148,16 @@
     "sedan": "2026-10-31",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-10-30"
+  },
+  "27865497": {
+    "titel": "LG OLED65B6V-Z  65 tum Ultra, tunn design",
+    "pris": 3500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27865497",
+    "sedan": "2026-11-01",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": 8
   }
 }

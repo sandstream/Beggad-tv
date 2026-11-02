@@ -3733,5 +3733,86 @@
     "totalAlder": 6,
     "underMarknad": -10,
     "kohort": true
+  },
+  {
+    "id": "27054978",
+    "titel": "LG OLED 65\" 4K HDR (OLED65C7V)",
+    "pris": 3000,
+    "hittad": "2026-10-02",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 31,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27631848",
+    "titel": "LG OLED65B6V 65\" OLED TV",
+    "pris": 3800,
+    "hittad": "2026-10-24",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "27824864",
+    "titel": "LG Smart TV 65 Tum, B6 4K Ultra",
+    "pris": 4000,
+    "hittad": "2026-10-31",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 2,
+    "underMarknad": null
+  },
+  {
+    "id": "24804970",
+    "titel": "LG TV 55\" OLED evo Gallery Edition 4K TV",
+    "pris": 14400,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 38,
+    "annonsdagarVidStart": 73,
+    "totalAlder": 111,
+    "underMarknad": -87,
+    "kohort": true
+  },
+  {
+    "id": "27544740",
+    "titel": "Samsung TV 55 tum",
+    "pris": 1999,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 6,
+    "totalAlder": 13,
+    "underMarknad": 33,
+    "kohort": true
+  },
+  {
+    "id": "27597528",
+    "titel": "Samsung 55 4K",
+    "pris": 3000,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 11,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "27668111",
+    "titel": "Samsung 55\" Crystal UHD Smart Tv",
+    "pris": 3500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-02",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 8,
+    "underMarknad": -17,
+    "kohort": true
   }
 ]

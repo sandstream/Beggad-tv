@@ -298,7 +298,7 @@
   },
   "23943548": {
     "titel": "LG 55\" 4K UHD LED Smart TV 55UH750V",
-    "pris": 2800,
+    "pris": 1000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 14,
@@ -438,17 +438,6 @@
     "marknad": 3000,
     "underMarknad": 17,
     "fangad": "2026-10-13"
-  },
-  "24804970": {
-    "titel": "LG TV 55\" OLED evo Gallery Edition 4K TV",
-    "pris": 14400,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 73,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": -87,
-    "fangad": "2026-09-25"
   },
   "24833590": {
     "titel": "Samsung smart TV 55 tum svart",
@@ -1748,17 +1737,6 @@
     "underMarknad": 17,
     "fangad": "2026-10-26"
   },
-  "27544740": {
-    "titel": "Samsung TV 55 tum",
-    "pris": 1999,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 6,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 33,
-    "fangad": "2026-10-26"
-  },
   "27568304": {
     "titel": "Samsung TV 55” UE55F6345",
     "pris": 1200,
@@ -1768,17 +1746,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 60,
-    "fangad": "2026-10-26"
-  },
-  "27597528": {
-    "titel": "Samsung 55 4K",
-    "pris": 3000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 4,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -17,
     "fangad": "2026-10-26"
   },
   "27622636": {
@@ -1812,17 +1779,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -150,
-    "fangad": "2026-10-26"
-  },
-  "27668111": {
-    "titel": "Samsung 55\" Crystal UHD Smart Tv",
-    "pris": 3500,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -17,
     "fangad": "2026-10-26"
   },
   "27673766": {
@@ -1860,7 +1816,7 @@
   },
   "27690483": {
     "titel": "Samsung 55-tum Full-HD LED-tv SMART-TV",
-    "pris": 999,
+    "pris": 900,
     "tum": 55,
     "oled": false,
     "annonsdagar": 0,

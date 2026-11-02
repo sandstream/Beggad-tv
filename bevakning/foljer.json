@@ -62,13 +62,6 @@
     "sedan": "2026-09-25",
     "rord": "2026-09-27"
   },
-  "27054978": {
-    "titel": "LG OLED 65\" 4K HDR (OLED65C7V)",
-    "pris": 3000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27054978",
-    "sedan": "2026-10-02",
-    "rord": "2026-10-01"
-  },
   "27065779": {
     "titel": "LG OLED55C9PLA 55\" OLED TV svårt. Säljs tillsammans med TV-bänken.",
     "pris": 6000,
@@ -104,13 +97,6 @@
     "sedan": "2026-10-23",
     "rord": "2026-10-22"
   },
-  "27631848": {
-    "titel": "LG OLED65B6V 65\" OLED TV",
-    "pris": 3800,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27631848",
-    "sedan": "2026-10-24",
-    "rord": "2026-10-28"
-  },
   "27772954": {
     "titel": "LG OLED evo C3 65” 4K Smart TV",
     "pris": 7500,
@@ -131,16 +117,6 @@
     "underMarknad": null,
     "rord": "2026-10-29"
   },
-  "27824864": {
-    "titel": "LG Smart TV 65 Tum, B6 4K Ultra",
-    "pris": 4000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27824864",
-    "sedan": "2026-10-31",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null,
-    "rord": "2026-10-30"
-  },
   "27831662": {
     "titel": "LG OLED65B6V 65\" 4K OLED Smart TV",
     "pris": 3000,
@@ -158,6 +134,25 @@
     "sedan": "2026-11-01",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": 8
+    "underMarknad": 8,
+    "rord": "2026-10-31"
+  },
+  "27884288": {
+    "titel": "LG OLED TV - C7 65''",
+    "pris": 1200,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27884288",
+    "sedan": "2026-11-02",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
+  },
+  "27899292": {
+    "titel": "LG OLED65C8 PLA",
+    "pris": 6000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/27899292",
+    "sedan": "2026-11-02",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

@@ -349,6 +349,7 @@ if (!torr) {
 const sok = await skapaSokare({ direkt: !flagg.has("--mcp") });
 const historik = lasHistorik();
 const nya = [];
+const misslyckade = [];
 const allaSedda = { ...historik.rapporterade };
 const paus = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -356,10 +357,26 @@ for (const b of BEVAKNINGAR) {
   for (const m of b.modeller) {
     const sedda = new Map();
     for (const q of m.q) {
-      try {
-        for (const it of await sok(q)) sedda.set(it.id, it);
-      } catch (e) {
-        process.stderr.write(`${q}: ${e.message}\n`);
+      // En sökfråga som dör tar med sig hela modellen i tysthet. Den 3
+      // november föll OLED55C6 på "terminated" — ett nätverksfel — och
+      // körningen rapporterade sig ändå som komplett. Det råkade vara en
+      // storlek vi inte vill ha; nästa gång kan det vara annonsen vi letar
+      // efter. Försök igen en gång, och gör det omöjligt att missa om båda
+      // försöken dör.
+      let fel = null;
+      for (let forsok = 1; forsok <= 2; forsok++) {
+        try {
+          for (const it of await sok(q)) sedda.set(it.id, it);
+          fel = null;
+          break;
+        } catch (e) {
+          fel = e;
+          if (forsok === 1) await paus(3000);
+        }
+      }
+      if (fel) {
+        misslyckade.push(q);
+        process.stderr.write(`${q}: ${fel.message}\n`);
       }
       await paus(250);
     }
@@ -473,6 +490,14 @@ if (!torr) {
   process.stderr.write(
     `\nHistorik: ${Object.keys(allaSedda).length} annonser | följer: ${Object.keys(foljer).length}\n`,
   );
+  // Står det här något är sökningen ofullständig och "inget nytt" betyder
+  // inte att det inte finns något.
+  if (misslyckade.length) {
+    console.log(
+      `\n⚠ ${misslyckade.length} sökfrågor dog även efter omförsök: ${misslyckade.join(", ")}` +
+        "\nKörningen är ofullständig — de modellerna sågs inte alls.",
+    );
+  }
 }
 
 process.exit(0);

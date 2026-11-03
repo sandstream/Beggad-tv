@@ -1035,7 +1035,7 @@
   },
   "26356250": {
     "titel": "Samsung Q6 Series 55 tum",
-    "pris": 3200,
+    "pris": 2800,
     "tum": 55,
     "oled": false,
     "annonsdagar": 19,
@@ -1134,7 +1134,7 @@
   },
   "26512679": {
     "titel": "Panasonic TV 55 tum",
-    "pris": 1300,
+    "pris": 1100,
     "tum": 55,
     "oled": false,
     "annonsdagar": 9,
@@ -1336,17 +1336,6 @@
     "tum": 55,
     "oled": false,
     "annonsdagar": 31,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 0,
-    "fangad": "2026-10-26"
-  },
-  "26896592": {
-    "titel": "Samsung (QLED 55 TV)",
-    "pris": 3000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 29,
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 0,
@@ -1772,24 +1761,13 @@
   },
   "27661201": {
     "titel": "Samsung Q8F QLED TV 55 tum",
-    "pris": 7500,
+    "pris": 7000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 1,
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -150,
-    "fangad": "2026-10-26"
-  },
-  "27673766": {
-    "titel": "Samsung The Serif TV 55”",
-    "pris": 3900,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": -30,
     "fangad": "2026-10-26"
   },
   "27688759": {
@@ -1816,7 +1794,7 @@
   },
   "27690483": {
     "titel": "Samsung 55-tum Full-HD LED-tv SMART-TV",
-    "pris": 900,
+    "pris": 800,
     "tum": 55,
     "oled": false,
     "annonsdagar": 0,

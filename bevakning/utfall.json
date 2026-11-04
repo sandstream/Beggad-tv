@@ -3849,5 +3849,29 @@
     "totalAlder": 9,
     "underMarknad": -30,
     "kohort": true
+  },
+  {
+    "id": "27383077",
+    "titel": "Samsung TV 55 tum",
+    "pris": 4500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-04",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 12,
+    "totalAlder": 21,
+    "underMarknad": -50,
+    "kohort": true
+  },
+  {
+    "id": "27568304",
+    "titel": "Samsung TV 55” UE55F6345",
+    "pris": 1200,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-04",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 14,
+    "underMarknad": 60,
+    "kohort": true
   }
 ]

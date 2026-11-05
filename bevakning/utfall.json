@@ -3873,5 +3873,40 @@
     "totalAlder": 14,
     "underMarknad": 60,
     "kohort": true
+  },
+  {
+    "id": "27772954",
+    "titel": "LG OLED evo C3 65” 4K Smart TV",
+    "pris": 7500,
+    "hittad": "2026-10-28",
+    "forsvann": "2026-11-05",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 8,
+    "underMarknad": null
+  },
+  {
+    "id": "26356250",
+    "titel": "Samsung Q6 Series 55 tum",
+    "pris": 2800,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-05",
+    "dagarFoljd": 41,
+    "annonsdagarVidStart": 19,
+    "totalAlder": 60,
+    "underMarknad": 9,
+    "kohort": true
+  },
+  {
+    "id": "27690483",
+    "titel": "Samsung 55-tum Full-HD LED-tv SMART-TV",
+    "pris": 800,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-05",
+    "dagarFoljd": 10,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 10,
+    "underMarknad": 67,
+    "kohort": true
   }
 ]

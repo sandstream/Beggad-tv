@@ -1033,17 +1033,6 @@
     "underMarknad": 0,
     "fangad": "2026-09-20"
   },
-  "26356250": {
-    "titel": "Samsung Q6 Series 55 tum",
-    "pris": 2800,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 19,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": 9,
-    "fangad": "2026-09-25"
-  },
   "26372763": {
     "titel": "Vridbar Tvkonsoll 55 tum",
     "pris": 400,
@@ -1768,17 +1757,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": 88,
-    "fangad": "2026-10-26"
-  },
-  "27690483": {
-    "titel": "Samsung 55-tum Full-HD LED-tv SMART-TV",
-    "pris": 800,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 0,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 67,
     "fangad": "2026-10-26"
   }
 }

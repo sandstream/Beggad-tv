@@ -3920,5 +3920,29 @@
     "totalAlder": 24,
     "underMarknad": -77,
     "kohort": true
+  },
+  {
+    "id": "26430112",
+    "titel": "Philips TV med Ambilight 55’",
+    "pris": 4950,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-07",
+    "dagarFoljd": 43,
+    "annonsdagarVidStart": 16,
+    "totalAlder": 59,
+    "underMarknad": -66,
+    "kohort": true
+  },
+  {
+    "id": "26977483",
+    "titel": "Samsung UE55NU7025 58\" LED-TV svart",
+    "pris": 1000,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-11-07",
+    "dagarFoljd": 35,
+    "annonsdagarVidStart": 4,
+    "totalAlder": 39,
+    "underMarknad": 33,
+    "kohort": true
   }
 ]

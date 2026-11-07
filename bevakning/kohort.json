@@ -1077,17 +1077,6 @@
     "underMarknad": 86,
     "fangad": "2026-09-25"
   },
-  "26430112": {
-    "titel": "Philips TV med Ambilight 55’",
-    "pris": 4950,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 16,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": -66,
-    "fangad": "2026-09-25"
-  },
   "26455178": {
     "titel": "LG 4k tv. 55tum med ett tv bord",
     "pris": 3200,
@@ -1341,17 +1330,6 @@
     "underMarknad": 0,
     "fangad": "2026-10-03"
   },
-  "26977483": {
-    "titel": "Samsung UE55NU7025 58\" LED-TV svart",
-    "pris": 1000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 4,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 33,
-    "fangad": "2026-10-03"
-  },
   "26986097": {
     "titel": "Helt Ny LG Oled 55",
     "pris": 8999,
@@ -1541,7 +1519,7 @@
   },
   "27289133": {
     "titel": "Sony KD-55X9005A 4K LED",
-    "pris": 3200,
+    "pris": 3000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 2,

@@ -3944,5 +3944,53 @@
     "totalAlder": 39,
     "underMarknad": 33,
     "kohort": true
+  },
+  {
+    "id": "26757879",
+    "titel": "Philips 55 tum OLED TV",
+    "pris": 500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-08",
+    "dagarFoljd": 49,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 49,
+    "underMarknad": 89,
+    "kohort": true
+  },
+  {
+    "id": "27091841",
+    "titel": "Samsung QLED Q8F 55\"",
+    "pris": 10000,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-08",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": 22,
+    "totalAlder": 35,
+    "underMarknad": -233,
+    "kohort": true
+  },
+  {
+    "id": "27364935",
+    "titel": "Samsung 55” 4K QD Smart TV modellkod UE55KS8005 något defekt.",
+    "pris": 1000,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-08",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": 13,
+    "totalAlder": 26,
+    "underMarknad": 67,
+    "kohort": true
+  },
+  {
+    "id": "27688759",
+    "titel": "Hitachi TV 55 tum",
+    "pris": 1500,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-08",
+    "dagarFoljd": 13,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 13,
+    "underMarknad": 40,
+    "kohort": true
   }
 ]

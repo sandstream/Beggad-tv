@@ -64,9 +64,37 @@ for (const id of ids) {
 
   const traff = (lista) =>
     lista.flatMap(([re, namn]) => (txt.match(re) ? [namn] : []));
-  const varning = traff(FLAGGOR);
+
+  // "Inga repor eller inbränningar" larmade för både repor och inbränning,
+  // två gånger: en Philips i oktober och en CX i Järfälla den 8 november.
+  // Ordet står i texten, men säljaren förnekar det. Vi tittar bakåt från
+  // varje träff till närmaste satsgräns och letar efter ett nekande ord där.
+  // Gränsen gör att "inga problem, men inbränning i hörnet" fortfarande
+  // larmar — nekandet hör till den förra satsen, inte till träffen.
+  // Komma duger inte som satsgräns: "utan några som helst problem, repor
+  // eller inbränningar" är en uppräkning, inte två satser. Gränsen går vid
+  // punkt och vid ord som vänder påståendet.
+  const NEKANDE =
+    /\b(?:inga|inget|ingen|utan|fri[att]*\s+fr[åa]n|aldrig|ej)\b(?:(?!\b(?:men|dock|d[äa]remot|tyv[äa]rr)\b)[^.!?;])*$/i;
+  const nekad = (re) => {
+    const alla = [...txt.matchAll(re)];
+    if (!alla.length) return false;
+    // Bara om VARJE förekomst är nekad. Säger annonsen både "inga
+    // inbränningar" och "syns inbränning i hörnet" är det en varning.
+    return alla.every((m) => NEKANDE.test(txt.slice(Math.max(0, m.index - 60), m.index)));
+  };
+
+  const varning = [];
+  const fornekat = [];
+  for (const [re, namn] of FLAGGOR) {
+    if (!txt.match(re)) continue;
+    (nekad(re) ? fornekat : varning).push(namn);
+  }
   const plus = traff(BRA);
   if (varning.length) console.log(`\n⚠  ${varning.join(", ")}`);
+  // Förnekandet är inte ett larm, men det är inte heller ingenting: det är
+  // ett påstående säljaren kan hållas till när du står där med testbilderna.
+  if (fornekat.length) console.log(`\nsäljaren förnekar: ${fornekat.join(", ")}`);
   if (plus.length) console.log(`✓  ${plus.join(", ")}`);
   console.log(`\n${txt}\n`);
   console.log(`https://www.blocket.se/recommerce/forsale/item/${id}`);

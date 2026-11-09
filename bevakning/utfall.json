@@ -3992,5 +3992,38 @@
     "totalAlder": 13,
     "underMarknad": 40,
     "kohort": true
+  },
+  {
+    "id": "27865497",
+    "titel": "LG OLED65B6V-Z  65 tum Ultra, tunn design",
+    "pris": 3500,
+    "hittad": "2026-11-01",
+    "forsvann": "2026-11-09",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 8,
+    "underMarknad": 8
+  },
+  {
+    "id": "27899292",
+    "titel": "LG OLED65C8 PLA",
+    "pris": 5000,
+    "hittad": "2026-11-02",
+    "forsvann": "2026-11-09",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 7,
+    "underMarknad": null
+  },
+  {
+    "id": "28039687",
+    "titel": "LG OLED 65” CX 4K Ultra HD Smart TV",
+    "pris": 3700,
+    "hittad": "2026-11-08",
+    "forsvann": "2026-11-09",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": 54
   }
 ]

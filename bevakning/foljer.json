@@ -92,10 +92,10 @@
   },
   "27621662": {
     "titel": "TV LG 65\" C1 4K OLED",
-    "pris": 3500,
+    "pris": 3000,
     "url": "https://www.blocket.se/recommerce/forsale/item/27621662",
     "sedan": "2026-10-23",
-    "rord": "2026-10-22"
+    "rord": "2026-11-09"
   },
   "27805789": {
     "titel": "LG 65\" G1 4K Evo OLED (2021)",
@@ -106,16 +106,6 @@
     "tum": 65,
     "underMarknad": null,
     "rord": "2026-10-29"
-  },
-  "27884288": {
-    "titel": "LG OLED TV - C7 65''",
-    "pris": 1200,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27884288",
-    "sedan": "2026-11-02",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null,
-    "rord": "2026-11-03"
   },
   "28006787": {
     "titel": "LG OLED CX TV 65”",
@@ -142,6 +132,7 @@
     "sedan": "2026-11-09",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-11-09"
   }
 }

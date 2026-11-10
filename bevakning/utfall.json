@@ -4025,5 +4025,28 @@
     "annonsdagarVidStart": 0,
     "totalAlder": 1,
     "underMarknad": 54
+  },
+  {
+    "id": "27884288",
+    "titel": "LG OLED TV - C7 65''",
+    "pris": 1200,
+    "hittad": "2026-11-02",
+    "forsvann": "2026-11-10",
+    "dagarFoljd": 8,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 8,
+    "underMarknad": null
+  },
+  {
+    "id": "23943548",
+    "titel": "LG 55\" 4K UHD LED Smart TV 55UH750V",
+    "pris": 1000,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-10",
+    "dagarFoljd": 15,
+    "annonsdagarVidStart": 14,
+    "totalAlder": 29,
+    "underMarknad": 7,
+    "kohort": true
   }
 ]

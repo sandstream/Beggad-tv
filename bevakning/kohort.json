@@ -703,17 +703,6 @@
     "underMarknad": 43,
     "fangad": "2026-09-25"
   },
-  "25519228": {
-    "titel": "LG 55\" C6 Pro 4K OLED evo TV (2026) - HELT NY",
-    "pris": 17990,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 47,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": -134,
-    "fangad": "2026-09-25"
-  },
   "25533221": {
     "titel": "Toshiba Smart TV, 55 tums",
     "pris": 2000,
@@ -1651,7 +1640,7 @@
   },
   "27661201": {
     "titel": "Samsung Q8F QLED TV 55 tum",
-    "pris": 7000,
+    "pris": 6000,
     "tum": 55,
     "oled": false,
     "annonsdagar": 1,

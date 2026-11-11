@@ -90,13 +90,6 @@
     "sedan": "2026-10-10",
     "rord": "2026-10-09"
   },
-  "27621662": {
-    "titel": "TV LG 65\" C1 4K OLED",
-    "pris": 3000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/27621662",
-    "sedan": "2026-10-23",
-    "rord": "2026-11-09"
-  },
   "27805789": {
     "titel": "LG 65\" G1 4K Evo OLED (2021)",
     "pris": 8000,
@@ -134,5 +127,23 @@
     "tum": 65,
     "underMarknad": null,
     "rord": "2026-11-09"
+  },
+  "28141097": {
+    "titel": "LG OLED C1 65 tum",
+    "pris": 2500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28141097",
+    "sedan": "2026-11-11",
+    "annonsdagar": 1,
+    "tum": 65,
+    "underMarknad": null
+  },
+  "28171003": {
+    "titel": "Panasonic 65 tums OLED TX-65GZ960E",
+    "pris": 6500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28171003",
+    "sedan": "2026-11-11",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

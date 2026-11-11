@@ -4048,5 +4048,28 @@
     "totalAlder": 29,
     "underMarknad": 7,
     "kohort": true
+  },
+  {
+    "id": "27621662",
+    "titel": "TV LG 65\" C1 4K OLED",
+    "pris": 3000,
+    "hittad": "2026-10-23",
+    "forsvann": "2026-11-11",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "25519228",
+    "titel": "LG 55\" C6 Pro 4K OLED evo TV (2026) - HELT NY",
+    "pris": 17990,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-11",
+    "dagarFoljd": 48,
+    "annonsdagarVidStart": 47,
+    "totalAlder": 95,
+    "underMarknad": -134,
+    "kohort": true
   }
 ]

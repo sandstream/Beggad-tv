@@ -135,7 +135,8 @@
     "sedan": "2026-11-11",
     "annonsdagar": 1,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-11-11"
   },
   "28171003": {
     "titel": "Panasonic 65 tums OLED TX-65GZ960E",
@@ -144,6 +145,7 @@
     "sedan": "2026-11-11",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-11-11"
   }
 }

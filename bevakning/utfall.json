@@ -4071,5 +4071,17 @@
     "totalAlder": 95,
     "underMarknad": -134,
     "kohort": true
+  },
+  {
+    "id": "27634999",
+    "titel": "Samsung TV 55 tum - bra skick med stativ Östermalm",
+    "pris": 1750,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-13",
+    "dagarFoljd": 18,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 20,
+    "underMarknad": 42,
+    "kohort": true
   }
 ]

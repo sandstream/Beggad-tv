@@ -13,6 +13,15 @@
     "sedan": "2026-09-22",
     "rord": "2026-08-05"
   },
+  "25582333": {
+    "titel": "LG C2 EVO 65",
+    "pris": 8800,
+    "url": "https://www.blocket.se/recommerce/forsale/item/25582333",
+    "sedan": "2026-11-14",
+    "annonsdagar": 93,
+    "tum": 65,
+    "underMarknad": null
+  },
   "25773941": {
     "titel": "LG C1 55” 4K OLED TV",
     "pris": 4500,
@@ -43,17 +52,10 @@
   },
   "26419579": {
     "titel": "Sony OLED TV 55 tum",
-    "pris": 4000,
+    "pris": 3500,
     "url": "https://www.blocket.se/recommerce/forsale/item/26419579",
     "sedan": "2026-09-20",
-    "rord": "2026-10-26"
-  },
-  "26527405": {
-    "titel": "LG OLED65C8PLA",
-    "pris": 5100,
-    "url": "https://www.blocket.se/recommerce/forsale/item/26527405",
-    "sedan": "2026-09-25",
-    "rord": "2026-10-16"
+    "rord": "2026-11-14"
   },
   "26803732": {
     "titel": "Panasonic 65 Smart 4KUHD WiFi Bluetooth fjärrkontroll och ben ingår",
@@ -147,5 +149,14 @@
     "tum": 65,
     "underMarknad": null,
     "rord": "2026-11-11"
+  },
+  "28207511": {
+    "titel": "Rubrik: LG 65\" 4K OLED TV (OLED65CX6LA) i toppskick – 120Hz / HDMI 2.1",
+    "pris": 8900,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28207511",
+    "sedan": "2026-11-14",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": -11
   }
 }

@@ -4083,5 +4083,28 @@
     "totalAlder": 20,
     "underMarknad": 42,
     "kohort": true
+  },
+  {
+    "id": "26527405",
+    "titel": "LG OLED65C8PLA",
+    "pris": 5100,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-14",
+    "dagarFoljd": 50,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "26721397",
+    "titel": "Philips 4K UHD HDR TV 55 tum",
+    "pris": 4500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-14",
+    "dagarFoljd": 55,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 56,
+    "underMarknad": -67,
+    "kohort": true
   }
 ]

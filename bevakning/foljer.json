@@ -20,7 +20,8 @@
     "sedan": "2026-11-14",
     "annonsdagar": 93,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-11-13"
   },
   "25773941": {
     "titel": "LG C1 55” 4K OLED TV",
@@ -116,19 +117,9 @@
     "titel": "LG TV OLED 65 tum",
     "pris": 5800,
     "plats": "Kungsängen",
-    "rord": "2026-11-06",
+    "rord": "2026-11-14",
     "url": "https://www.blocket.se/recommerce/forsale/item/28012966",
     "sedan": "2026-11-07"
-  },
-  "28098181": {
-    "titel": "Samsung 65\" S90D 4K OLED Smart TV",
-    "pris": 9000,
-    "url": "https://www.blocket.se/recommerce/forsale/item/28098181",
-    "sedan": "2026-11-09",
-    "annonsdagar": 0,
-    "tum": 65,
-    "underMarknad": null,
-    "rord": "2026-11-09"
   },
   "28141097": {
     "titel": "LG OLED C1 65 tum",
@@ -150,6 +141,15 @@
     "underMarknad": null,
     "rord": "2026-11-11"
   },
+  "28196880": {
+    "titel": "LG oled C2 65tum",
+    "pris": 7999,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28196880",
+    "sedan": "2026-11-15",
+    "annonsdagar": 2,
+    "tum": 65,
+    "underMarknad": null
+  },
   "28207511": {
     "titel": "Rubrik: LG 65\" 4K OLED TV (OLED65CX6LA) i toppskick – 120Hz / HDMI 2.1",
     "pris": 8900,
@@ -157,6 +157,16 @@
     "sedan": "2026-11-14",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": -11
+    "underMarknad": -11,
+    "rord": "2026-11-13"
+  },
+  "28228821": {
+    "titel": "LG OLED65C36LC är en 65-tums 4K OLED-TV",
+    "pris": 8500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28228821",
+    "sedan": "2026-11-15",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

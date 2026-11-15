@@ -4106,5 +4106,88 @@
     "totalAlder": 56,
     "underMarknad": -67,
     "kohort": true
+  },
+  {
+    "id": "28098181",
+    "titel": "Samsung 65\" S90D 4K OLED Smart TV",
+    "pris": 9000,
+    "hittad": "2026-11-09",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 6,
+    "underMarknad": null
+  },
+  {
+    "id": "27115971",
+    "titel": "Sony 55\" Smart tv",
+    "pris": 1900,
+    "hittad": "2026-10-26",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 20,
+    "annonsdagarVidStart": 21,
+    "totalAlder": 41,
+    "underMarknad": 37,
+    "kohort": true
+  },
+  {
+    "id": "27147605",
+    "titel": "TCL 55P735 55\" 4K TV",
+    "pris": 3900,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 33,
+    "annonsdagarVidStart": 8,
+    "totalAlder": 41,
+    "underMarknad": -30,
+    "kohort": true
+  },
+  {
+    "id": "28032209",
+    "titel": "55”  Andersoon QLED Ultra HD smart tv 4K HDR android tv",
+    "pris": 2900,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 7,
+    "totalAlder": 8,
+    "underMarknad": 3,
+    "kohort": true
+  },
+  {
+    "id": "28045519",
+    "titel": "Äldre smart tv 55'",
+    "pris": 1100,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 6,
+    "totalAlder": 7,
+    "underMarknad": 63,
+    "kohort": true
+  },
+  {
+    "id": "28127263",
+    "titel": "Ny LG OLED 55” C3",
+    "pris": 10500,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 3,
+    "totalAlder": 4,
+    "underMarknad": -50,
+    "kohort": true
+  },
+  {
+    "id": "28175740",
+    "titel": "Sharp  TV 55 tums Full HD",
+    "pris": 1000,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-15",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 2,
+    "underMarknad": 67,
+    "kohort": true
   }
 ]

@@ -4189,5 +4189,100 @@
     "totalAlder": 2,
     "underMarknad": 67,
     "kohort": true
+  },
+  {
+    "id": "28141097",
+    "titel": "LG OLED C1 65 tum",
+    "pris": 2500,
+    "hittad": "2026-11-11",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 5,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 6,
+    "underMarknad": null
+  },
+  {
+    "id": "24568853",
+    "titel": "55” OLED 4K Smart TV - LG OLED55B7V",
+    "pris": 1950,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 19,
+    "totalAlder": 21,
+    "underMarknad": 72,
+    "kohort": true
+  },
+  {
+    "id": "24684585",
+    "titel": "LED-TV 55 tum med belysning bakom skärmen",
+    "pris": 4000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 52,
+    "annonsdagarVidStart": 77,
+    "totalAlder": 129,
+    "underMarknad": -14,
+    "kohort": true
+  },
+  {
+    "id": "26727511",
+    "titel": "Skärm från Samsung  55 tum 4K",
+    "pris": 1250,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 57,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 58,
+    "underMarknad": 47,
+    "kohort": true
+  },
+  {
+    "id": "27809704",
+    "titel": "Samsung QE55Q8A 55-tums QLED-TV inklusive väggfäste",
+    "pris": 4490,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 15,
+    "totalAlder": 17,
+    "underMarknad": -50,
+    "kohort": true
+  },
+  {
+    "id": "28174745",
+    "titel": "Samsung 55” S95B QD-OLED – 4K, 120Hz, Premium-TV",
+    "pris": 5750,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 4,
+    "underMarknad": 18,
+    "kohort": true
+  },
+  {
+    "id": "28195363",
+    "titel": "Andersson smart tv Android 55tum 4K",
+    "pris": 2900,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 3,
+    "underMarknad": 3,
+    "kohort": true
+  },
+  {
+    "id": "28222691",
+    "titel": "LG 55 tum 4K Ultra HD Smart-TV",
+    "pris": 1500,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-16",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 2,
+    "underMarknad": 50,
+    "kohort": true
   }
 ]

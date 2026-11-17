@@ -133,13 +133,13 @@
   },
   "28196880": {
     "titel": "LG oled C2 65tum",
-    "pris": 7999,
+    "pris": 6500,
     "url": "https://www.blocket.se/recommerce/forsale/item/28196880",
     "sedan": "2026-11-15",
     "annonsdagar": 2,
     "tum": 65,
     "underMarknad": null,
-    "rord": "2026-11-15"
+    "rord": "2026-11-16"
   },
   "28207511": {
     "titel": "Rubrik: LG 65\" 4K OLED TV (OLED65CX6LA) i toppskick – 120Hz / HDMI 2.1",
@@ -152,13 +152,22 @@
     "rord": "2026-11-13"
   },
   "28228821": {
-    "titel": "LG OLED65C36LC är en 65-tums 4K OLED-TV",
-    "pris": 8000,
+    "titel": "LG OLED65C36LC 65-tums 4K OLED-TV, först till kvarn",
+    "pris": 7000,
     "url": "https://www.blocket.se/recommerce/forsale/item/28228821",
     "sedan": "2026-11-15",
     "annonsdagar": 0,
     "tum": 65,
     "underMarknad": null,
-    "rord": "2026-11-15"
+    "rord": "2026-11-16"
+  },
+  "28295827": {
+    "titel": "LG OLED G1 65” inkl. bordstativ",
+    "pris": 8500,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28295827",
+    "sedan": "2026-11-17",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

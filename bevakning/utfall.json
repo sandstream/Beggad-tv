@@ -4284,5 +4284,65 @@
     "totalAlder": 2,
     "underMarknad": 50,
     "kohort": true
+  },
+  {
+    "id": "27261047",
+    "titel": "LG smart tv 55tum",
+    "pris": 3500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-11-17",
+    "dagarFoljd": 35,
+    "annonsdagarVidStart": 3,
+    "totalAlder": 38,
+    "underMarknad": -67,
+    "kohort": true
+  },
+  {
+    "id": "27307476",
+    "titel": "LG 55\" 4K Smart-TV  Nästan oanvänd!",
+    "pris": 2500,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-11-17",
+    "dagarFoljd": 35,
+    "annonsdagarVidStart": 2,
+    "totalAlder": 37,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "27908533",
+    "titel": "Samsung QLED 55-tums TV",
+    "pris": 7990,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-17",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 14,
+    "underMarknad": -166,
+    "kohort": true
+  },
+  {
+    "id": "28126223",
+    "titel": "Samsung 55\" 4K Smart-TV  från 2020 – Komplett med väggfäste & originalkartong",
+    "pris": 3500,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-17",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 3,
+    "totalAlder": 6,
+    "underMarknad": -17,
+    "kohort": true
+  },
+  {
+    "id": "28206823",
+    "titel": "55\" Smart-TV med HDR, 4K-upplösning och subwoofer",
+    "pris": 1500,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-17",
+    "dagarFoljd": 3,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 3,
+    "underMarknad": 50,
+    "kohort": true
   }
 ]

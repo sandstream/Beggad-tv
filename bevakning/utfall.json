@@ -4413,5 +4413,89 @@
     "totalAlder": 15,
     "underMarknad": 50,
     "kohort": true
+  },
+  {
+    "id": "26601137",
+    "titel": "Samsung Qled 4K 55 tum",
+    "pris": 3500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 61,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 66,
+    "underMarknad": -50,
+    "kohort": true
+  },
+  {
+    "id": "26833429",
+    "titel": "LG TV 55tum Ultra HD 4K",
+    "pris": 1750,
+    "hittad": "2026-09-24",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 57,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 58,
+    "underMarknad": 0,
+    "kohort": true
+  },
+  {
+    "id": "27637262",
+    "titel": "LG 55EA970W 55-tums välvd OLED-TV Exklusiv",
+    "pris": 2500,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 21,
+    "totalAlder": 27,
+    "underMarknad": 64,
+    "kohort": true
+  },
+  {
+    "id": "27928373",
+    "titel": "Signage Tv skärm 55tum",
+    "pris": 12000,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 11,
+    "totalAlder": 17,
+    "underMarknad": -300,
+    "kohort": true
+  },
+  {
+    "id": "27985571",
+    "titel": "LG Smart tv 55 tum 4k ultra hd",
+    "pris": 2999,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 8,
+    "totalAlder": 14,
+    "underMarknad": 0,
+    "kohort": true
+  },
+  {
+    "id": "28040290",
+    "titel": "Sony Bravia 55 tum TV",
+    "pris": 2500,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 6,
+    "totalAlder": 12,
+    "underMarknad": 17,
+    "kohort": true
+  },
+  {
+    "id": "28096179",
+    "titel": "Samsung 4k QLED 55 tum tv",
+    "pris": 3400,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-19",
+    "dagarFoljd": 6,
+    "annonsdagarVidStart": 5,
+    "totalAlder": 11,
+    "underMarknad": -33,
+    "kohort": true
   }
 ]

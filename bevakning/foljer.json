@@ -115,9 +115,9 @@
   },
   "28012966": {
     "titel": "LG TV OLED 65 tum",
-    "pris": 5800,
+    "pris": 5400,
     "plats": "Kungsängen",
-    "rord": "2026-11-14",
+    "rord": "2026-11-18",
     "url": "https://www.blocket.se/recommerce/forsale/item/28012966",
     "sedan": "2026-11-07"
   },
@@ -139,6 +139,24 @@
     "annonsdagar": 0,
     "tum": 65,
     "underMarknad": -11,
-    "rord": "2026-11-13"
+    "rord": "2026-11-18"
+  },
+  "28324181": {
+    "titel": "Samsung OLED S95B 65tum",
+    "pris": 9000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28324181",
+    "sedan": "2026-11-19",
+    "annonsdagar": 2,
+    "tum": 65,
+    "underMarknad": null
+  },
+  "28392633": {
+    "titel": "LG OLED C1 65",
+    "pris": 8000,
+    "url": "https://www.blocket.se/recommerce/forsale/item/28392633",
+    "sedan": "2026-11-19",
+    "annonsdagar": 0,
+    "tum": 65,
+    "underMarknad": null
   }
 }

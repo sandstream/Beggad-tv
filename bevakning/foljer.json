@@ -148,7 +148,8 @@
     "sedan": "2026-11-19",
     "annonsdagar": 2,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-11-18"
   },
   "28392633": {
     "titel": "LG OLED C1 65",
@@ -157,6 +158,7 @@
     "sedan": "2026-11-19",
     "annonsdagar": 0,
     "tum": 65,
-    "underMarknad": null
+    "underMarknad": null,
+    "rord": "2026-11-19"
   }
 }

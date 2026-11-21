@@ -4497,5 +4497,75 @@
     "totalAlder": 11,
     "underMarknad": -33,
     "kohort": true
+  },
+  {
+    "id": "26419579",
+    "titel": "Sony OLED TV 55 tum",
+    "pris": 3500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-21",
+    "dagarFoljd": 62,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "28171003",
+    "titel": "Panasonic 65 tums OLED TX-65GZ960E",
+    "pris": 6500,
+    "hittad": "2026-11-11",
+    "forsvann": "2026-11-21",
+    "dagarFoljd": 10,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 10,
+    "underMarknad": null
+  },
+  {
+    "id": "26419579",
+    "titel": "Sony OLED TV 55 tum",
+    "pris": 3500,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-21",
+    "dagarFoljd": 62,
+    "annonsdagarVidStart": 12,
+    "totalAlder": 74,
+    "underMarknad": -11,
+    "kohort": true
+  },
+  {
+    "id": "26766031",
+    "titel": "Samsung UE55HU7505 55\" LED-TV",
+    "pris": 4000,
+    "hittad": "2026-09-21",
+    "forsvann": "2026-11-21",
+    "dagarFoljd": 61,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 61,
+    "underMarknad": -100,
+    "kohort": true
+  },
+  {
+    "id": "27827353",
+    "titel": "LG 55 tum",
+    "pris": 5200,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-21",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 14,
+    "totalAlder": 21,
+    "underMarknad": -73,
+    "kohort": true
+  },
+  {
+    "id": "28001836",
+    "titel": "Samsung 55\" 4K Smart-TV",
+    "pris": 1600,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-21",
+    "dagarFoljd": 7,
+    "annonsdagarVidStart": 8,
+    "totalAlder": 15,
+    "underMarknad": 47,
+    "kohort": true
   }
 ]

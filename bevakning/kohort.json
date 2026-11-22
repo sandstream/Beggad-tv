@@ -109,17 +109,6 @@
     "underMarknad": -217,
     "fangad": "2026-10-03"
   },
-  "21075872": {
-    "titel": "55 tums TV",
-    "pris": 2800,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 49,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 7,
-    "fangad": "2026-10-03"
-  },
   "21282766": {
     "titel": "55\" Crystal UHD U8075 4K Smart TV (2025) SPARA HALVA PRISET!",
     "pris": 4990,
@@ -162,17 +151,6 @@
     "grupp": "55-led",
     "marknad": 3500,
     "underMarknad": -157,
-    "fangad": "2026-09-25"
-  },
-  "22315766": {
-    "titel": "Samsung Odyssey Ark 55” – Extrem gaming  (inkl. 2 kontroller) - S55BG970NU",
-    "pris": 10000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 65,
-    "grupp": "55-led",
-    "marknad": 3500,
-    "underMarknad": -186,
     "fangad": "2026-09-25"
   },
   "22343123": {
@@ -626,17 +604,6 @@
     "underMarknad": 30,
     "fangad": "2026-11-14"
   },
-  "25430609": {
-    "titel": "LG 55\" 4K UHD OLED Smart TV OLED55B6V",
-    "pris": 4500,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 50,
-    "grupp": "55-oled",
-    "marknad": 7700,
-    "underMarknad": 42,
-    "fangad": "2026-09-25"
-  },
   "25440585": {
     "titel": "LG 55” NANO95 8K NanoCell Smart TV (2020)",
     "pris": 4995,
@@ -925,7 +892,7 @@
   },
   "26177543": {
     "titel": "Smart tv 55 tum",
-    "pris": 250,
+    "pris": 200,
     "tum": 55,
     "oled": false,
     "annonsdagar": 21,
@@ -999,17 +966,6 @@
     "marknad": 3500,
     "underMarknad": 23,
     "fangad": "2026-09-25"
-  },
-  "26355350": {
-    "titel": "Samsung 55” Smart TV 4K UHD – UE55MU6475 – Fint skick",
-    "pris": 3000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 14,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 0,
-    "fangad": "2026-09-20"
   },
   "26372763": {
     "titel": "Vridbar Tvkonsoll 55 tum",
@@ -1761,7 +1717,7 @@
   },
   "28123742": {
     "titel": "Sony 55\" A80L 4K OLED Smart TV som ny, 2024 med väggfäste",
-    "pris": 7000,
+    "pris": 6900,
     "tum": 55,
     "oled": true,
     "annonsdagar": 4,

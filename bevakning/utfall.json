@@ -4567,5 +4567,64 @@
     "totalAlder": 15,
     "underMarknad": 47,
     "kohort": true
+  },
+  {
+    "id": "25430609",
+    "titel": "LG 55\" 4K UHD OLED Smart TV OLED55B6V",
+    "pris": 4500,
+    "hittad": "2026-09-22",
+    "forsvann": "2026-11-22",
+    "dagarFoljd": 61,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "21075872",
+    "titel": "55 tums TV",
+    "pris": 2800,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-11-22",
+    "dagarFoljd": 50,
+    "annonsdagarVidStart": 49,
+    "totalAlder": 99,
+    "underMarknad": 7,
+    "kohort": true
+  },
+  {
+    "id": "22315766",
+    "titel": "Samsung Odyssey Ark 55” – Extrem gaming  (inkl. 2 kontroller) - S55BG970NU",
+    "pris": 10000,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-22",
+    "dagarFoljd": 58,
+    "annonsdagarVidStart": 65,
+    "totalAlder": 123,
+    "underMarknad": -186,
+    "kohort": true
+  },
+  {
+    "id": "25430609",
+    "titel": "LG 55\" 4K UHD OLED Smart TV OLED55B6V",
+    "pris": 4500,
+    "hittad": "2026-09-25",
+    "forsvann": "2026-11-22",
+    "dagarFoljd": 58,
+    "annonsdagarVidStart": 50,
+    "totalAlder": 108,
+    "underMarknad": 42,
+    "kohort": true
+  },
+  {
+    "id": "26355350",
+    "titel": "Samsung 55” Smart TV 4K UHD – UE55MU6475 – Fint skick",
+    "pris": 3000,
+    "hittad": "2026-09-20",
+    "forsvann": "2026-11-22",
+    "dagarFoljd": 63,
+    "annonsdagarVidStart": 14,
+    "totalAlder": 77,
+    "underMarknad": 0,
+    "kohort": true
   }
 ]

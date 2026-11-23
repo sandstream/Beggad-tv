@@ -74,6 +74,14 @@ for (const id of ids) {
   // Komma duger inte som satsgräns: "utan några som helst problem, repor
   // eller inbränningar" är en uppräkning, inte två satser. Gränsen går vid
   // punkt och vid ord som vänder påståendet.
+  // Somliga nekanden står efter ordet i stället för före: "Kvitto saknas".
+  // Den 23 november skrev verktyget "✓ kvitto" på just den meningen.
+  // Fast uttryck dög inte: "Originalkartong finns tyvärr inte kvar" har ett
+  // ord inklämt i nekandet. Vi tar i stället allt fram till närmaste
+  // skiljetecken — komma räknas här, för ett komma följt av "inte" är en
+  // motsättning ("kartong ingår, inte stativ") — och letar efter ett
+  // nekande ord i det.
+  const SAKNAS_EFTER = /^[^.!?;,]{0,40}?\b(?:saknas|inte|ej|borttappad|f[öo]rsvunnen|uteblir)\b/i;
   const NEKANDE =
     /\b(?:inga|inget|ingen|utan|fri[att]*\s+fr[åa]n|aldrig|ej)\b(?:(?!\b(?:men|dock|d[äa]remot|tyv[äa]rr)\b)[^.!?;])*$/i;
   const nekad = (re) => {
@@ -81,7 +89,11 @@ for (const id of ids) {
     if (!alla.length) return false;
     // Bara om VARJE förekomst är nekad. Säger annonsen både "inga
     // inbränningar" och "syns inbränning i hörnet" är det en varning.
-    return alla.every((m) => NEKANDE.test(txt.slice(Math.max(0, m.index - 60), m.index)));
+    return alla.every(
+      (m) =>
+        NEKANDE.test(txt.slice(Math.max(0, m.index - 60), m.index)) ||
+        SAKNAS_EFTER.test(txt.slice(m.index + m[0].length, m.index + m[0].length + 45)),
+    );
   };
 
   const varning = [];
@@ -90,7 +102,14 @@ for (const id of ids) {
     if (!txt.match(re)) continue;
     (nekad(re) ? fornekat : varning).push(namn);
   }
-  const plus = traff(BRA);
+  // Samma prövning för pluslistan. Ett "kvitto" som saknas är inget plus.
+  // Undantaget är poster vars mönster självt är ett nekande — "inga
+  // inbränningar" ska fortsätta räknas som säljarens utfästelse.
+  const plus = [];
+  for (const [re, namn] of BRA) {
+    if (!txt.match(re)) continue;
+    if (/inga/i.test(re.source) || !nekad(re)) plus.push(namn);
+  }
   if (varning.length) console.log(`\n⚠  ${varning.join(", ")}`);
   // Förnekandet är inte ett larm, men det är inte heller ingenting: det är
   // ett påstående säljaren kan hållas till när du står där med testbilderna.

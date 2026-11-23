@@ -4626,5 +4626,74 @@
     "totalAlder": 77,
     "underMarknad": 0,
     "kohort": true
+  },
+  {
+    "id": "23527197",
+    "titel": "LG 65 CX OLED TV",
+    "pris": 7000,
+    "hittad": "2026-11-21",
+    "forsvann": "2026-11-23",
+    "dagarFoljd": 2,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 2,
+    "underMarknad": 11
+  },
+  {
+    "id": "27076978",
+    "titel": "LG OLED 55\" 4K (B9, OLED55B9PLA), skick som ny, inga inbrända bilder",
+    "pris": 3800,
+    "hittad": "2026-10-03",
+    "forsvann": "2026-11-23",
+    "dagarFoljd": 51,
+    "annonsdagarVidStart": null,
+    "totalAlder": null,
+    "underMarknad": null
+  },
+  {
+    "id": "28426155",
+    "titel": "LG C2 65 tum TV 2023 Oled",
+    "pris": 6000,
+    "hittad": "2026-11-22",
+    "forsvann": "2026-11-23",
+    "dagarFoljd": 1,
+    "annonsdagarVidStart": 0,
+    "totalAlder": 1,
+    "underMarknad": null
+  },
+  {
+    "id": "26824310",
+    "titel": "Digihome smart tv 55 Tum",
+    "pris": 2000,
+    "hittad": "2026-09-24",
+    "forsvann": "2026-11-23",
+    "dagarFoljd": 60,
+    "annonsdagarVidStart": 1,
+    "totalAlder": 61,
+    "underMarknad": 33,
+    "kohort": true
+  },
+  {
+    "id": "27076978",
+    "titel": "LG OLED 55\" 4K (B9, OLED55B9PLA), skick som ny, inga inbrända bilder",
+    "pris": 3800,
+    "hittad": "2026-11-14",
+    "forsvann": "2026-11-23",
+    "dagarFoljd": 9,
+    "annonsdagarVidStart": 42,
+    "totalAlder": 51,
+    "underMarknad": 46,
+    "kohort": true
+  },
+  {
+    "id": "27116147",
+    "titel": "TCL 55” 4K Smart-TV – fullt fungerande",
+    "pris": 750,
+    "hittad": "2026-10-13",
+    "forsvann": "2026-11-23",
+    "dagarFoljd": 41,
+    "annonsdagarVidStart": 8,
+    "totalAlder": 49,
+    "underMarknad": 75,
+    "kohort": true
   }
 ]

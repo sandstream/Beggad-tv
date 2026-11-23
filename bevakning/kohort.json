@@ -1154,17 +1154,6 @@
     "underMarknad": 20,
     "fangad": "2026-09-20"
   },
-  "26824310": {
-    "titel": "Digihome smart tv 55 Tum",
-    "pris": 2000,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 1,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 33,
-    "fangad": "2026-09-24"
-  },
   "26930791": {
     "titel": "Samsung smart TV 55 tum svart",
     "pris": 3000,
@@ -1264,17 +1253,6 @@
     "underMarknad": 0,
     "fangad": "2026-10-13"
   },
-  "27076978": {
-    "titel": "LG OLED 55\" 4K (B9, OLED55B9PLA), skick som ny, inga inbrända bilder",
-    "pris": 3800,
-    "tum": 55,
-    "oled": true,
-    "annonsdagar": 42,
-    "grupp": "55-oled",
-    "marknad": 6999,
-    "underMarknad": 46,
-    "fangad": "2026-11-14"
-  },
   "27077967": {
     "titel": "LG 55NANO76 55\" 4K Smart TV webOS",
     "pris": 3600,
@@ -1284,17 +1262,6 @@
     "grupp": "55-led",
     "marknad": 3000,
     "underMarknad": -20,
-    "fangad": "2026-10-13"
-  },
-  "27116147": {
-    "titel": "TCL 55” 4K Smart-TV – fullt fungerande",
-    "pris": 750,
-    "tum": 55,
-    "oled": false,
-    "annonsdagar": 8,
-    "grupp": "55-led",
-    "marknad": 3000,
-    "underMarknad": 75,
     "fangad": "2026-10-13"
   },
   "27116216": {
@@ -1717,7 +1684,7 @@
   },
   "28123742": {
     "titel": "Sony 55\" A80L 4K OLED Smart TV som ny, 2024 med väggfäste",
-    "pris": 6900,
+    "pris": 6500,
     "tum": 55,
     "oled": true,
     "annonsdagar": 4,

@@ -37,7 +37,12 @@ function normalisera(item) {
 const PER_SIDA_TAK = 12; // spärr mot en fråga som råkar matcha halva Blocket
 
 async function hamtaSida(fraga, sida) {
-  const res = await fetch(`${UPPSTROMS}?query=${encodeURIComponent(fraga)}&page=${sida}`);
+  // Utan tidsgräns hänger ett dött uppströms i tjugo sekunder per anrop.
+  // Den 24 november svarade det 522 på allt, och morgonkörningen maldes
+  // ihjäl av sin egen tidsgräns innan den hann skriva något.
+  const res = await fetch(`${UPPSTROMS}?query=${encodeURIComponent(fraga)}&page=${sida}`, {
+    signal: AbortSignal.timeout(8000),
+  });
   if (!res.ok) throw new Error(`Blocket ${res.status} ${res.statusText}`);
   return res.json();
 }

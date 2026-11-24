@@ -191,7 +191,9 @@ async function hamtaAnnons(id) {
 
 async function hamtaEnGang(id) {
   try {
-    const res = await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`);
+    const res = await fetch(`https://blocket-api.se/v1/ad/recommerce?id=${id}`, {
+      signal: AbortSignal.timeout(8000),
+    });
     const d = await res.json();
     // Uppströms svarar 200 även när den stryper oss, med ett error-fält i
     // kroppen: {"error":"Client error '429 Too Many Requests' ..."}. Det såg
@@ -316,6 +318,37 @@ function berika(i) {
   };
 }
 
+// Är tjänsten uppe? Två anrop kostar sekunder och sparar en halvtimme när
+// svaret är nej. Den 24 november svarade uppströms 522 på allt och
+// körningen dödades av sin egen tidsgräns utan att ha skrivit något.
+const UPPSTROMS_SOK = "https://blocket-api.se/v1/search";
+
+async function uppstromsSvarar() {
+  for (let i = 0; i < 2; i++) {
+    try {
+      const res = await fetch(`${UPPSTROMS_SOK}?query=oled&page=1`, {
+        signal: AbortSignal.timeout(8000),
+      });
+      if (res.ok) return null;
+      var sista = `HTTP ${res.status} ${res.statusText}`;
+    } catch (e) {
+      var sista = e.message;
+    }
+    if (i === 0) await new Promise((r) => setTimeout(r, 4000));
+  }
+  return sista;
+}
+
+const nere = await uppstromsSvarar();
+if (nere) {
+  // Ingen state skrivs. En körning som inte sett marknaden får inte logga
+  // utfall, och "inget nytt" vore en lögn.
+  console.log(`UPPSTRÖMS NERE — ${nere}`);
+  console.log("Ingen state skrevs. Kör om när tjänsten svarar igen.");
+  process.exit(0);
+}
+
+
 const foljer = lasFoljer();
 
 // --folj: lägg till annonser i följlistan och sluta där.
@@ -350,81 +383,104 @@ const sok = await skapaSokare({ direkt: !flagg.has("--mcp") });
 const historik = lasHistorik();
 const nya = [];
 const misslyckade = [];
+let iRad = 0; // sökfrågor som fallit i rad
 const allaSedda = { ...historik.rapporterade };
 const paus = (ms) => new Promise((r) => setTimeout(r, ms));
 
-for (const b of BEVAKNINGAR) {
-  for (const m of b.modeller) {
-    const sedda = new Map();
-    for (const q of m.q) {
-      // En sökfråga som dör tar med sig hela modellen i tysthet. Den 3
-      // november föll OLED55C6 på "terminated" — ett nätverksfel — och
-      // körningen rapporterade sig ändå som komplett. Det råkade vara en
-      // storlek vi inte vill ha; nästa gång kan det vara annonsen vi letar
-      // efter. Försök igen en gång, och gör det omöjligt att missa om båda
-      // försöken dör.
-      let fel = null;
-      for (let forsok = 1; forsok <= 2; forsok++) {
-        try {
-          for (const it of await sok(q)) sedda.set(it.id, it);
-          fel = null;
-          break;
-        } catch (e) {
-          fel = e;
-          if (forsok === 1) await paus(3000);
+try {
+  for (const b of BEVAKNINGAR) {
+    for (const m of b.modeller) {
+      const sedda = new Map();
+      for (const q of m.q) {
+        // En sökfråga som dör tar med sig hela modellen i tysthet. Den 3
+        // november föll OLED55C6 på "terminated" — ett nätverksfel — och
+        // körningen rapporterade sig ändå som komplett. Det råkade vara en
+        // storlek vi inte vill ha; nästa gång kan det vara annonsen vi letar
+        // efter. Försök igen en gång, och gör det omöjligt att missa om båda
+        // försöken dör.
+        let fel = null;
+        for (let forsok = 1; forsok <= 2; forsok++) {
+          try {
+            for (const it of await sok(q)) sedda.set(it.id, it);
+            fel = null;
+            break;
+          } catch (e) {
+            fel = e;
+            if (forsok === 1) await paus(3000);
+          }
         }
+        if (fel) {
+          misslyckade.push(q);
+          iRad++;
+          process.stderr.write(`${q}: ${fel.message}\n`);
+          // Säkring. Omförsöket ovan gör varje död fråga dubbelt så dyr, och
+          // med hundratals frågor blir ett nere-uppströms timmar av väntan på
+          // samma besked. Faller så här många i rad är det inte frågorna som
+          // är fel, det är tjänsten. Avbryt och säg det, i stället för att
+          // dödas av tidsgränsen utan att ha skrivit något.
+          if (iRad >= 5) throw new Error(`UPPSTROMS_NERE: ${fel.message}`);
+        } else {
+          iRad = 0;
+        }
+        await paus(250);
       }
-      if (fel) {
-        misslyckade.push(q);
-        process.stderr.write(`${q}: ${fel.message}\n`);
-      }
-      await paus(250);
-    }
-    // Alla träffar på modellen, inte bara de nya — de utgör jämförelsematerialet
-    // som avgör om en ny annons är ett kap eller bara ett pris.
-    //
-    // Jämförelsen görs per storlek. En 55:a och en 65:a av samma modell är
-    // olika varor till olika pris, och en gemensam median hade dömt ut varje
-    // 65:a som dyr och varje 55:a som kap.
-    // Tumangivelse krävs bara av bevakningar som gäller TV. En soundbar har
-    // ingen storlek i rubriken, så kravet skulle sålla bort varenda träff.
-    const kraverTum = Array.isArray(b.storlekar);
-    const matchande = [...sedda.values()]
-      .map((i) => ({ i, tum: kraverTum ? storlekIRubrik(i.title, b.storlekar) : null }))
-      .filter(({ i, tum }) => {
-        if (kraverTum && !tum) return false;
-        if (!i.price || i.price > b.maxpris) return false;
-        return b.matchar ? b.matchar(i.title) : m.p.test(i.title) && !inteEnTv(i.title);
-      });
-
-    for (const { i, tum } of matchande) {
-      allaSedda[i.id] = true;
-      if (!historik.rapporterade[i.id]) {
-        const r = berika(i);
-        const jamforbara = matchande
-          .filter((x) => x.tum === tum && x.i.id !== i.id)
-          .map((x) => x.i.price);
-        nya.push({
-          ...r,
-          bevakning: b.namn,
-          modell: m.k,
-          ar: m.ar,
-          tum,
-          defekt: b.granska ? await defektord(i.id) : null,
-          kap: jamforbara.length ? bedomKap({ begart: i.price, jamforbara }) : null,
+      // Alla träffar på modellen, inte bara de nya — de utgör jämförelsematerialet
+      // som avgör om en ny annons är ett kap eller bara ett pris.
+      //
+      // Jämförelsen görs per storlek. En 55:a och en 65:a av samma modell är
+      // olika varor till olika pris, och en gemensam median hade dömt ut varje
+      // 65:a som dyr och varje 55:a som kap.
+      // Tumangivelse krävs bara av bevakningar som gäller TV. En soundbar har
+      // ingen storlek i rubriken, så kravet skulle sålla bort varenda träff.
+      const kraverTum = Array.isArray(b.storlekar);
+      const matchande = [...sedda.values()]
+        .map((i) => ({ i, tum: kraverTum ? storlekIRubrik(i.title, b.storlekar) : null }))
+        .filter(({ i, tum }) => {
+          if (kraverTum && !tum) return false;
+          if (!i.price || i.price > b.maxpris) return false;
+          return b.matchar ? b.matchar(i.title) : m.p.test(i.title) && !inteEnTv(i.title);
         });
-        foljer[i.id] = {
-          titel: r.titel,
-          pris: r.pris,
-          url: r.url,
-          sedan: new Date().toISOString().slice(0, 10),
-          annonsdagar: r.dagar,
-          tum,
-          underMarknad: nya[nya.length - 1].kap?.motMarknad?.procentUnder ?? null,
-        };
+
+      for (const { i, tum } of matchande) {
+        allaSedda[i.id] = true;
+        if (!historik.rapporterade[i.id]) {
+          const r = berika(i);
+          const jamforbara = matchande
+            .filter((x) => x.tum === tum && x.i.id !== i.id)
+            .map((x) => x.i.price);
+          nya.push({
+            ...r,
+            bevakning: b.namn,
+            modell: m.k,
+            ar: m.ar,
+            tum,
+            defekt: b.granska ? await defektord(i.id) : null,
+            kap: jamforbara.length ? bedomKap({ begart: i.price, jamforbara }) : null,
+          });
+          foljer[i.id] = {
+            titel: r.titel,
+            pris: r.pris,
+            url: r.url,
+            sedan: new Date().toISOString().slice(0, 10),
+            annonsdagar: r.dagar,
+            tum,
+            underMarknad: nya[nya.length - 1].kap?.motMarknad?.procentUnder ?? null,
+          };
+        }
       }
     }
   }
+} catch (e) {
+  // Säkringen ovan. Uppströms är nere, inte frågorna fel. Skriv ingenting
+  // till bevakningen: en körning som inte sett marknaden får inte logga
+  // utfall, och "inget nytt" vore en lögn.
+  if (String(e.message).startsWith("UPPSTROMS_NERE")) {
+    console.log(`\nUPPSTRÖMS NERE — ${misslyckade.length} sökfrågor föll i rad.`);
+    console.log(`Sista felet: ${String(e.message).split(": ").slice(1).join(": ")}`);
+    console.log("Ingen state skrevs. Kör om när tjänsten svarar igen.");
+    process.exit(0);
+  }
+  throw e;
 }
 
 if (sok.stang) await sok.stang();

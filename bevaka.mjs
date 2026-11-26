@@ -329,8 +329,23 @@ async function uppstromsSvarar() {
       const res = await fetch(`${UPPSTROMS_SOK}?query=oled&page=1`, {
         signal: AbortSignal.timeout(8000),
       });
-      if (res.ok) return null;
-      var sista = `HTTP ${res.status} ${res.statusText}`;
+      // HTTP 200 räcker inte. Den 26 november svarade värden 200 med en
+      // HTML-sida — GitHub-sidan för projektet som driver tjänsten — och
+      // hälsokontrollen släppte igenom den. Kontrollen ska pröva det vi
+      // faktiskt behöver: att svaret är JSON med annonser i.
+      if (res.ok) {
+        const txt = await res.text();
+        try {
+          const d = JSON.parse(txt);
+          if (Array.isArray(d?.docs)) return null;
+          var sista = `svarade JSON utan docs-fält`;
+        } catch {
+          const typ = res.headers.get("content-type") || "okänd typ";
+          var sista = `svarade ${typ} i stället för JSON`;
+        }
+      } else {
+        var sista = `HTTP ${res.status} ${res.statusText}`;
+      }
     } catch (e) {
       var sista = e.message;
     }
